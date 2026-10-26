@@ -1,0 +1,66 @@
+/* finesse · register=product · A=sage+forest · B=700/400 · C=study-list+right-rail · D=state-feedback · E=learning-desk · SOUL=6 SPECTACLE=2 DENSITY=6 */
+@import 'tailwindcss' source('../');
+@import 'tw-animate-css';
+@custom-variant dark (&:is(.dark *));
+:root {
+  /* Sage mist (#f2f5f2): calm page surface. Forest (#23583f): primary actions. */
+  --background: #f2f5f2;
+  --foreground: #1c3025;
+  --card: #fdfefb;
+  --card-foreground: #1c3025;
+  --popover: #fdfefb;
+  --popover-foreground: #1c3025;
+  --primary: #23583f;
+  --primary-foreground: #f5faf5;
+  --secondary: #e8efe7;
+  --secondary-foreground: #294b37;
+  --muted: #edf2eb;
+  --muted-foreground: #57675c;
+  --accent: #e6eee4;
+  --accent-foreground: #23583f;
+  --destructive: #a42f31;
+  --border: rgba(31, 65, 43, 0.12);
+  --input: #aebfae;
+  --ring: #2f6b4f;
+  --radius: 0.65rem;
+  --hero: #214f3c;
+  --hero-ink: #f4f8ed;
+  --hero-muted: #cfddcc;
+  --hero-line: rgba(241, 248, 233, 0.2);
+  --hero-button: #e0edc6;
+  --hero-button-ink: #24452e;
+  --sidebar-bg: #eaf0e9;
+  --success: #216477;
+  --error-bg: #fcf0ed;
+  --shadow: 0 2px 12px rgba(31, 65, 43, 0.035);
+  --font-sans: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, monospace;
+  --nav-h: 64px;
+  --z-nav: 30;
+  --z-sticky: 20;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-sans);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}

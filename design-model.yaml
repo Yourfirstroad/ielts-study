@@ -1,0 +1,22 @@
+meta:
+  name: IELTS Study
+  register: product
+  dials: { soul: 6, spectacle: 2, density: 6 }
+  approved: 浅色背景、墨绿色按钮、每日学习清单、电脑和手机可用
+color:
+  source: src/styles/tokens.css
+  palette: Sage neutral ramp + Forest accent
+type:
+  family: Segoe UI / PingFang SC / Microsoft YaHei
+  rationale: 中英文长时间阅读且无需下载字体
+layout:
+  shell: 220px sidebar + main study column + 300px goal rail
+  mobile: 导航横向滚动，内容单列，保留文字标签
+  imagery: none, study content and tools are the actual interface
+motion:
+  behavior: interactive state feedback only
+  reduced_motion: transitions removed
+accessibility:
+  focus: visible
+  touch_target: 44px
+  widths: [320, 375, 414, 768, 1440]
