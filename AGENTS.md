@@ -10,6 +10,8 @@
 - 官方/自编内容明确标注，资料必须有来源。没有证据不提供真题、官方词表或雅思分数预测。
 - 新课程编辑content.ts并更新来源与核查日期；当前7日主题循环不应描述为后台自动更新。
 - 构建npm run build，格式npm run format:check，核心流程npm run test:e2e。浏览器使用独立上下文，端口5186。
+- GitHub Pages构建npm run build:pages到dist-pages，hash路由；npm run test:pages验证严格静态托管。普通Sites构建仍为dist和BrowserRouter；两者不要混用。
+- 用户已授权公开源码与GitHub Pages发布到Yourfirstroad/ielts-study；禁止上传凭据、学习备份、测试截图或运行时数据。未来发布仍须在用户相应请求范围内。
 - 预览仅本机；公网发布、云同步、付费AI和消息发送需在相应用户授权范围内实施。
 - 不自动提交、推送、删除用户数据。维护README和docs中的实际验收状态。
 - 保留THIRD_PARTY_NOTICES.md。旧模板源码可供参考，但不属于已交付产品入口。

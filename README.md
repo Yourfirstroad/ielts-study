@@ -4,9 +4,9 @@
 
 ## 在其他电脑使用
 
-私人站点地址（首次发布成功后生效）：https://ielts-study-78a4ab06.steadylemon512.chatgpt.site
+现有学习网址：https://ielts-study-78a4ab06.steadylemon512.chatgpt.site
 
-在其他电脑或手机的浏览器打开网址，按页面提示登录创建本站的同一个 ChatGPT 账号。网站由 Sites 托管，不需要让原电脑一直开机，也不需要在其他电脑安装 Node.js。本站没有改为公开分享；访问权限由托管平台控制。
+在其他电脑或手机的浏览器打开网址即可使用，不需要让原电脑一直开机，也不需要下载安装或注册账号。2026-10-27 已核对现有 Sites 的访问权限为公开，匿名请求首页返回 200。学习记录保存在各自的浏览器中，不会向其他访客展示。
 
 **网页可跨电脑访问，但学习记录目前不自动同步。** 本机地址、线上地址、不同浏览器和不同电脑各有自己的记录。首次迁移：
 
@@ -16,7 +16,7 @@
 
 以后换电脑时同样导出并导入最新备份，建议固定一台设备为主要学习设备，避免来回覆盖。备份含个人草稿和学习记录，请自行妥善保存，不要上传到公开仓库。
 
-源代码通过 Sites 专用源码仓库随发布保存，**并非 GitHub 仓库**。如需另存 GitHub，可在确定自己的仓库与访问权限后再推送；无需为了跨电脑访问而额外注册 GitHub。
+GitHub 公开源码仓库：https://github.com/Yourfirstroad/ielts-study 。GitHub Pages 首次部署成功后的网站地址为 https://yourfirstroad.github.io/ielts-study/ 。仓库用于查看和下载源码，学习者使用网站地址；访问网站不需要 GitHub 账号。
 
 ## 本机打开与启动
 
@@ -31,7 +31,7 @@ npm run dev
 
 已经安装依赖后无需重复 npm ci。运行环境 Node.js >=22.12（本次24.20.0）。终端保持运行，Ctrl+C 关闭。若端口被占用，请先确认是否已经运行本项目，不要关闭其他项目。
 
-手机尺寸已通过浏览器模拟验证。当前开发服务仅绑定本机 127.0.0.1；其他设备使用上方私人站点地址，而不是本机地址。
+手机尺寸已通过浏览器模拟验证。当前开发服务仅绑定本机 127.0.0.1；其他设备使用上方学习网址，而不是本机地址。
 
 ## 可以做什么
 
@@ -51,7 +51,7 @@ npm run dev
 
 ## 数据说明
 
-存储键：`ielts-study-78a4ab06:study:v1`。本地浏览器、域名、协议和端口共同决定数据位置。换端口或浏览器不自动同步；登录同一 ChatGPT 账号只用于访问私人网站，不会自动搬移浏览器内的数据。
+存储键：`ielts-study-78a4ab06:study:v1`。本地浏览器、域名、协议和端口共同决定数据位置。换网址或浏览器不自动同步，Sites 和 GitHub Pages 之间也需要导出/导入备份。公开源码和页面不等于公开访客在浏览器内填写的草稿。
 请定期在「目标设置」导出备份。恢复时选择本站导出的JSON，确认后会替换当前数据。损坏数据不会自动清空；可先导出原始备份。其他窗口修改记录时，本窗口会暂停保存并提示刷新。
 
 ## 开发与验证
@@ -60,6 +60,8 @@ npm run dev
 npm run build
 npm run format:check
 npm run test:e2e
+npm run build:pages
+npm run test:pages
 ```
 
 浏览器测试使用本机Chrome与独立测试上下文，不写入日常浏览器数据。测试服务端口5186。
@@ -67,7 +69,17 @@ npm run test:e2e
 
 ## 托管维护
 
-`.openai/hosting.json` 保存本站标识和静态部署设置，保留该文件，后续更新复用同一站点。`dist` 是构建产物，已配置单页应用回退，保证直接打开或刷新 `/vocabulary`、`/settings` 等地址时仍进入应用。发布使用 Sites 的源码同步、打包和私有部署流程，不将凭据写入源码。学习记录仍只在用户浏览器中，不进入发布包。
+### GitHub Pages
+
+`.github/workflows/pages.yml` 在推送 main 或手动触发时运行：安装锁定依赖、格式检查、构建、浏览器验证、发布。仓库 Settings → Pages → Source 应设为 GitHub Actions。工作流只上传 `dist-pages`，不上传源码目录、测试记录、凭据或用户学习备份。
+
+`npm run build:pages` 使用 hash 路由（例如 `/ielts-study/#/vocabulary`），无需服务器路由回退，刷新和直接分享子页面均可用。资源路径默认 `/ielts-study/`；工作流从 GitHub Pages 获取实际路径。学习记录格式不变。`npm run test:pages` 会启动一个没有路由回退的静态服务器，检查电脑和手机尺寸下的子页面、刷新、打卡、草稿、无障碍跳转及访客隔离。
+
+仓库公开不代表自动授予新的开源许可证；第三方许可见 THIRD_PARTY_NOTICES.md。本站不包含密钥、用户学习数据、官方付费书籍或真题全文。
+
+### 现有 Sites
+
+`.openai/hosting.json` 保留原站点标识。普通 `npm run build` 仍输出 `dist`、使用原来的 BrowserRouter 和单页应用回退；GitHub Pages 构建输出独立的 `dist-pages`，不会覆盖原构建。本次 GitHub 发布不重新部署现有 Sites。后续需要更新 Sites 时应先核对实际访问权限，使用相应的平台发布流程。
 
 ## 来源
 

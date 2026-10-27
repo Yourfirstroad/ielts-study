@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Navigate, Route, Routes, Link } from 'react-router-dom'
 import { Toaster } from 'sonner'
 import { ErrorBoundary } from './error-boundary'
 import { StudyProvider } from '@/features/study/store'
@@ -12,11 +12,12 @@ import {
   SettingsPage,
   Action,
 } from '@/features/study/pages'
+const StudyRouter = import.meta.env.MODE === 'github-pages' ? HashRouter : BrowserRouter
 export function App() {
   return (
     <ErrorBoundary>
       <StudyProvider>
-        <BrowserRouter>
+        <StudyRouter>
           <Routes>
             <Route element={<Layout />}>
               <Route index element={<TodayPage />} />
@@ -41,7 +42,7 @@ export function App() {
             </Route>
           </Routes>
           <Toaster position="bottom-right" closeButton />
-        </BrowserRouter>
+        </StudyRouter>
       </StudyProvider>
     </ErrorBoundary>
   )

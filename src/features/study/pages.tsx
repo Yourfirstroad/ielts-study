@@ -86,7 +86,16 @@ export function Layout() {
   }, [location.pathname])
   return (
     <div className="study-app">
-      <a className="skip-link" href="#main">
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(event) => {
+          event.preventDefault()
+          const main = document.getElementById('main')
+          main?.focus()
+          main?.scrollIntoView()
+        }}
+      >
         跳到主要内容
       </a>
       <aside className="sidebar">
