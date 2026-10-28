@@ -9,6 +9,7 @@
 - 日期按Asia/Shanghai，未来只预览。考试类型、日期、写作Task的草稿分别保存；词汇按实际当天记复习。
 - 官方/自编内容明确标注，资料必须有来源。没有证据不提供真题、官方词表或雅思分数预测。
 - 日期课程唯一源文件为src/data/plan.json；共用course-schema.ts校验和lessonTasks摘要。通过Vite同时发布courses/plan.json供提醒读取。原content.ts的7日起步版仅用于旧记录与明确标注的复习。
+- 每课必须有speakingGuide、writingGuide及对应chartGuides：中文审题、提纲、表达、原创参考段落与中文理解/解释、填空示例和迁移任务、已核查官方sourceIds。Task 2参考全文至少250词，Task 1至少150词；口语短示范不得冒充完整两分钟或已评分答案。新增课程延续此合同。展开答案不能覆盖草稿。
 - 已批准30天课程、北京时间每日显示、21:00推送同一课及后续补充维护；按docs/每日课程维护.md操作。不得改写已发布日期的题目/词ID导致历史答案错配，不得上传访客记录。
 - 构建npm run build，格式npm run format:check，核心流程npm run test:e2e。浏览器使用独立上下文，端口5186。
 - GitHub Pages构建npm run build:pages到dist-pages，hash路由；npm run test:pages验证严格静态托管。普通Sites构建仍为dist和BrowserRouter；两者不要混用。

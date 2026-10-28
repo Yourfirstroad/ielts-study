@@ -48,6 +48,7 @@ import {
 import { sources, taskDefs, topics, words, type Source, type Word } from './content'
 import { curriculum, lessons, courseStart, courseEnd, courseSource } from './curriculum'
 import { lessonTasks } from './course-schema'
+import { GuidedPractice } from './guided-practice'
 
 export function Action({ className = '', ...props }: ComponentProps<typeof Button>) {
   return <Button className={`action ${className}`} {...props} />
@@ -988,6 +989,13 @@ export function PracticePage() {
                     '先用关键词组织内容，再尝试说满 1–2 分钟。优先讲真实、具体的经历，避免逐字背诵整篇答案。'}
                 </div>
               </Panel>
+              {s.lesson && (
+                <GuidedPractice
+                  key={`speaking-${s.selected}`}
+                  guide={s.lesson.speakingGuide}
+                  kind="speaking"
+                />
+              )}
               <Panel>
                 <h2>练习后，听听自己的表达</h2>
                 <p>
@@ -1133,6 +1141,17 @@ export function PracticePage() {
                 )}
                 <External source={practiceSource} label="核对官方写作样题与要求" />
               </Panel>
+              {s.lesson && (writingTask === 'task2' || s.data.profile.track === 'academic') && (
+                <GuidedPractice
+                  key={`${s.selected}-${writingTask}`}
+                  guide={
+                    writingTask === 'task2'
+                      ? s.lesson.writingGuide
+                      : curriculum.chartGuides[s.lesson.chart.title]
+                  }
+                  kind={writingTask === 'task2' ? 'task2' : 'task1'}
+                />
+              )}
               <Panel>
                 <Draft
                   key={`${s.selected}-${s.data.profile.track}-${writingTask}`}

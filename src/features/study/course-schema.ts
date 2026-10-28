@@ -3,11 +3,27 @@ import { z } from 'zod'
 const date = z.iso.date()
 const line = z.string().min(1).max(10000)
 const question = z.tuple([line, z.enum(['TRUE', 'FALSE', 'NOT GIVEN']), line])
+const guide = z.object({
+  explain: line,
+  outline: z.array(line).min(3),
+  phrases: z.array(z.tuple([line, line])).min(3),
+  paragraphs: z.array(z.tuple([line, line, line])).min(3),
+  practice: z.object({ frame: line, answer: line, transfer: line }),
+  sourceIds: z.array(line).min(2),
+})
+export type PracticeGuide = z.infer<typeof guide>
+export const answerWordCount = (g: PracticeGuide) =>
+  g.paragraphs
+    .map((p) => p[0])
+    .join(' ')
+    .trim()
+    .split(/\s+/).length
 export const courseSchema = z
   .object({
     version: z.literal(1),
     timeZone: z.literal('Asia/Shanghai'),
     checkedAt: date,
+    chartGuides: z.record(z.string(), guide),
     sources: z.array(
       z.object({ id: line, name: line, url: z.url().startsWith('https://'), note: line }),
     ),
@@ -37,6 +53,8 @@ export const courseSchema = z
           speaking: line,
           cues: z.array(line).length(4),
           speakingTask: line,
+          speakingGuide: guide,
+          writingGuide: guide,
           writing: line,
           writingTask: line,
           writingPart: z.enum(['task1', 'task2']),
@@ -72,6 +90,15 @@ export const courseSchema = z
       if ([...lesson.sourceIds, lesson.listeningSource].some((id) => !sourceIds.has(id)))
         fail('课程来源无效')
       if (lesson.text.trim().split(/\s+/).length < 60) fail('阅读短文过短')
+      const chartGuide = plan.chartGuides[lesson.chart.title]
+      if (!chartGuide) fail(`第 ${lesson.number} 天缺少图表讲解`)
+      if (answerWordCount(lesson.writingGuide) < 250)
+        fail(`第 ${lesson.number} 天 Task 2 参考答案不足 250 词`)
+      if (chartGuide && answerWordCount(chartGuide) < 150) fail('Task 1 参考答案不足 150 词')
+      for (const g of [lesson.speakingGuide, lesson.writingGuide, chartGuide]) {
+        if (g?.sourceIds.some((id) => !sourceIds.has(id))) fail('讲解来源无效')
+        if (g && g.outline.length !== g.paragraphs.length) fail('提纲与参考段落必须逐段对应')
+      }
     })
   })
 export type CoursePlan = z.infer<typeof courseSchema>

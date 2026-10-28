@@ -120,11 +120,38 @@ try {
     expect(planResponse.status()).toBe(200)
     const plan = await planResponse.json()
     expect(plan).toEqual(localPlan)
+    for (const kind of ['speaking', 'writing']) {
+      await page.goto(`${target}#/practice/${kind}?date=2026-10-28`)
+      const guide =
+        kind === 'speaking' ? localPlan.lessons[0].speakingGuide : localPlan.lessons[0].writingGuide
+      await expect(page.getByText(guide.explain, { exact: true })).toBeVisible()
+      await page.getByText('展开参考答案与中文拆解', { exact: true }).click()
+      await expect(page.getByText(guide.paragraphs[0][0], { exact: true })).toBeVisible()
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(
+        true,
+      )
+      if (kind === 'writing') {
+        await expect(draft).toHaveValue(
+          'Public libraries give people access to useful learning resources.',
+        )
+        await page.getByRole('button', { name: 'Task 1', exact: true }).click()
+        const chartGuide = localPlan.chartGuides[localPlan.lessons[0].chart.title]
+        await expect(page.getByText(chartGuide.explain, { exact: true })).toBeVisible()
+        await page.getByText('展开参考答案与中文拆解', { exact: true }).click()
+        await expect(page.getByText(chartGuide.paragraphs[3][0], { exact: true })).toBeVisible()
+      }
+    }
     await page.goto(`${target}#/?date=2026-11-26`)
     await expect(
       page.getByText(`${localPlan.lessons.length} 天课程 · 第 30 天`, { exact: true }),
     ).toBeVisible()
     await expect(page.getByRole('checkbox', { name: '词汇完成状态' })).toBeDisabled()
+    await page.goto(`${target}#/practice/writing?date=2026-11-26`)
+    await page.getByRole('button', { name: 'Task 2', exact: true }).click()
+    await expect(
+      page.getByText(localPlan.lessons[29].writingGuide.explain, { exact: true }),
+    ).toBeVisible()
+    await expect(page.getByLabel('我的英文草稿')).toBeDisabled()
     await context.close()
   }
   const isolated = await browser.newContext()
@@ -140,6 +167,7 @@ try {
       viewports: [1440, 375],
       checklistPersistence: true,
       draftPersistence: true,
+      beginnerGuides: true,
       visitorIsolation: true,
       skipLink: true,
       pageErrors: errors,

@@ -41,6 +41,15 @@ if (args.includes('--check')) {
   const tasks = lessonTasks(lesson)
   const selectedWords = lesson.wordIds.map((id) => plan.wordBank.find((word) => word.id === id))
   const link = `${site}#/?date=${lesson.date}`
+  const guidance = {
+    speaking: `${site}#/practice/speaking?date=${lesson.date}`,
+    writing: `${site}#/practice/writing?date=${lesson.date}`,
+  }
+  const sourceIds = new Set([
+    ...lesson.sourceIds,
+    ...lesson.speakingGuide.sourceIds,
+    ...lesson.writingGuide.sourceIds,
+  ])
   if (args.includes('--json')) {
     console.log(
       JSON.stringify(
@@ -49,7 +58,8 @@ if (args.includes('--check')) {
           tasks,
           words: selectedWords,
           link,
-          sources: plan.sources.filter((source) => lesson.sourceIds.includes(source.id)),
+          guidance,
+          sources: plan.sources.filter((source) => sourceIds.has(source.id)),
         },
         null,
         2,
@@ -57,7 +67,7 @@ if (args.includes('--check')) {
     )
   } else {
     console.log(
-      `今晚的雅思学习 · ${date} · 第 ${lesson.number} 天：${lesson.name}\n\n${lesson.focus}\n\n${tasks.map((task) => `- ${task.label}（${task.minutes} 分钟）：${task.text}`).join('\n')}\n\n今日词义：${selectedWords.map((word) => `${word.word} ${word.meaning}`).join('；')}\n\n[打开今天的完整课程](${link})\n\n来源：${plan.sources
+      `今晚的雅思学习 · ${date} · 第 ${lesson.number} 天：${lesson.name}\n\n${lesson.focus}\n\n${tasks.map((task) => `- ${task.label}（${task.minutes} 分钟）：${task.text}`).join('\n')}\n\n今日词义：${selectedWords.map((word) => `${word.word} ${word.meaning}`).join('；')}\n\n[打开今天的完整课程](${link})\n\n不会开口或下笔时，先做中文带练：[当天口语](${guidance.speaking}) · [当天写作](${guidance.writing})。包含填空、原创参考答案和官方材料入口。\n\n来源：${plan.sources
         .filter((source) => lesson.sourceIds.includes(source.id))
         .map((source) => `[${source.name}](${source.url})`)
         .join('、')}。站内短文和任务为原创；官方练习在来源网站进行。`,

@@ -1,8 +1,250 @@
 {
   "version": 1,
+  "chartGuides": {
+    "自编数据：某镇通勤方式占比（%）": {
+      "explain": "学术类 Task 1：概括三个年份的通勤比例。先找大趋势：汽车下降、公交上升并居首，自行车始终最低。50% 到 30% 是下降 20 个百分点，不是下降 20%。",
+      "outline": [
+        "引言：改写对象与年份",
+        "概述：主导方式改变",
+        "细节一：汽车和公交对比",
+        "细节二：自行车及最终差距"
+      ],
+      "phrases": [
+        ["accounted for", "占……比例"],
+        ["percentage points", "百分点"],
+        ["remained unchanged", "保持不变"]
+      ],
+      "paragraphs": [
+        [
+          "The table compares the proportions of commuters using cars, buses and bicycles in a town in 2010, 2015 and 2020. The figures are presented as percentages for each of the three modes of transport.",
+          "表格比较该镇2010、2015、2020年三种通勤方式的百分比。",
+          "只改写对象、单位、时间，不解释原因。"
+        ],
+        [
+          "Overall, car use declined throughout the period, while the proportion travelling by bus increased and became the largest by 2020. Cycling remained the least common of the three methods, although its share rose slightly in the final year shown.",
+          "总体汽车下降，公交上升且最终最多，自行车一直最少但末年小幅升高。",
+          "概述不堆数值，先挑最显著的排序和趋势。"
+        ],
+        [
+          "In 2010, cars accounted for half of all commuters, compared with 30% for buses. By 2015, the two figures were equal at 40%. Car use then fell by a further ten percentage points to 30% in 2020, whereas the share for buses reached 45%. Over the whole period, the car figure decreased by twenty percentage points.",
+          "汽车50%、公交30%起步，2015年同为40%；2020年分别30%和45%，汽车全期降20个百分点。",
+          "把两条相反趋势放一起比较，数字支持描述。"
+        ],
+        [
+          "The proportion travelling by bicycle remained unchanged at 20% between 2010 and 2015 before rising to 25% in 2020. At the end of the period, cycling was only five percentage points below car use, but twenty percentage points below the figure for buses.",
+          "自行车先维持20%，后至25%；最终比汽车低5个百分点、比公交低20个百分点。",
+          "补第三类和末年差距，避免遗漏。"
+        ]
+      ],
+      "practice": {
+        "frame": "The share of car users fell from [start]% to [end]%, a decrease of [difference] percentage points.",
+        "answer": "The share of car users fell from 50% to 30%, a decrease of 20 percentage points.",
+        "transfer": "先遮住参考，写公交的起终比例与变化，再写一句总体趋势。不能把图表数据换成个人经历。"
+      },
+      "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+    },
+    "自编数据：某图书馆借阅量（千册）": {
+      "explain": "表格单位为千册，40 表示 40,000 册。纸书下降但始终最多，电子书和有声书上升。不要把借阅量写成借阅人数。",
+      "outline": [
+        "引言：对象、年份和单位",
+        "概述：纸书下降，另两类上升",
+        "细节一：纸书与电子书",
+        "细节二：有声书与总体差距"
+      ],
+      "phrases": [
+        ["loans of printed books", "纸书借阅量"],
+        ["rose from ... to ...", "从……升至……"],
+        ["the gap narrowed", "差距缩小"]
+      ],
+      "paragraphs": [
+        [
+          "The table presents library borrowing figures for printed books, e-books and audio books in 2016, 2020 and 2024. All figures are given in thousands of loans, allowing changes in the three formats to be compared across the period.",
+          "表格提供三个年份纸书、电子书和有声书的借阅量，单位千册。",
+          "先把单位说清，后文可统一用实际数量。"
+        ],
+        [
+          "Overall, borrowing of printed books fell, while both electronic and audio formats became more popular in terms of loan numbers. Printed books nevertheless remained the largest category in every year shown, although the gap between printed books and e-books narrowed considerably.",
+          "纸书下降，另两类上升；纸书始终最多，但与电子书差距明显缩小。",
+          "概述抓趋势和排名，不猜测读者偏好原因。"
+        ],
+        [
+          "Printed book loans declined from 40,000 in 2016 to 35,000 in 2020 and then to 30,000 in 2024. By contrast, e-book borrowing increased by 10,000 in each interval, rising from 5,000 to 15,000 and finally 25,000. The difference between these two categories consequently fell from 35,000 loans at the beginning to only 5,000 at the end.",
+          "纸书40,000→35,000→30,000，电子书5,000→15,000→25,000；两者差距35,000缩至5,000。",
+          "同段比较两类，体现变化关系。"
+        ],
+        [
+          "Audio book loans also rose, from 2,000 in 2016 to 8,000 in 2020 and 15,000 in 2024. Despite this growth, they remained below both other formats. The combined total for all three categories increased from 47,000 to 70,000 over the period.",
+          "有声书2,000→8,000→15,000但仍最少，三类总计47,000增至70,000。",
+          "总量可由给定数据计算，但不要写成独立读者人数。"
+        ]
+      ],
+      "practice": {
+        "frame": "Printed book loans fell from [start] to [end], while e-book loans rose from [start] to [end].",
+        "answer": "Printed book loans fell from 40,000 to 30,000, while e-book loans rose from 5,000 to 25,000.",
+        "transfer": "独立写有声书的三年变化，再核对每个数字是否已正确换算千册。"
+      },
+      "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+    },
+    "自编数据：某学院三类课程人数（人）": {
+      "explain": "表格单位是人。科学类始终最多且持续增长，商科也增长；艺术类先降后升。不能把人数变化写成占比变化。",
+      "outline": [
+        "引言：学院三类课程人数",
+        "概述：科学领先，艺术波动",
+        "细节一：科学和商科增长",
+        "细节二：艺术变化与排序"
+      ],
+      "phrases": [
+        ["enrolments", "课程注册人数"],
+        ["the largest category", "人数最多的类别"],
+        ["recovered to", "回升至"]
+      ],
+      "paragraphs": [
+        [
+          "The table shows the numbers of students on science, arts and business courses at a college in 2015, 2020 and 2025. It allows enrolments in the three subject areas to be compared at five-year intervals.",
+          "比较学院2015、2020、2025年科学、艺术、商科课程人数。",
+          "保留college而非改成全国或所有大学。"
+        ],
+        [
+          "Overall, science had the highest enrolment throughout the period, and both science and business experienced continuous growth. Arts numbers followed a different pattern, falling initially before recovering to a level slightly above their starting point.",
+          "科学始终最高，科学和商科连续增长；艺术先降后回升，终值稍高于起点。",
+          "突出艺术与其他两类的不同走势。"
+        ],
+        [
+          "Science enrolments increased from 120 students in 2015 to 150 in 2020 and 180 in 2025. This was a total rise of 60 students. Business also grew, from 80 to 110 and then 130 students. Although business began as the smallest category, it overtook arts by 2020 and remained in second place at the end.",
+          "科学120→150→180，总增60；商科80→110→130，从最低变第二。",
+          "两类增长放同段，并写商科排名变化。"
+        ],
+        [
+          "Arts enrolments declined from 100 in 2015 to 90 in 2020 before recovering to 110 in 2025. The final figure was ten higher than the initial one. By 2025, science had 70 more students than arts and 50 more than business, compared with gaps of 20 and 40 respectively in 2015.",
+          "艺术100→90→110，净增10；最终科学分别多70和50人，起初差20和40。",
+          "用准确差值支持对比，respectively 顺序应一致。"
+        ]
+      ],
+      "practice": {
+        "frame": "Science enrolments increased from [start] to [end], while arts numbers first [trend] and then [trend].",
+        "answer": "Science enrolments increased from 120 to 180, while arts numbers first fell and then rose.",
+        "transfer": "先写艺术类的一句完整趋势，再用2025年数据比较科学与商科。"
+      },
+      "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+    },
+    "自编数据：某中心的服务使用人次（千人次）": {
+      "explain": "表格统计服务使用人次，单位千人次，不代表独立人数。咨询持续增长，课程和运动先降后升，运动始终最多。",
+      "outline": [
+        "引言：中心服务使用量",
+        "概述：运动领先、变化不同",
+        "细节一：咨询持续增长",
+        "细节二：课程和运动先降后升"
+      ],
+      "phrases": [
+        ["service use", "服务使用量"],
+        ["doubled over the period", "期间翻倍"],
+        ["fell before recovering", "先下降后回升"]
+      ],
+      "paragraphs": [
+        [
+          "The table compares use of advice, classes and sport services at a centre in 2018, 2021 and 2024. The figures are expressed in thousands of uses rather than the number of individual visitors to the centre.",
+          "比较中心2018、2021、2024年的咨询、课程、运动使用人次，非独立访客数。",
+          "把人次和人数区分，避免曲解指标。"
+        ],
+        [
+          "Overall, sport remained the most used service in all three years. Advice use increased steadily, whereas classes and sport both declined in 2021 before recovering to levels above their initial figures by the end of the period.",
+          "运动三年都最多，咨询持续升，另两类先降后升且超过起点。",
+          "概述交代排序和两种走势。"
+        ],
+        [
+          "Advice use rose from 10,000 in 2018 to 14,000 in 2021 and then 20,000 in 2024, doubling over the period as a whole. It was the smallest category at the start and finish, but exceeded classes by 2,000 uses in 2021. By 2024, the difference between advice and classes was only 1,000.",
+          "咨询10,000→14,000→20,000翻倍，2021年比课程多2,000，末年仅比课程少1,000。",
+          "选择一个持续增长类别单独展开。"
+        ],
+        [
+          "Classes fell from 18,000 uses to 12,000 before climbing to 21,000. Sport followed a similar pattern, decreasing from 22,000 to 16,000 and then reaching 24,000. The total across the three services dropped from 50,000 in 2018 to 42,000 in 2021, before rising to 65,000 in 2024.",
+          "课程18,000→12,000→21,000；运动22,000→16,000→24,000；总计50,000→42,000→65,000。",
+          "将相似走势并列，计算总量前核对加法。"
+        ]
+      ],
+      "practice": {
+        "frame": "Use of classes fell from [A] to [B] before rising to [C].",
+        "answer": "Use of classes fell from 18,000 to 12,000 before rising to 21,000.",
+        "transfer": "按同一句型写运动变化，再独立写不带数字的总趋势句。"
+      },
+      "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+    },
+    "自编数据：某商店三类商品销售额（千英镑）": {
+      "explain": "表格是销售额，单位千英镑，不是销量或利润。新品销售额下降但一直最高，维修商品和备件销售额增加。",
+      "outline": [
+        "引言：商品类别和金额",
+        "概述：新品下降但领先",
+        "细节一：新品与维修商品",
+        "细节二：备件及总额"
+      ],
+      "phrases": [
+        ["sales revenue", "销售收入"],
+        ["spare parts", "备件"],
+        ["remained the main source", "仍是主要来源"]
+      ],
+      "paragraphs": [
+        [
+          "The table gives sales revenue for new goods, repaired goods and spare parts at a shop in 2019, 2022 and 2025. The figures are presented in thousands of pounds and show how the three categories changed over time.",
+          "表格比较2019、2022、2025年新品、维修商品和备件销售额，单位千英镑。",
+          "准确写revenue而非profit，不知道成本就无法说利润。"
+        ],
+        [
+          "Overall, revenue from new goods declined, while sales of repaired goods and spare parts increased. New goods remained the largest source of revenue in every year shown, but the difference between this category and repaired goods became much smaller.",
+          "新品下降但始终最大，另两类增长，维修商品与新品差距缩小。",
+          "概述总结两种方向和主要类别。"
+        ],
+        [
+          "New goods generated £80,000 in 2019, compared with £10,000 for repaired goods. By 2022, these figures had changed to £75,000 and £20,000 respectively. In 2025, new goods revenue fell further to £65,000, while repaired goods reached £35,000. The gap between the categories therefore narrowed from £70,000 to £30,000 over the full period.",
+          "新品80,000→75,000→65,000英镑，维修商品10,000→20,000→35,000，差距70,000缩至30,000。",
+          "并列金额支持差距判断。"
+        ],
+        [
+          "Spare parts had the lowest revenue throughout, increasing from £5,000 to £12,000 and then £20,000. This final figure was four times the initial amount. Despite the decline in new goods, total revenue across the three categories rose from £95,000 in 2019 to £120,000 in 2025.",
+          "备件5,000→12,000→20,000，末值是初值四倍；总额95,000升至120,000。",
+          "four times 是末值为初值四倍，不是额外增长四倍。"
+        ]
+      ],
+      "practice": {
+        "frame": "Revenue from [category] rose from £[start] to £[end], while [other category] declined.",
+        "answer": "Revenue from repaired goods rose from £10,000 to £35,000, while revenue from new goods declined.",
+        "transfer": "独立写备件的起终金额和倍数，再检查全文是否误写成购买人数或利润。"
+      },
+      "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+    }
+  },
   "timeZone": "Asia/Shanghai",
   "checkedAt": "2026-10-28",
   "sources": [
+    {
+      "id": "bc-speaking-guide",
+      "name": "British Council · 官方口语样题",
+      "url": "https://takeielts.britishcouncil.org/sites/default/files/%5Bdownloads%5D/ielts-speaking-sample-tasks-2023.pdf",
+      "note": "先看 Part 2 任务卡，练习按提示组织内容；再看 Part 1 与 Part 3 的问法。该 PDF 提供官方样题，不是本站话题的参考答案。"
+    },
+    {
+      "id": "speaking-bands",
+      "name": "IELTS · 官方口语评分标准",
+      "url": "https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf",
+      "note": "对照 Band 6 与 Band 7 的四栏：流利与连贯、词汇、语法、发音。文字示范不能验证你的发音或直接给出分数。"
+    },
+    {
+      "id": "ielts-writing-guide",
+      "name": "IELTS · 官方写作要求与讲解",
+      "url": "https://ielts.org/take-a-test/preparation-resources/writing-test-resources",
+      "note": "先看 How the Writing test is assessed，再看对应任务说明。完整 Task 1 至少 150 词、约 20 分钟；Task 2 至少 250 词、约 40 分钟。"
+    },
+    {
+      "id": "bc-writing-models",
+      "name": "British Council · 官方考生作答与考官评语",
+      "url": "https://takeielts.britishcouncil.org/sites/default/files/%5Bdownloads%5D/ielts-academic-writing-example-responses-to-parts-1-and-2-with-band-scores-and-examiner-comments.pdf",
+      "note": "打开后先看对应任务的 Candidate Response，再看紧随的 Examiner comment。题目与本站不同；这些是带官方评分的考生作答，包含不足，并非每篇都是高分范文。"
+    },
+    {
+      "id": "writing-bands",
+      "name": "IELTS · 官方写作评分标准",
+      "url": "https://ielts.org/cdn/ielts-guides/ielts-writing-band-descriptors.pdf",
+      "note": "找到对应 Task 的 Band 6 与 Band 7，重点对照任务回应、组织衔接、词汇和语法。本站讲解只是学习辅助，不代表考官评分。"
+    },
     {
       "id": "listening",
       "name": "British Council · 官方听力样题",
@@ -1245,6 +1487,80 @@
   "lessons": [
     {
       "date": "2026-10-28",
+      "speakingGuide": {
+        "explain": "题目让你描述一个能高效学习的地方。选熟悉的图书馆或房间即可，说明你什么时候去、做什么，以及为什么适合你。",
+        "outline": ["交代地点与时间", "描述一次具体学习", "解释对你的帮助"],
+        "phrases": [
+          ["a quiet corner", "安静的角落"],
+          ["put my phone away", "收起手机"],
+          ["stay focused", "保持专注"]
+        ],
+        "paragraphs": [
+          [
+            "I'd like to describe the public library near my home. I first went there last summer, and now I usually visit on Saturday mornings. My favourite place is a quiet corner beside a large window.",
+            "我想介绍家附近的公共图书馆，去年夏天第一次去，现在通常周六上午去。我最喜欢窗边的安静角落。",
+            "用地点和时间直接回答，不必先讲大道理。"
+          ],
+          [
+            "Last weekend, I took my English notebook there and practised reading for half an hour. I put my phone away so I wouldn't keep checking messages. When I needed a break, I walked outside for a few minutes.",
+            "上周末我带英语笔记本去读了半小时，收起手机避免看消息，需要休息时出去走几分钟。",
+            "用一次真实可替换的经历，把“适合学习”说具体。"
+          ],
+          [
+            "I like this place because the desks are comfortable and there are few distractions. At home, I often stop to do other things. In the library, I find it easier to stay focused and finish a small task.",
+            "桌子舒服、干扰少；在家容易分心，在这里更能专心完成小任务。",
+            "对比家里和图书馆，说明原因与个人感受。"
+          ]
+        ],
+        "practice": {
+          "frame": "I usually study at [place] because [reason]. Last [day], I [activity] there.",
+          "answer": "I usually study at the library because it is quiet. Last Saturday, I read an English article there.",
+          "transfer": "把 library、Saturday 和 read an English article 换成你的地点、时间、活动；补充一个声音或光线的细节。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问大学是否应提供比社交空间更多的安静学习空间。必须比较两类空间的优先级，而不是只说安静有好处。示范选择基本赞同，同时保留社交需要。",
+        "outline": [
+          "引言：优先保障安静学习",
+          "主体一：专注与公平使用",
+          "主体二：保留必要社交空间",
+          "结论：安静优先但兼顾交流"
+        ],
+        "phrases": [
+          ["concentrate on demanding work", "专注于费力的学习"],
+          ["limited space", "有限空间"],
+          ["a reasonable balance", "合理平衡"]
+        ],
+        "paragraphs": [
+          [
+            "Universities must decide how to use limited space on campus. Some people believe that quiet study areas should receive more attention than places for social activities. I largely agree, because a reliable place to concentrate is essential for academic work, although students also need opportunities to interact.",
+            "大学空间有限，我基本支持优先安静区，但交流也必要。",
+            "开头直接回答 more...than 的优先级比较。"
+          ],
+          [
+            "The main reason for prioritising quiet spaces is that many university tasks require sustained attention. Students reading a difficult article or preparing an assignment may struggle if conversations are taking place nearby. Furthermore, not everyone has a suitable room at home. A student sharing a small flat may depend on the campus library to complete important work. Providing enough quiet desks therefore helps students with different living conditions access a basic resource. Universities could check how often these desks are occupied before deciding where additional space is most needed.",
+            "难文章和作业需要专注，住处不适合学习的学生尤其依赖校园；可根据座位使用情况扩容。",
+            "解释机制，再给共享住房的例子，不需要虚构研究数据。"
+          ],
+          [
+            "However, social areas should not disappear. Students learn through discussing ideas, planning group projects, and meeting people from different courses. If every available room were silent, collaborative tasks would become harder to organise. A sensible approach would be to maintain separate areas with clear rules. For example, a library could offer silent reading rooms alongside a smaller number of bookable discussion rooms. This would allow students to choose an environment that suits their task, while reducing conflict between those who want to talk and those who need silence.",
+            "社交区支持讨论和小组任务，建议静音区与预约讨论室分开。",
+            "让步后提出分区方案，没有推翻自己的立场。"
+          ],
+          [
+            "In conclusion, I support giving quiet study spaces priority, especially where students struggle to find a desk. Nevertheless, universities should preserve enough social and collaborative space to support the wider learning experience. The aim should be a practical balance based on students' actual needs.",
+            "安静区优先，但按实际需要兼顾交流。",
+            "重申有条件的赞同，不引入新理由。"
+          ]
+        ],
+        "practice": {
+          "frame": "Quiet study spaces are important because [reason]. For example, [student situation].",
+          "answer": "Quiet study spaces are important because students need to concentrate. For example, someone sharing a noisy flat may rely on the library.",
+          "transfer": "先用你自己的学习环境写三句：什么干扰你、为何影响学习、安静区如何帮助。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 1,
       "name": "校园学习空间",
       "en": "Study spaces",
@@ -1307,6 +1623,80 @@
     },
     {
       "date": "2026-10-29",
+      "speakingGuide": {
+        "explain": "描述你修好或再次使用的一件物品。可以是包、衣服或家具，不必选择复杂电器；重点讲清问题和处理过程。",
+        "outline": ["介绍物品与问题", "说明修理过程", "解释结果与意义"],
+        "phrases": [
+          ["a loose strap", "松动的背带"],
+          ["instead of throwing it away", "而不是扔掉它"],
+          ["a sense of achievement", "成就感"]
+        ],
+        "paragraphs": [
+          [
+            "I'd like to talk about an old backpack that I repaired last month. I had used it for several years, but one of the straps had become loose. I noticed the problem while I was packing my books at home.",
+            "上个月修了一个用了几年的旧背包，在家装书时发现背带松了。",
+            "用一个具体小故障让故事容易展开。"
+          ],
+          [
+            "Instead of throwing it away, I asked my mother to show me how to sew it. We found some strong thread, and I slowly stitched the strap back into place. My first attempt looked untidy, but it held together.",
+            "没有扔掉，而是请妈妈教我用结实的线缝回去，虽然不整齐但很牢。",
+            "按发现问题、找人帮助、采取行动的顺序说。"
+          ],
+          [
+            "I still use the bag for short trips. Repairing it saved me the cost of a new one and gave me a sense of achievement. Next time something small breaks, I will at least check whether it can be fixed.",
+            "现在短途出行还在用，既省钱也有成就感，以后物品坏了会先看能不能修。",
+            "交代实际结果，再加一个未来态度。"
+          ]
+        ],
+        "practice": {
+          "frame": "My [object] was [problem], so I [action] instead of [alternative].",
+          "answer": "My backpack was damaged, so I repaired it instead of buying a new one.",
+          "transfer": "换成你修过或重复使用的东西；不会表达维修方法时，可说 I asked someone to help me。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问损坏物品应修理而不是更换，你可以有条件赞同。区分小故障和不安全、无法合理修复的损坏。",
+        "outline": [
+          "引言：在可行时优先修理",
+          "主体一：省资源与费用",
+          "主体二：安全和修理成本限制",
+          "结论：先评估再决定"
+        ],
+        "phrases": [
+          ["extend the life of a product", "延长产品寿命"],
+          ["replacement parts", "替换零件"],
+          ["a sensible choice", "明智的选择"]
+        ],
+        "paragraphs": [
+          [
+            "When a possession breaks, buying a replacement can seem easier than arranging a repair. I agree that people should generally try to repair damaged items first. However, this advice should depend on the condition of the object and the cost of making it safe and useful again.",
+            "一般支持先修理，但要看物品状态和修复成本。",
+            "用 generally 明确不是无条件赞同。"
+          ],
+          [
+            "Repairing possessions can reduce unnecessary waste and help households manage their budgets. A bag with a broken zip, for instance, may still have strong fabric and many years of use left. Replacing the zip uses fewer materials than producing an entirely new bag. The owner may also spend less, particularly if the repair is simple. Learning basic skills, such as sewing on a button, can make people less dependent on shops for small problems. These advantages are especially relevant to products that fail because of one minor part rather than damage to the whole object.",
+            "坏拉链的包主体仍可用，换小件节省材料和开销；基本修补技能也有用。",
+            "围绕坏拉链展开一个例子，解释资源与成本两层作用。"
+          ],
+          [
+            "Nevertheless, repair is not always the best option. Some damaged products may be unsafe, and an inexperienced owner should not attempt complicated electrical work. In other cases, replacement parts are unavailable or the repair costs almost as much as a reliable new product. People should therefore seek an assessment before spending money. A repair shop could explain the likely cost, expected lifespan, and any safety concerns. Manufacturers could also help by supplying parts and clear information, making repair a realistic choice instead of placing all responsibility on consumers.",
+            "电器安全、缺零件和高费用可能让更换更合理，应先专业评估，厂家也应提供支持。",
+            "反面条件有具体场景，不是空泛的 however。"
+          ],
+          [
+            "In conclusion, repairing should usually be the first option considered because it can save resources and money. It should not become an absolute rule. A decision based on safety, repairability, and likely future use is more reasonable than either replacing everything or keeping every damaged item.",
+            "先考虑修理而非绝对都要修，按安全和实际可行性判断。",
+            "结论保留开头的条件。"
+          ]
+        ],
+        "practice": {
+          "frame": "Repairing [object] can save [resource] because only [part] needs replacing.",
+          "answer": "Repairing a bag can save materials because only the zip needs replacing.",
+          "transfer": "用你修过的物品写一个支持例子，再补一句什么情况下你会选择换新。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 2,
       "name": "维修与再利用",
       "en": "Repair and reuse",
@@ -1369,6 +1759,80 @@
     },
     {
       "date": "2026-10-30",
+      "speakingGuide": {
+        "explain": "介绍帮助你学习的数字工具。说出一项具体功能和一次使用经历，不要只罗列软件优点。",
+        "outline": ["介绍工具与发现时间", "描述具体用法", "评价帮助与限制"],
+        "phrases": [
+          ["review vocabulary", "复习词汇"],
+          ["a short reminder", "简短的提醒"],
+          ["use it regularly", "经常使用它"]
+        ],
+        "paragraphs": [
+          [
+            "A useful learning tool for me is a flashcard app on my phone. A friend introduced it to me earlier this year when I was struggling to remember English words. I normally use it on the bus home.",
+            "今年早些时候朋友推荐了手机单词卡应用，我记词困难，常在回家公交上用。",
+            "不需要品牌名，说明工具类别就够了。"
+          ],
+          [
+            "I add a few words from an article, together with simple example sentences. The app shows me these cards again later. Yesterday, for example, I reviewed the word reliable and used it to describe a friend. A short reminder helps me remember to practise.",
+            "从文章选少量词和例句，之后复习。昨天用 reliable 描述朋友，提醒功能帮助我记得练习。",
+            "选一个词和一个操作，让回答有画面。"
+          ],
+          [
+            "The app is useful because a small session feels manageable. However, I still need to say the words aloud and use them in my own sentences. The tool gives me a routine, but it cannot do the learning for me.",
+            "短练习容易坚持，但仍需自己开口造句；工具提供规律，不能代替学习。",
+            "承认限制，会比反复说 useful 更有内容。"
+          ]
+        ],
+        "practice": {
+          "frame": "I use [tool] to [activity]. It helps me [benefit], but I still need to [effort].",
+          "answer": "I use a flashcard app to review words. It helps me practise regularly, but I still need to make my own sentences.",
+          "transfer": "换成词典、计时器或你真正用过的工具，举出昨天或上周的一次操作。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "问题是提醒能否让学习者更独立，而不是电子工具是否方便。示范部分赞同：提醒帮助建立习惯，但自主制定和调整计划才是关键。",
+        "outline": [
+          "引言：提醒有帮助但不充分",
+          "主体一：减少遗忘并形成规律",
+          "主体二：过度依赖与主动管理",
+          "结论：把工具当辅助"
+        ],
+        "phrases": [
+          ["take responsibility for learning", "为自己的学习负责"],
+          ["rely entirely on alerts", "完全依赖提醒"],
+          ["adjust a study plan", "调整学习计划"]
+        ],
+        "paragraphs": [
+          [
+            "Digital reminders are now commonly used to organise study sessions. They can help people remember their goals, but whether they create independent learners is less clear. I partly agree with the claim: reminders support independence when learners control them, yet they cannot replace the ability to plan and evaluate learning.",
+            "提醒可以帮助自主学习，但要由学习者管理，不能替代计划和评估。",
+            "先界定 independent，避免离题谈手机的所有好处。"
+          ],
+          [
+            "One benefit is that reminders make it easier to begin a regular routine. A student balancing classes and a part-time job may forget a planned vocabulary review even when they want to study. A short alert can bring the task back to their attention at a suitable moment. If the learner chooses a realistic time and completes a small activity, repeated practice may become easier to maintain. The reminder then supports a decision the student has already made, rather than requiring a teacher to contact them each day and tell them what to do.",
+            "兼顾工作和课程的学生可能忘记复习，合适提醒帮助执行自己决定的计划。",
+            "建立提醒到行动到规律的因果链。"
+          ],
+          [
+            "However, receiving an alert is different from managing one's own learning. Someone who follows every notification without thinking may depend on the tool as much as another student depends on a teacher. The scheduled task may also become too easy, too difficult, or irrelevant. Independent learners need to notice these problems and change their plans. For example, after repeatedly failing a listening exercise, a learner could select a shorter recording and review unfamiliar words first. A notification alone cannot make that judgement or explain why the original approach was unsuccessful.",
+            "机械跟提醒不等于自主，难度不合适时还需自己调整，如换短录音和预习词汇。",
+            "用换听力材料说明提醒做不到的判断。"
+          ],
+          [
+            "In conclusion, digital reminders can encourage regular study and reduce the need for personal prompting. Their value depends on how they are used. Learners become more independent when they set goals, review results, and adapt their routines, with reminders serving as a practical aid to those decisions.",
+            "真正自主来自定目标、复盘和调整，提醒只提供辅助。",
+            "回答条件，而非简单说技术好或坏。"
+          ]
+        ],
+        "practice": {
+          "frame": "A reminder helps me [action], but I must decide [responsibility].",
+          "answer": "A reminder helps me start studying, but I must decide which skill needs more practice.",
+          "transfer": "写一个你会错过的学习任务，再写你必须自己作出的一个决定。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 3,
       "name": "数字学习提醒",
       "en": "Digital reminders",
@@ -1431,6 +1895,80 @@
     },
     {
       "date": "2026-10-31",
+      "speakingGuide": {
+        "explain": "描述经常走的一段路，而不是一次特殊旅行。交代起终点、交通方式、频率和途中细节。",
+        "outline": ["介绍路线与频率", "描述途中活动", "说明感受与作用"],
+        "phrases": [
+          ["take the bus", "乘公交"],
+          ["during the journey", "在路途中"],
+          ["plan my day", "计划一天"]
+        ],
+        "paragraphs": [
+          [
+            "A journey I make regularly is the bus trip from my home to the library. I usually make it twice a week, and it takes around twenty minutes when traffic is light. The bus stop is only a short walk from my building.",
+            "我通常每周两次坐公交从家去图书馆，路况好时约二十分钟，车站离家近。",
+            "路线、频率、时长是容易准备的三个信息。"
+          ],
+          [
+            "During the journey, I often look out of the window or listen to a short English recording. The bus passes a small park and a busy shopping street. I try to leave early so that I don't have to worry about being late.",
+            "途中看窗外或听英语录音，经过公园和商业街，早出门避免迟到。",
+            "用两个沿途景物增加细节。"
+          ],
+          [
+            "I enjoy this journey because it gives me time to plan my day. It is also cheaper than taking a taxi. The bus can be crowded, but most of the time it is a convenient way to travel.",
+            "这段路让我计划一天，也比出租车便宜；虽然可能拥挤，总体方便。",
+            "给出优点也承认一个小不足，语气自然。"
+          ]
+        ],
+        "practice": {
+          "frame": "I travel from [A] to [B] by [transport] about [frequency].",
+          "answer": "I travel from my home to the library by bus about twice a week.",
+          "transfer": "换成你的通勤或上学路线；补充路上看到的一处地方和自己的感受。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "这是讨论优缺点题，要说明雇主支持公共交通的好处和代价。支持可以指补贴、交通信息或班次安排，不要只讨论公交本身。",
+        "outline": [
+          "引言：说明支持措施",
+          "主体一：员工与企业的好处",
+          "主体二：成本与适用性",
+          "结论：按实际需求设计"
+        ],
+        "phrases": [
+          ["subsidise travel costs", "补贴出行费用"],
+          ["staff who live far away", "住得远的员工"],
+          ["a flexible scheme", "灵活的方案"]
+        ],
+        "paragraphs": [
+          [
+            "Employers can support public transport use through travel subsidies, route information, or working hours that fit local services. Such support may benefit both staff and the wider community. However, it also creates costs and can be unfair if a scheme ignores employees whose journeys cannot reasonably be made by bus or train.",
+            "雇主可提供补贴、路线信息或配合班次的工时，有收益也有成本和公平问题。",
+            "明确讨论对象是雇主提供帮助。"
+          ],
+          [
+            "A major advantage is that help with travel expenses can make commuting more affordable. For employees who travel every day, even a modest contribution may reduce pressure on their household budget. A well-designed scheme can also reduce demand for parking at the workplace. If more staff arrive by public transport, an employer may be able to use some parking space for other purposes. In addition, providing clear information about nearby routes can help new employees feel confident about trying a service they have not used before, especially during their first weeks at work.",
+            "交通补贴减轻员工开销，也可能减少公司停车需求，路线信息帮助新员工尝试。",
+            "同时回答员工与企业收益，使论点具体。"
+          ],
+          [
+            "On the other hand, subsidies must be funded, which may be difficult for a small business. Public transport is also not equally suitable for everyone. A worker finishing a late shift may find that the last bus has already left, while someone living in a rural area may have no practical route. Giving support only to ordinary daytime commuters could therefore leave other staff feeling disadvantaged. Employers should first ask employees about their journeys and consider flexible support, such as adjusting shift times where possible or offering alternative assistance when public services are unavailable.",
+            "小企业经费有限，夜班和偏远员工未必能坐公交，需调查并灵活支持。",
+            "费用和不可达性都是该措施的真实限制。"
+          ],
+          [
+            "Overall, employer support for public transport can lower commuting costs and reduce pressure on workplace facilities. Its main disadvantages are the expense and unequal access to services. A targeted, flexible scheme is likely to be more useful than assuming that every employee can make the same travel choices.",
+            "方案应适应不同通勤情况，而不是一刀切。",
+            "总结两面并给实施条件，不夸大效果。"
+          ]
+        ],
+        "practice": {
+          "frame": "One advantage of employer support is [benefit]. However, [group] may not benefit because [reason].",
+          "answer": "One advantage of employer support is lower travel costs. However, night workers may not benefit because buses stop running early.",
+          "transfer": "各写一个优点和缺点，为其中一个配上员工场景。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 4,
       "name": "公交与通勤",
       "en": "Commuting choices",
@@ -1493,6 +2031,80 @@
     },
     {
       "date": "2026-11-01",
+      "speakingGuide": {
+        "explain": "描述你想养成的习惯，可以还没有做到。用 would like to / plan to 表达计划，不要把未来计划全部说成过去经历。",
+        "outline": ["提出想培养的习惯", "说明执行计划", "解释困难与意义"],
+        "phrases": [
+          ["develop a routine", "养成习惯"],
+          ["start with", "从……开始"],
+          ["keep it realistic", "让计划切实可行"]
+        ],
+        "paragraphs": [
+          [
+            "I'd like to develop a routine of reading English for ten minutes every evening. At the moment, I sometimes study for a long time and then do nothing for several days. I thought about changing this after forgetting words I had recently learned.",
+            "想每晚读十分钟英语，现在常学一大段后停好几天，忘词后想改变。",
+            "先说现状，再说明为什么想改变。"
+          ],
+          [
+            "My plan is to read at my desk after dinner. I will choose a short article, write down one useful expression, and explain the main idea aloud. To keep it realistic, I will start with easy material rather than a difficult novel.",
+            "饭后在书桌读短文，记一个表达，再口述主旨，从简单材料开始。",
+            "把时间、地点和动作讲具体。"
+          ],
+          [
+            "The biggest problem will be feeling tired, so I want to prepare the article in advance. I hope this routine will make English a normal part of my day instead of something I only study before an exam.",
+            "疲劳会是难点，所以提前准备文章，希望英语成为日常而非考前突击。",
+            "一个可预见的困难能让计划更可信。"
+          ]
+        ],
+        "practice": {
+          "frame": "I'd like to [habit] after [daily event]. I will start with [small action].",
+          "answer": "I'd like to read English after dinner. I will start with one short paragraph.",
+          "transfer": "把每天触发习惯的事件说清楚；用真实可做的小目标替换示例。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问工作日中增加放松机会是否合理。可支持短而有安排的休息，同时说明岗位覆盖，避免把放松理解成不受限制地停工。",
+        "outline": [
+          "引言：支持适当休息",
+          "主体一：恢复注意力",
+          "主体二：岗位安排与公平",
+          "结论：短时且可执行"
+        ],
+        "phrases": [
+          ["take a short break", "短暂休息"],
+          ["maintain concentration", "保持注意力"],
+          ["cover essential duties", "确保必要岗位有人值守"]
+        ],
+        "paragraphs": [
+          [
+            "Working continuously for long periods can be tiring, so some people argue that employers should provide more opportunities for staff to relax during the day. I generally agree. Short, properly organised breaks can support better work, provided that essential duties are still covered and the policy is suitable for different roles.",
+            "支持有安排的短休息，但必要工作需有人覆盖，不同岗位应适配。",
+            "开头加入条件，让立场清楚且可论证。"
+          ],
+          [
+            "The strongest argument is that a brief pause can help employees return to a task with greater attention. Someone checking a long document may begin to overlook simple errors after concentrating for a long time. A short walk or a few minutes away from the screen can create an opportunity to reset before reviewing the work again. Relaxation can also make the workplace feel more supportive. Employees may be more comfortable explaining that they are struggling if their employer recognises that people cannot maintain the same level of energy throughout every hour of the day.",
+            "长时间检查文档容易忽略错误，短暂停顿有助重新集中，也体现组织理解疲劳。",
+            "用工作场景解释注意力，而非编造健康统计。"
+          ],
+          [
+            "However, giving more opportunities to relax should not mean leaving services unattended. A receptionist, for example, cannot simply leave the desk whenever they wish if visitors need assistance. Managers should arrange cover or stagger breaks so that staff can rest without shifting all their duties onto colleagues. The policy should also allow some choice: one person may prefer quiet time while another benefits from a short conversation. Expensive leisure rooms are not always necessary. Clear permission to take reasonable breaks and a suitable space may be more practical for a small organisation.",
+            "前台不能随意离岗，可错峰或安排代班，休息方式可选，不一定建昂贵娱乐室。",
+            "解决实施限制，避免只列反方问题。"
+          ],
+          [
+            "In conclusion, employers should make room for relaxation because it can help staff manage fatigue and sustain attention. The most useful approach is to provide short, fair, and clearly organised breaks rather than a single arrangement that ignores the demands of different jobs.",
+            "休息要短、合理、公平，符合岗位实际。",
+            "重复核心条件，完成一致结论。"
+          ]
+        ],
+        "practice": {
+          "frame": "Short breaks may help staff [benefit]. For example, [work situation].",
+          "answer": "Short breaks may help staff notice mistakes. For example, an employee can review a report again after a brief walk.",
+          "transfer": "选择一个你熟悉的工作或学习任务，说明休息前后可能发生的变化。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 5,
       "name": "日常活动与习惯",
       "en": "Everyday routines",
@@ -1555,6 +2167,80 @@
     },
     {
       "date": "2026-11-02",
+      "speakingGuide": {
+        "explain": "描述合作成功的一次经历。用小组作业或家庭活动也可以，重点说你承担了什么，而不只是说大家很好。",
+        "outline": ["交代团队与任务", "说明分工和一次问题", "评价成果与收获"],
+        "phrases": [
+          ["divide the work", "分工"],
+          ["meet the deadline", "按时完成"],
+          ["ask for help", "寻求帮助"]
+        ],
+        "paragraphs": [
+          [
+            "Last term, I worked with two classmates on a short presentation about local transport. We had one week to prepare it, and we met in the library after class. At first, we all wanted to work on the same part.",
+            "上学期和两名同学一周内准备交通主题展示，在图书馆碰面，一开始大家想做同一部分。",
+            "用人物、任务和期限建立故事背景。"
+          ],
+          [
+            "We decided to divide the work. I collected examples, another student made the slides, and the third person checked our English. When one slide was unclear, we discussed it together and replaced a long paragraph with a simple diagram.",
+            "分工后我收集例子，另两人做幻灯片和检查英语；一页不清楚时共同改成图示。",
+            "突出自己贡献，并给一个合作解决问题的细节。"
+          ],
+          [
+            "We finished on time and felt much more confident after practising together. I learned that successful teamwork needs clear responsibilities as well as friendly communication. I also became more willing to ask for help when I did not understand something.",
+            "按时完成，练习后更自信；合作需要明确分工，也要愿意求助。",
+            "结果加收获，比简单说 very successful 更完整。"
+          ]
+        ],
+        "practice": {
+          "frame": "I was responsible for [task], while my teammates [other tasks]. Together, we [result].",
+          "answer": "I was responsible for collecting examples, while my teammates prepared the slides. Together, we finished on time.",
+          "transfer": "换成你参加过的一次合作；即使没有学校经历，也可以说一起准备一顿饭。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "要比较书面沟通与会议两种观点，并给自己的看法。不要只写邮件优点；示范结论是日常信息用文字、复杂问题用会议。",
+        "outline": [
+          "引言：两种形式各有用途",
+          "主体一：文字可查、便于异步阅读",
+          "主体二：会议利于澄清和协商",
+          "结论：按任务选择"
+        ],
+        "phrases": [
+          ["a written record", "书面记录"],
+          ["clarify a misunderstanding", "澄清误解"],
+          ["reach an agreement", "达成一致"]
+        ],
+        "paragraphs": [
+          [
+            "Workplaces rely on both written messages and meetings to share information. Some people consider writing more useful because it creates a clear record, while others value direct discussion. In my view, written communication is usually better for routine information, but meetings remain important when people need to solve complicated or sensitive problems together.",
+            "文字可留记录，会议可直接讨论；我的选择取决于任务。",
+            "引言已给个人判断，符合 give your opinion。"
+          ],
+          [
+            "Written communication has several practical strengths. Employees can read an instruction when they are ready and return to it later if they forget a detail. This is particularly helpful when a message includes dates, figures, or a sequence of steps. For example, a written summary of a project deadline gives every team member the same information to check. It also allows colleagues working different hours to contribute without attending an event at the same time. When the purpose is simply to announce an update, a clear message may save the time that a full meeting would require.",
+            "文字便于查日期和步骤，也适合工时不同的人，简单通知没必要全员开会。",
+            "例子围绕可回查这一优点展开。"
+          ],
+          [
+            "Meetings, however, allow immediate questions and responses. A long exchange of emails can become confusing when people interpret the same sentence differently. During a discussion, someone can explain their reasoning, notice uncertainty, and ask another person to clarify a point. This is useful when a team must choose between several difficult options or resolve a disagreement. Meetings should still have a clear purpose and involve only the people who need to contribute. Recording the final decision afterwards can combine the benefits of discussion with the reliability of a written record.",
+            "会议及时澄清不同理解，适合复杂选择和分歧，会后文字记录决定。",
+            "充分解释另一观点，不把会议写成毫无价值。"
+          ],
+          [
+            "In conclusion, neither method is always more useful. I would favour writing for routine updates and detailed instructions, while using focused meetings for decisions that require interaction. Choosing the format according to the task is more effective than replacing all meetings with messages or discussing every small update in person.",
+            "日常信息用文字，需要互动的决策用聚焦会议。",
+            "用任务匹配回答比较，而不是含糊说都有好处。"
+          ]
+        ],
+        "practice": {
+          "frame": "Written messages are useful when [situation], whereas meetings are better when [situation].",
+          "answer": "Written messages are useful when staff need to check a deadline, whereas meetings are better when a team must resolve a disagreement.",
+          "transfer": "写一个适合邮件的工作场景和一个适合开会的场景，再解释其中一个为什么。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 6,
       "name": "团队合作",
       "en": "Working together",
@@ -1617,6 +2303,80 @@
     },
     {
       "date": "2026-11-03",
+      "speakingGuide": {
+        "explain": "描述对你有意义的传统。说明何时、和谁做、具体过程，再讲它与你的联系。",
+        "outline": ["介绍传统与时间", "描写一次活动", "说明个人意义"],
+        "phrases": [
+          ["get together", "团聚"],
+          ["pass on stories", "传承故事"],
+          ["feel connected", "感到有联系"]
+        ],
+        "paragraphs": [
+          [
+            "A tradition that matters to me is making dumplings with my family before the Spring Festival. We usually gather at my grandparents' home. I have joined this activity since I was a child, although I was not very helpful at first.",
+            "春节前家人在祖父母家一起包饺子，小时候就参加。",
+            "不必解释所有文化背景，选一个活动。"
+          ],
+          [
+            "Last year, I helped prepare the vegetables and tried folding the dumplings. Mine were different sizes, and we laughed about them. While we worked, my grandmother told us stories about how she celebrated the festival when she was young.",
+            "去年切菜、包饺子，大小不一惹大家笑；奶奶边做边讲以前过节的故事。",
+            "用自己的小失误让故事自然具体。"
+          ],
+          [
+            "I value this tradition because it gives us time to talk without looking at our phones. The food is enjoyable, but the shared experience matters more to me. I would like to continue it even if I live in another city.",
+            "重要的是放下手机聊天、共享经历，以后住外地也想保持。",
+            "把传统的意义落到家庭联系上。"
+          ]
+        ],
+        "practice": {
+          "frame": "Every [occasion], my family [activity]. What I enjoy most is [detail].",
+          "answer": "Every Spring Festival, my family makes dumplings. What I enjoy most is talking while we cook.",
+          "transfer": "换成你熟悉的节日或家庭惯例，加入一个人的动作或一句印象深的话。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "是否应花更多钱记录地方历史？重点是记录与投入，不能只说历史重要。支持合理增加投入，同时讨论基本服务预算。",
+        "outline": [
+          "引言：支持有规划的投入",
+          "主体一：保存易流失的记忆",
+          "主体二：控制费用与参与方式",
+          "结论：持续而适度"
+        ],
+        "phrases": [
+          ["record personal memories", "记录个人回忆"],
+          ["preserve local identity", "保存地方特色"],
+          ["limited public funds", "有限公共资金"]
+        ],
+        "paragraphs": [
+          [
+            "Local history is often found in personal memories, photographs, and buildings rather than only in formal archives. I agree that communities should invest more in recording it, especially where valuable material is at risk of being lost. However, additional spending should be carefully planned and should not undermine essential public services.",
+            "支持有规划地增加地方历史记录经费，但不能挤压基本服务。",
+            "明确“更多钱”的有条件支持。"
+          ],
+          [
+            "One important reason to act is that some historical knowledge cannot be recovered later. Older residents may remember how a neighbourhood developed or how a local industry shaped everyday life. If nobody records these accounts, future generations may have little access to those experiences. A modest project collecting interviews and scanning family photographs could preserve material that would otherwise remain scattered across private homes. Schools could then use these records to help students connect national events with places they recognise. This can make history feel relevant and give residents a stronger understanding of their community.",
+            "老居民记忆可能随时间流失，访谈和扫描照片可保存，学校也能使用。",
+            "解释不及时记录的损失，再举低成本做法。"
+          ],
+          [
+            "At the same time, recording history does not always require an expensive new museum. Communities have other urgent needs, including transport, housing, and basic facilities. A reasonable programme could begin with existing libraries, trained volunteers, and a simple digital collection. Organisers would need to check information, obtain permission to share personal material, and explain how records will be maintained. These practical responsibilities matter because collecting a large amount of material is not enough if nobody can find or understand it. Clear priorities would help the community spend its money on records with lasting value.",
+            "不一定新建昂贵博物馆，可用图书馆和志愿者，但需核实、授权和维护。",
+            "费用限制对应实际方案，形成完整论证。"
+          ],
+          [
+            "In conclusion, I support increased funding for local history where there is a clear need and a workable plan. Preserving memories can benefit education and community identity, but the scale of investment should reflect available resources. Small, accessible projects may achieve more than costly buildings without a clear purpose.",
+            "投入应与资源匹配，小而可访问的项目也有长期价值。",
+            "强调可持续用途而非单纯花钱。"
+          ]
+        ],
+        "practice": {
+          "frame": "Recording [material] matters because [risk]. A community could [action].",
+          "answer": "Recording older residents' memories matters because these stories may be lost. A community could organise short interviews.",
+          "transfer": "选你家乡的一类历史资料，写它为什么值得记录、怎样低成本保存。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 7,
       "name": "文化与归属",
       "en": "Culture and belonging",
@@ -1679,6 +2439,80 @@
     },
     {
       "date": "2026-11-04",
+      "speakingGuide": {
+        "explain": "描述一次核实信息的经历。交代原消息、怀疑点、检查方式和最后结果。",
+        "outline": ["说明看到的信息", "解释如何核实", "讲结果和收获"],
+        "phrases": [
+          ["check the source", "核实来源"],
+          ["out of date", "过时的"],
+          ["before making plans", "在制定计划之前"]
+        ],
+        "paragraphs": [
+          [
+            "Last month, I needed to check the opening hours of a museum. A travel blog said it was open on Mondays, so I was planning to go with a friend. However, the article looked quite old, and I was not completely sure.",
+            "旅行博客说博物馆周一开放，但文章看起来很旧，所以出发前核实。",
+            "解释为什么产生怀疑，不只说 I checked it。"
+          ],
+          [
+            "I visited the museum's own website and found a newer notice. It said the building was closed on Mondays for maintenance. I also checked the date of the notice and showed it to my friend, so we moved our visit to Tuesday.",
+            "官网新通知写周一维护闭馆，我检查通知日期，和朋友改到周二。",
+            "具体说访问哪个来源、看什么信息。"
+          ],
+          [
+            "This small check saved us an unnecessary journey. It taught me that information can be accurate when it is written but become out of date later. Now I try to check the original source before making travel plans.",
+            "避免白跑，也明白信息会过时，出行前应查原始来源。",
+            "用过去事件引出现在养成的习惯。"
+          ]
+        ],
+        "practice": {
+          "frame": "I first read that [claim], but [reason for doubt]. I checked [source] and found [result].",
+          "answer": "I first read that the museum opened on Monday, but the article was old. I checked its website and found a closure notice.",
+          "transfer": "换成你查过的时间、路线或报名信息；明确说出最终确认了什么。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "判断学校是否应教授信息评估能力。示范支持，解释学生需要学什么以及如何融入课程，不能只说网络真假难辨。",
+        "outline": [
+          "引言：明确支持",
+          "主体一：避免错误判断",
+          "主体二：融入实际学科",
+          "结论：教方法而非标准立场"
+        ],
+        "phrases": [
+          ["evaluate a source", "评估来源"],
+          ["support a claim", "支持一个说法"],
+          ["compare independent accounts", "比较独立报道"]
+        ],
+        "paragraphs": [
+          [
+            "Students encounter large amounts of information in their studies and daily lives, but easy access does not guarantee reliability. I strongly agree that schools should teach them how to evaluate what they read and hear. This is a practical skill that supports both academic work and decisions outside the classroom.",
+            "支持学校教信息评估，信息易得并不意味着可靠。",
+            "直接答是否应教，不用长背景。"
+          ],
+          [
+            "First, students need a way to distinguish a supported claim from an attractive but weak statement. A page may look professional while failing to explain where its information came from. Without guidance, a learner might copy an incorrect fact into an assignment or share it with friends. Teachers can show students how to identify the author, check the publication date, and look for original evidence. For example, comparing a short online post with the report it refers to may reveal that an important limitation has been left out. Such activities turn a vague instruction to be careful into a process students can actually follow.",
+            "看似专业页面也可能无依据，可教查作者、日期、原始证据，比较短帖与原报告。",
+            "将抽象能力拆成可观察动作。"
+          ],
+          [
+            "This teaching can also improve existing subjects rather than becoming a separate burden. In history, students could compare accounts written from different perspectives. In science, they could ask whether the results of a small experiment justify a broad conclusion. The aim should not be to tell students which opinions they must hold, but to help them explain why a source deserves confidence. Teachers should also model uncertainty when evidence is incomplete. Learning that some questions cannot yet be answered firmly is more useful than treating every claim as either completely true or completely false.",
+            "历史比较不同立场，科学检查实验能否支持结论；教判断方法而不是规定意见。",
+            "回应课程负担，展示如何融入现有科目。"
+          ],
+          [
+            "In conclusion, evaluating information deserves a clear place in school education. It can protect students from avoidable mistakes and strengthen their reasoning across subjects. Practical comparisons, source checking, and honest discussion of uncertainty would make this skill useful well beyond examinations.",
+            "实操核查和承认不确定性可帮助考试之外的生活。",
+            "回扣教育价值，避免新增未经解释的原因。"
+          ]
+        ],
+        "practice": {
+          "frame": "Schools should teach students to check [feature] because [risk].",
+          "answer": "Schools should teach students to check publication dates because old information may no longer be accurate.",
+          "transfer": "从作者、日期、证据选一项，写一个学生可能犯的错和对应检查办法。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 8,
       "name": "调查与证据",
       "en": "Surveys and evidence",
@@ -1741,6 +2575,80 @@
     },
     {
       "date": "2026-11-05",
+      "speakingGuide": {
+        "explain": "介绍一件物有所值的购买。good value 不等于最便宜，要讲价格和实际用途为什么相配。",
+        "outline": ["介绍物品与购买", "描述具体用途", "解释为何值得"],
+        "phrases": [
+          ["good value for money", "物有所值"],
+          ["use it almost every day", "几乎每天使用"],
+          ["last for years", "使用多年"]
+        ],
+        "paragraphs": [
+          [
+            "A purchase that was good value for money was a small desk lamp. I bought it online about six months ago because the light in my room was too weak for reading. It was not the cheapest option, but the price was within my budget.",
+            "半年前买了一盏台灯，房间光线不足，不是最便宜但预算内。",
+            "先说购买动机和大致时间，不必编具体价格。"
+          ],
+          [
+            "Before buying it, I checked its size and read comments about how easy it was to adjust. Now I use it almost every evening when I study English. I can change the angle so that the light falls on my notebook rather than my screen.",
+            "买前查尺寸和调节评价，现在每晚学英语用，可调整角度照笔记本。",
+            "用实际使用场景证明价值。"
+          ],
+          [
+            "I think it was worth buying because it solved a problem I had every day. It also seems well made. For me, good value means something is useful and lasts, rather than simply having the lowest price.",
+            "解决日常问题且做工好，所以值得；物有所值是有用耐用，不只是便宜。",
+            "结尾解释自己的判断标准。"
+          ]
+        ],
+        "practice": {
+          "frame": "I bought [item] because [problem]. It was worth the money because [benefit].",
+          "answer": "I bought a desk lamp because my room was too dark. It was worth the money because I use it every evening.",
+          "transfer": "选你常用的一件小物品，补充买之前考虑过的一个因素。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目声称最低价是购买时最重要因素。可不同意这个绝对优先级，承认预算重要，再比较寿命、适用性与长期成本。",
+        "outline": [
+          "引言：价格重要但非总是首位",
+          "主体一：质量和用途影响价值",
+          "主体二：预算限制与合理比较",
+          "结论：看总价值"
+        ],
+        "phrases": [
+          ["meet the buyer's needs", "满足买家需要"],
+          ["the total cost of ownership", "拥有和使用的总成本"],
+          ["stay within a budget", "不超预算"]
+        ],
+        "paragraphs": [
+          [
+            "Price is an important consideration when people buy a product, particularly when money is limited. However, I disagree that the lowest price should always be the most important factor. A purchase is only worthwhile if it meets the buyer's needs, and a cheap item can become expensive when it fails quickly or performs poorly.",
+            "最低价不应永远最重要，还要满足需要并看使用成本。",
+            "回应 most important，而非否认价格重要。"
+          ],
+          [
+            "The first issue is the relationship between cost and useful life. For example, a very cheap pair of shoes may need replacing after a short period, while a moderately priced pair could remain comfortable for much longer. In that situation, spending less at the start does not necessarily mean spending less overall. Suitability matters as well. A low-priced desk may be poor value if it is too small for the equipment someone needs to use. Buyers should therefore consider practical requirements before comparing prices, rather than assuming that any product in the same category will do the same job.",
+            "便宜鞋可能很快更换，小桌即使便宜也未必适用，应先定需求。",
+            "两个小例子分别支持耐用与适用。"
+          ],
+          [
+            "Nevertheless, this does not mean that expensive products are automatically better. Some higher prices reflect branding or features that a particular buyer will never use. People also have genuine budget limits and cannot always choose the product with the longest expected life. A sensible approach is to decide which features are essential, set an affordable price range, and compare options within it. Information about guarantees, repair costs, and reliable performance can help with that comparison. For simple items used only occasionally, the cheapest suitable option may indeed be sufficient.",
+            "贵不一定好，品牌和多余功能可能增价；设预算、看保修与维修成本，偶尔使用的简单物品可选最低合适价。",
+            "让步照顾预算限制，立场更细致。"
+          ],
+          [
+            "In conclusion, low price matters, but it should be considered alongside usefulness, durability, and future costs. The goal should be good value within an affordable budget. Choosing the cheapest product without checking these factors can waste money just as easily as buying an unnecessarily expensive one.",
+            "目标是预算内物有所值，避免只看标签价格。",
+            "总结同一判断标准。"
+          ]
+        ],
+        "practice": {
+          "frame": "The cheapest [product] may not be good value if [problem], because [consequence].",
+          "answer": "The cheapest shoes may not be good value if they wear out quickly, because the buyer must replace them sooner.",
+          "transfer": "选一件你买过的东西，写便宜但不合适可能造成的实际后果。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 9,
       "name": "消费与预算",
       "en": "Spending choices",
@@ -1803,6 +2711,80 @@
     },
     {
       "date": "2026-11-06",
+      "speakingGuide": {
+        "explain": "描述你享受制作的一餐。不会做复杂菜也没关系，按准备、制作、分享的顺序讲即可。",
+        "outline": ["介绍菜品与场合", "描述制作步骤", "说明为什么开心"],
+        "phrases": [
+          ["prepare the ingredients", "准备食材"],
+          ["follow a simple recipe", "照着简单食谱做"],
+          ["share a meal", "一起吃饭"]
+        ],
+        "paragraphs": [
+          [
+            "A meal I enjoyed preparing was tomato and egg noodles for my family last Sunday. I made them in our kitchen because everyone was busy and I wanted to help. I am not an experienced cook, so I chose something simple.",
+            "上周日在家给忙碌的家人做番茄鸡蛋面，自己经验不多所以选简单的。",
+            "菜名不会时可以用主要食材解释。"
+          ],
+          [
+            "First, I washed and cut the tomatoes. Then I cooked the eggs, added the tomatoes, and boiled the noodles in another pot. I followed a short recipe and asked my father to check the taste. The kitchen was a little messy by the time I finished.",
+            "洗切番茄、炒蛋、加番茄、另锅煮面，看食谱并请爸爸尝味，厨房有点乱。",
+            "First、Then 帮助说清顺序，不需描述所有细节。"
+          ],
+          [
+            "We ate together, and my family said the noodles were good. I enjoyed the meal because I had made something useful with my own hands. Next time, I would prepare all the ingredients first to make the process easier.",
+            "家人喜欢，自己因做了有用的事开心；下次先备齐食材。",
+            "用一个下次会改进的地方自然结束。"
+          ]
+        ],
+        "practice": {
+          "frame": "I made [meal] for [people]. First, I [step]. Then, I [step].",
+          "answer": "I made noodles for my family. First, I prepared the vegetables. Then, I cooked the noodles.",
+          "transfer": "替换菜品和两步操作，再加一句家人的反应或你自己的感受。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "这是原因与措施双问题，两个部分都要答。示范聚焦家庭和零售环节的多买、储存问题，并让措施逐一对应原因。",
+        "outline": [
+          "引言：指出问题与主要方向",
+          "主体一：多买和保存不当",
+          "主体二：计划、库存和临期管理",
+          "结论：对应原因共同减少浪费"
+        ],
+        "phrases": [
+          ["buy more than necessary", "购买超过需要的量"],
+          ["plan meals in advance", "提前安排餐食"],
+          ["manage stock carefully", "谨慎管理库存"]
+        ],
+        "paragraphs": [
+          [
+            "Food is wasted at several stages between production and consumption. In households and shops, two common causes are buying more than is needed and failing to manage food before it becomes unusable. Reducing this waste requires practical changes to purchasing and storage, rather than simply telling people that throwing food away is wrong.",
+            "家庭和商店常因购买过量、管理不及时浪费，需要采购和储存改进。",
+            "先给两条主线，确保双问题都有位置。"
+          ],
+          [
+            "At home, people may shop without checking what they already have. Large promotional packs can also encourage them to buy quantities they will not finish. If ingredients are hidden at the back of a cupboard or refrigerator, they may be forgotten until it is too late to use them. Shops face a related problem when they order more stock than customers are likely to buy. Uncertain demand and an expectation that shelves should always look full can leave businesses with unsold products, particularly items that remain fresh for only a short time.",
+            "不查存货、促销大包装、食物藏在后面，以及商店过量订货都可能造成剩余。",
+            "因果清楚：行为导致没用完再丢弃。"
+          ],
+          [
+            "Several measures can address these causes. Households can plan a few meals, make a shopping list, and check existing supplies before visiting a shop. Keeping older items visible can help people use them first. Retailers can review sales patterns, order suitable quantities, and reduce prices on products approaching the end of their useful selling period. Where safe and practical, surplus food can be passed to organisations that distribute it. Clear guidance about storage and food labels is also important, because people need reliable information to decide what can still be used safely.",
+            "家庭列计划、旧物放显眼处；商店看销量、临期降价，安全可行时捐赠，并提供标签说明。",
+            "措施逐项对应前段原因，不泛写政府应重视。"
+          ],
+          [
+            "In conclusion, food waste often results from poor planning and difficulties managing limited storage life. Better shopping habits, clearer storage information, and more careful retail stock control can reduce it. These measures are most effective when they address the specific point at which food is being lost.",
+            "措施应对应食物损失的具体原因。",
+            "总结原因和对应办法，不加入新议题。"
+          ]
+        ],
+        "practice": {
+          "frame": "One cause of food waste is [behaviour]. This could be reduced by [matching solution].",
+          "answer": "One cause of food waste is buying food that is already at home. This could be reduced by checking supplies before shopping.",
+          "transfer": "用你家中可能发生的一种浪费，写出一条直接对应的解决措施。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 10,
       "name": "食物与浪费",
       "en": "Food and waste",
@@ -1865,6 +2847,80 @@
     },
     {
       "date": "2026-11-07",
+      "speakingGuide": {
+        "explain": "描述核查过的一条新闻。重点不是新闻多重大，而是你为什么怀疑、如何查证，以及结果。",
+        "outline": ["介绍消息和疑点", "说明核查步骤", "解释结果与影响"],
+        "phrases": [
+          ["an official notice", "官方通知"],
+          ["share it immediately", "立刻转发"],
+          ["avoid confusion", "避免混淆"]
+        ],
+        "paragraphs": [
+          [
+            "Recently, I saw a message saying that our local library would close for several weeks. A friend shared it in a group chat. I was surprised because I used the library often, but the message did not include a date.",
+            "群聊里看到图书馆要关闭数周的消息，但没有日期。",
+            "把消息内容和疑点一起说清。"
+          ],
+          [
+            "Before sharing it with anyone else, I checked the library's website. I found a notice about a short closure, but it was from the previous year. I then looked at the current opening hours and confirmed that the library was operating normally.",
+            "转发前查官网，发现关闭通知来自去年，再核对当前开放时间。",
+            "按先找到旧通知、再看当前信息的顺序展开。"
+          ],
+          [
+            "I sent the updated information to my friend politely. This experience reminded me that an old story can look like new information when its date is missing. Checking carefully helped us avoid changing our plans for no reason.",
+            "礼貌发给朋友新信息，明白缺少日期会让旧闻像新闻，核查避免无谓改计划。",
+            "结果需要对应开头的问题。"
+          ]
+        ],
+        "practice": {
+          "frame": "I checked the story because [doubt]. The original notice showed that [fact].",
+          "answer": "I checked the story because it had no date. The original notice showed that the closure happened last year.",
+          "transfer": "换成你实际核实过的消息；不记得内容时可以练一个明确标为假设的场景。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目比较新闻准确性与发布速度的优先级。示范赞同准确优先，但解释紧急消息如何在核实范围内及时发布。",
+        "outline": [
+          "引言：准确应优先",
+          "主体一：错误信息的后果",
+          "主体二：及时发布已知事实",
+          "结论：速度服从核实"
+        ],
+        "phrases": [
+          ["verify the facts", "核实事实"],
+          ["correct a false impression", "纠正错误印象"],
+          ["make uncertainty clear", "说明不确定之处"]
+        ],
+        "paragraphs": [
+          [
+            "News organisations face pressure to publish quickly, especially when readers can find updates on many platforms. Nevertheless, I agree that accuracy should take priority over speed. A report that reaches people first has limited value if it gives them a misleading understanding of what has happened or what they should do next.",
+            "赞同准确优先，抢先却误导的报道价值有限。",
+            "明确优先顺序，直接回答题目。"
+          ],
+          [
+            "The main reason is that errors can influence real decisions. An inaccurate report about a transport closure, for example, may cause people to cancel necessary journeys or seek unsuitable alternatives. Once the information has been shared widely, a later correction may not reach everyone who saw the original story. This also affects trust. Readers who repeatedly discover important mistakes may become less willing to rely on the organisation, including when its later reports are correct. Checking the source, confirming key details, and distinguishing evidence from speculation are therefore central parts of reporting, not optional steps that can simply be removed to save time.",
+            "错误停运消息影响出行，后续更正未必到达所有人，也损害媒体信任。",
+            "例子展示错误怎样影响行动，避免空泛说危险。"
+          ],
+          [
+            "However, prioritising accuracy does not mean waiting until every detail is known. During a developing event, people may genuinely need prompt information. A news organisation can publish what has been confirmed and explain which questions remain unanswered. It can then update the report as reliable evidence becomes available. For instance, it may report that a service has been suspended while making clear that the cause and reopening time are not yet confirmed. This approach is more useful than either saying nothing or filling gaps with guesses presented as facts.",
+            "紧急情况下可先发布已证实事实，并明确原因或恢复时间未知，再更新。",
+            "处理速度的合理需求，不把对立面绝对化。"
+          ],
+          [
+            "In conclusion, accurate reporting should come before being first because mistakes can affect decisions and damage trust. Timely news still matters, but speed should be achieved through clear reporting of verified information and honest uncertainty, rather than by lowering the standard of evidence.",
+            "及时不等于猜测，速度应建立在核实和透明基础上。",
+            "前后一致强调核实。"
+          ]
+        ],
+        "practice": {
+          "frame": "Accuracy should come first because [consequence]. A report can still be timely by [method].",
+          "answer": "Accuracy should come first because false information can change people's decisions. A report can still be timely by sharing only confirmed details.",
+          "transfer": "选择一条会影响行动的新闻，说明报错的后果和一种及时但谨慎的写法。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 11,
       "name": "媒体与核查",
       "en": "Media literacy",
@@ -1927,6 +2983,80 @@
     },
     {
       "date": "2026-11-08",
+      "speakingGuide": {
+        "explain": "描述一个有用的图表或信息。口语不用逐一报告数字，讲它如何帮助你作出选择即可。",
+        "outline": ["介绍看到的图表", "解释如何使用", "说明决定和帮助"],
+        "phrases": [
+          ["compare the options", "比较选项"],
+          ["at a glance", "一眼看出"],
+          ["make a decision", "作出决定"]
+        ],
+        "paragraphs": [
+          [
+            "A useful chart I found was a comparison of three mobile phone plans. I saw it on a provider's website when my old contract was ending. It showed the monthly price and the amount of data included in each plan.",
+            "手机套餐到期时在运营商网站看到三种套餐的价格和流量比较表。",
+            "交代图表用途，不需编造复杂数值。"
+          ],
+          [
+            "At first, I was attracted to the plan with the most data. However, I checked my recent usage and realised that I rarely needed that much. The chart made it easy to compare the options without reading several long descriptions.",
+            "起初想选流量最多的，但查自己用量后发现用不到，图表方便比较。",
+            "用开始的想法与后来发现构成故事。"
+          ],
+          [
+            "I chose a cheaper plan that still covered my usual needs. I liked the chart because I could understand the main differences at a glance. It also reminded me to compare information with my own situation before making a decision.",
+            "选了满足需要的便宜套餐，图表让区别一目了然，也提醒自己结合实际需求。",
+            "结尾对应“有用”这个题眼。"
+          ]
+        ],
+        "practice": {
+          "frame": "The chart compared [options]. It helped me choose [choice] because [reason].",
+          "answer": "The chart compared phone plans. It helped me choose a cheaper plan because I did not need much data.",
+          "transfer": "换成路线表、课程表或价格表，讲清你依据哪个信息做了什么决定。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问参观人数是不是评价博物馆成功的最佳方法。示范不同意仅以此为主，承认人数可用但需教育、保护和可及性指标。",
+        "outline": [
+          "引言：人数有用但不充分",
+          "主体一：人数能反映吸引力",
+          "主体二：教育与藏品保护同样重要",
+          "结论：多项指标评价"
+        ],
+        "phrases": [
+          ["visitor numbers", "参观人数"],
+          ["the quality of the experience", "体验质量"],
+          ["preserve collections", "保护藏品"]
+        ],
+        "paragraphs": [
+          [
+            "Visitor numbers are an easy way to describe a museum's popularity, but popularity is not the same as overall success. I disagree that attendance is the best measure on its own. Museums have educational and preservation responsibilities that cannot be fully understood simply by counting how many people pass through their doors.",
+            "人数反映受欢迎程度，不等于全部成功，博物馆还有教育和保护职责。",
+            "回应 best，不把人数说成完全无用。"
+          ],
+          [
+            "Attendance does provide useful information. A museum that attracts visitors is reaching people, and ticket income may help pay for staff and facilities. Comparing numbers over time can also show whether a new exhibition has gained public interest. However, the figures need context. A museum in a major tourist area is likely to attract more people than a small local collection, even if the smaller museum serves its community very well. Free entry, advertising, and the size of the building can also affect the total. Without considering these differences, a simple ranking may reward location or resources rather than the quality of the museum's work.",
+            "人数说明触达和收入，但位置、门票与规模会影响比较。",
+            "先承认其价值再说明比较限制。"
+          ],
+          [
+            "Other measures are therefore necessary. A successful museum should help visitors understand its material, care for its collections, and make its resources accessible to different groups. For example, a small exhibition that allows schoolchildren to explore local history in depth may have considerable value despite modest attendance. Feedback, repeat visits, school partnerships, and the condition of collections can offer evidence about these responsibilities. None of these indicators is perfect, but together they provide a more balanced picture than a single total at the entrance.",
+            "学习体验、藏品保护和不同群体可及性也应看，少量学生深入学地方史也有价值。",
+            "提供替代指标并解释用途。"
+          ],
+          [
+            "In conclusion, visitor numbers should be included when assessing museums, but they should not dominate the judgement. Success involves reaching an audience while providing meaningful learning and protecting material for the future. A combination of measures is better suited to those different aims.",
+            "综合指标比只看总人数更合理。",
+            "形成明确的多指标立场。"
+          ]
+        ],
+        "practice": {
+          "frame": "Visitor numbers show [aspect], but they do not tell us [missing aspect].",
+          "answer": "Visitor numbers show popularity, but they do not tell us how much visitors have learned.",
+          "transfer": "写一个人数少但可能很成功的展览例子，说明你会用什么补充证据。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 12,
       "name": "图表与趋势",
       "en": "Describing trends",
@@ -1989,6 +3119,80 @@
     },
     {
       "date": "2026-11-09",
+      "speakingGuide": {
+        "explain": "描述用过的一项公共服务，可以是图书馆、公共交通或社区服务。讲一次实际使用过程。",
+        "outline": ["介绍服务和需求", "描述使用过程", "评价体验和不足"],
+        "phrases": [
+          ["apply for a card", "申请一张卡"],
+          ["explain the process", "解释流程"],
+          ["available to everyone", "人人可使用的"]
+        ],
+        "paragraphs": [
+          [
+            "A public service I have used is the local library. I went there earlier this year because I wanted to borrow books instead of buying them. The building is near a bus stop, so it was easy to reach.",
+            "今年去本地图书馆，想借书而不是买书，公交方便。",
+            "先说需求，让使用过程有目的。"
+          ],
+          [
+            "A member of staff helped me apply for a library card and explained the borrowing rules. I then used a computer to search for an English reader. When I could not find it on the shelf, another staff member showed me the correct section.",
+            "工作人员帮办卡、讲规则，我搜索英语读物，找不到时得到指引。",
+            "加入一次求助使故事具体。"
+          ],
+          [
+            "I appreciated the service because the staff were patient and I could explore books without spending much money. The opening hours could be longer in the evening, but overall it is a useful place that supports learning in the community.",
+            "耐心服务降低阅读成本，希望晚间开放更久，总体有益社区学习。",
+            "评价包括优点和一个改善建议。"
+          ]
+        ],
+        "practice": {
+          "frame": "I used [service] because I needed to [goal]. A staff member helped me [action].",
+          "answer": "I used the library because I needed to borrow a book. A staff member helped me find the right shelf.",
+          "transfer": "换成你用过的服务，描述一个工作人员或设施实际帮助你的地方。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论数字公共服务应否优先，也要呈现线下服务的价值并给看法。示范支持数字化常规流程，同时保留可用的人工渠道。",
+        "outline": [
+          "引言：数字优先但保留选择",
+          "主体一：减少重复出行与等待",
+          "主体二：数字障碍及复杂个案",
+          "结论：兼顾效率与可及性"
+        ],
+        "phrases": [
+          ["complete a routine application", "完成常规申请"],
+          ["access to support", "获得帮助的机会"],
+          ["retain an alternative channel", "保留另一渠道"]
+        ],
+        "paragraphs": [
+          [
+            "Governments increasingly provide services through websites and apps. Supporters argue that digital services deserve priority because they are convenient, while others believe that direct assistance remains essential. I favour improving digital options for routine tasks, but this should not come at the cost of excluding people who need an alternative way to obtain help.",
+            "常规服务值得数字化，但不能排除需要其他渠道的人。",
+            "引言已表明支持方向和条件。"
+          ],
+          [
+            "Digital services can make simple processes easier for both residents and staff. People may be able to complete an application or check its progress without travelling to an office during working hours. This is particularly helpful for someone who lives far away or cannot easily take time off work. Clear online forms can also reduce repeated questions by showing which documents are required before an application is submitted. If routine requests are handled efficiently, staff may have more time for difficult cases. These benefits explain why investment in reliable, understandable digital systems is a reasonable priority.",
+            "在线申请和查进度省出行、便于上班族，清晰材料清单减少重复咨询。",
+            "解释具体流程如何节省时间。"
+          ],
+          [
+            "However, online access cannot be assumed. Some residents lack a suitable device, a stable connection, or confidence using digital forms. Others face a complicated situation that does not fit the choices available on a screen. If offices and telephone services disappear, these people may struggle to access support to which they are entitled. Governments should therefore provide assistance with digital tasks and keep practical alternatives for those who need them. They should also test services with a range of users, rather than judging success only by how many applications move online.",
+            "有的人无设备、网络或技能，复杂个案也未必适合表格，所以保留电话和人工支持。",
+            "充分讨论另一观点的使用者需求。"
+          ],
+          [
+            "In conclusion, digital public services should receive substantial attention because they can make routine tasks more convenient. Yet the purpose of public service is to serve the whole population. Digital investment should be accompanied by accessible human support, so that greater efficiency does not create a new barrier.",
+            "效率要以全体可及为前提。",
+            "以公共服务目的收束。"
+          ]
+        ],
+        "practice": {
+          "frame": "Digital services help people [benefit], but governments should keep [alternative] for [group].",
+          "answer": "Digital services help people apply from home, but governments should keep telephone support for those who need help.",
+          "transfer": "选一个公共服务，写线上适合完成什么、什么情况下还需人工帮助。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 13,
       "name": "公共服务",
       "en": "Public services",
@@ -2051,6 +3255,80 @@
     },
     {
       "date": "2026-11-10",
+      "speakingGuide": {
+        "explain": "描述你觉得有趣的动物。说自己看见或了解它的经历即可，不需要专业生物知识。",
+        "outline": ["介绍动物与遇见地点", "描述观察到的行为", "解释兴趣和感受"],
+        "phrases": [
+          ["notice the details", "注意细节"],
+          ["watch from a distance", "从远处观察"],
+          ["move quickly", "移动很快"]
+        ],
+        "paragraphs": [
+          [
+            "An animal I find interesting is the squirrel. I first paid attention to one in a park near my home last autumn. I was sitting on a bench when a small squirrel ran across the path and stopped beside a tree.",
+            "去年秋天在家附近公园注意到松鼠，它穿过小路停在树边。",
+            "以个人观察开场，避免不确定的科学断言。"
+          ],
+          [
+            "I watched from a distance as it picked something up from the ground and climbed the tree quickly. Its movements were much faster than I expected. I wanted to take a photograph, but I decided to stay still rather than follow it.",
+            "远远看它捡东西、迅速上树，本想拍照但选择不追。",
+            "用动作描述替代重复 interesting。"
+          ],
+          [
+            "What interested me was how alert it seemed. The experience made an ordinary walk more memorable and encouraged me to notice the details around me. I would like to learn more about the animals that live in local parks.",
+            "它机警的样子有趣，让普通散步变得难忘，也想了解本地动物。",
+            "解释兴趣如何影响自己。"
+          ]
+        ],
+        "practice": {
+          "frame": "I saw a [animal] in [place]. It was [action], which I found [feeling].",
+          "answer": "I saw a squirrel in a park. It was climbing a tree, which I found fascinating.",
+          "transfer": "换成你见过的动物，补充两个可观察的动作；不确定习性时不要硬编。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "城市需要住房时是否仍应保护自然栖息地？示范基本赞同保护，同时承认住房压力并讨论替代用地，不要把住房需求忽略。",
+        "outline": [
+          "引言：保护重要但住房也紧迫",
+          "主体一：栖息地损失难恢复",
+          "主体二：优先已开发用地与合理规划",
+          "结论：避免把自然当默认扩建区"
+        ],
+        "phrases": [
+          ["natural habitats", "自然栖息地"],
+          ["previously developed land", "已开发过的土地"],
+          ["long-term consequences", "长期后果"]
+        ],
+        "paragraphs": [
+          [
+            "Cities need enough housing, but they also contain natural habitats that may be difficult to restore once destroyed. I largely agree that these areas should remain protected even when demand for homes is high. Housing plans should first examine less damaging options rather than treating undeveloped natural land as the easiest place to build.",
+            "基本支持保护栖息地，住房计划应先查较低破坏的替代方案。",
+            "同时点出冲突双方，立场仍清楚。"
+          ],
+          [
+            "Protecting habitats matters because their value extends beyond their appearance. A wooded area or wetland may support plants and animals that cannot simply move to a small decorative park nearby. Breaking an area into isolated pieces can also change how wildlife uses it. Once buildings and roads are in place, restoring the original conditions may be costly or impossible. Residents can lose opportunities to experience nature as well. For these reasons, decisions about development should consider long-term consequences rather than only the number of homes that could be built immediately.",
+            "树林湿地的生态功能难靠小装饰公园代替，一旦建成难恢复，也减少居民接触自然机会。",
+            "用可能性和具体机制说明不可逆影响。"
+          ],
+          [
+            "Nevertheless, housing shortages create serious problems and cannot be dismissed. People need affordable, suitable places to live, so protecting habitats should be part of a wider planning strategy. Cities could examine empty buildings, previously developed sites, and opportunities to use existing urban land more efficiently. These alternatives also require careful assessment, since not every site is safe or suitable. Where difficult choices remain, planning decisions should be transparent and informed by evidence about both housing needs and environmental effects. Protecting every small piece of land without considering its condition would be as simplistic as allowing construction wherever space appears available.",
+            "住房困难也真实，应评估空置建筑和已开发用地；透明地比较需要与环境影响。",
+            "替代方案带限制，不声称所有空地都可建。"
+          ],
+          [
+            "In conclusion, I support strong protection for natural habitats while recognising the urgency of housing needs. Cities should seek to meet those needs through careful use of land already affected by development wherever possible. Environmental protection should be a serious planning requirement, not an issue considered only after building decisions have been made.",
+            "保护应提前进入规划，而非建房决定后的附带考虑。",
+            "回到规划优先级而非抽象环保口号。"
+          ]
+        ],
+        "practice": {
+          "frame": "Protecting [habitat] matters because [loss]. Cities could instead consider [alternative].",
+          "answer": "Protecting a wetland matters because its habitat may be difficult to restore. Cities could instead consider suitable previously developed sites.",
+          "transfer": "写一个具体栖息地及失去它的后果，再提出一种需要评估的住房替代方案。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 14,
       "name": "自然观察",
       "en": "Observing nature",
@@ -2113,6 +3391,80 @@
     },
     {
       "date": "2026-11-11",
+      "speakingGuide": {
+        "explain": "描述想尝试的创意活动。可选画画、陶艺、摄影；重点讲想做什么、如何开始、为什么吸引你。",
+        "outline": ["介绍活动和触发原因", "说明开始的计划", "解释期待与困难"],
+        "phrases": [
+          ["make something by hand", "亲手制作东西"],
+          ["join a beginner class", "参加入门班"],
+          ["enjoy the process", "享受过程"]
+        ],
+        "paragraphs": [
+          [
+            "I would like to try pottery. I became interested in it after seeing some handmade cups at a small market last month. They were slightly different from one another, and I liked the idea of making something useful by hand.",
+            "上个月看到手工杯子后想学陶艺，喜欢亲手做实用品。",
+            "说明兴趣来自哪里，回答更个人化。"
+          ],
+          [
+            "I would start by joining a beginner class at a local studio. My first goal would be to make a simple bowl, not a perfect piece of art. I would ask the teacher to show me how to shape the clay and correct my mistakes.",
+            "想参加初学班，先做简单碗，请老师教塑形并纠错。",
+            "具体到第一件作品，比说 I will learn hard 清楚。"
+          ],
+          [
+            "I think the activity would help me slow down after a busy week. It might be difficult at first, but I would enjoy the process. Keeping a bowl I had made myself would also be a nice reminder of learning a new skill.",
+            "期待慢下来、享受过程，保留作品纪念学会新技能。",
+            "承认困难但解释愿意尝试的原因。"
+          ]
+        ],
+        "practice": {
+          "frame": "I'd like to try [activity]. My first goal would be to [small project].",
+          "answer": "I'd like to try pottery. My first goal would be to make a simple bowl.",
+          "transfer": "换成想做的活动，补充第一次练习会在哪里、请谁帮助。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "比较艺术教育中的参与和竞赛。示范支持以参与为主，竞赛可选；不能误写成是否应教艺术。",
+        "outline": [
+          "引言：参与应是基础",
+          "主体一：让初学者敢尝试",
+          "主体二：竞赛的激励与限制",
+          "结论：可选比赛而非唯一目标"
+        ],
+        "phrases": [
+          ["take part without fear", "不害怕地参与"],
+          ["constructive feedback", "建设性反馈"],
+          ["recognise individual progress", "认可个人进步"]
+        ],
+        "paragraphs": [
+          [
+            "Arts education can give students opportunities to create, perform, and understand different forms of expression. I agree that participation should be its main focus rather than competition. Competitions may motivate some learners, but an education system should also support beginners and students whose progress cannot be captured by a single ranking.",
+            "艺术教育应以参与为基础，比赛可激励部分人但排名不能涵盖所有进步。",
+            "限定在艺术教育的教学重点。"
+          ],
+          [
+            "A focus on participation encourages students to try unfamiliar activities. Someone who has never drawn or performed may be reluctant to begin if the first experience involves being compared with highly skilled classmates. In a supportive class, that student can experiment, make mistakes, and receive feedback without feeling that the only worthwhile result is winning. This matters because the process of making something can teach patience, observation, and cooperation. For example, preparing a class performance gives students different useful roles, including planning, designing, and rehearsing, even when not everyone wants to appear at the centre of the stage.",
+            "安全尝试让初学者愿意开始，集体表演也提供规划、设计等角色，不是人人都要站中央。",
+            "用课堂活动解释参与如何产生学习。"
+          ],
+          [
+            "Competition can still have a place. A voluntary exhibition or performance contest may give interested students a clear goal and a chance to develop their skills further. It can also teach them to prepare carefully and respond to feedback. Problems arise when awards become the main measure of achievement or when the same few confident students receive most of the attention. Teachers should therefore offer challenges at different levels and recognise improvement, thoughtful effort, and collaboration. Students who do not enter a competition should continue to receive meaningful teaching and opportunities to show their work.",
+            "自愿竞赛可提供目标，但不能只重获奖者，应认可进步和合作，不参赛者也能展示。",
+            "认真承认比赛价值，再说明适用条件。"
+          ],
+          [
+            "In conclusion, participation should provide the foundation of arts education because all students deserve a chance to learn through creative activity. Competitions can be useful additions for those who want them, but they should not define the purpose of the subject or determine whose work is valued.",
+            "比赛是补充，参与才保证普遍学习机会。",
+            "结论保持优先级，不走极端。"
+          ]
+        ],
+        "practice": {
+          "frame": "Participation helps beginners [benefit], while competition may help [group] to [benefit].",
+          "answer": "Participation helps beginners gain confidence, while competition may help experienced students prepare for a clear goal.",
+          "transfer": "选绘画或表演，写一个能让初学者参与的任务和一种有帮助的反馈。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 15,
       "name": "艺术与参与",
       "en": "Arts participation",
@@ -2175,6 +3527,80 @@
     },
     {
       "date": "2026-11-12",
+      "speakingGuide": {
+        "explain": "描述改变过的一种学习方法。用“以前怎么学—为什么改—现在怎么学—有何变化”组织。",
+        "outline": ["交代旧方法和问题", "描述新方法", "比较变化与限制"],
+        "phrases": [
+          ["test myself", "自测"],
+          ["recall the meaning", "回忆含义"],
+          ["put it into practice", "实际运用"]
+        ],
+        "paragraphs": [
+          [
+            "I used to learn English words by reading the same list many times. I did this at home before tests, and the words looked familiar. However, when I tried to speak, I often could not recall them without seeing the list.",
+            "以前考前反复看词表，虽然眼熟，开口却想不起。",
+            "清楚区分看着认识和主动回忆。"
+          ],
+          [
+            "A few months ago, I changed my method. Now I cover the meanings and test myself. I also choose two words and make a short sentence about my own life. If I cannot remember a word, I check it and try again later.",
+            "几个月前改为遮住意思自测，用两个词写个人生活的句子，忘了再查。",
+            "用可执行的动作解释新方法。"
+          ],
+          [
+            "This method takes more effort, but it shows me what I actually know. I still forget things, so I do not expect instant results. The main improvement is that I spend less time looking at words and more time trying to use them.",
+            "更费力但知道真正掌握多少，仍会忘，改善在于更多实际运用。",
+            "不夸大效果，讲具体变化。"
+          ]
+        ],
+        "practice": {
+          "frame": "I used to [old method], but now I [new method] because [reason].",
+          "answer": "I used to reread word lists, but now I test myself because I want to recall words without help.",
+          "transfer": "换成你改过的一种方法；还没改过可以先用该方法练一天，再讲真实体验。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "要求讨论自主学习与遵循教师指导两种观点。示范两边都解释，并以“基础阶段指导、逐渐增加自主”综合；不要只把独立理解成没人帮助。",
+        "outline": [
+          "引言：效果取决于阶段",
+          "主体一：自主学习可针对弱点",
+          "主体二：教师指导提供基础与反馈",
+          "结论：逐步移交学习责任"
+        ],
+        "phrases": [
+          ["identify a weakness", "发现弱点"],
+          ["receive timely feedback", "获得及时反馈"],
+          ["take increasing responsibility", "承担越来越多责任"]
+        ],
+        "paragraphs": [
+          [
+            "Some people believe students learn best when they work independently, while others emphasise following a teacher's instructions. Both views have value because effective learning requires personal effort as well as appropriate guidance. The balance between them may depend on the learner's experience, the difficulty of the task, and the support already available.",
+            "两者有价值，比例取决于经验、任务难度和支持。",
+            "题目要求讨论双方，因此引言不只宣称一种更好。"
+          ],
+          [
+            "Independent work allows students to focus on their own needs. In a large class, some may understand a topic quickly while others require more practice. A learner working alone can spend additional time on a weak area instead of moving at the pace of the whole group. Choosing a task and checking the result can also develop responsibility. For example, a language learner who notices difficulty understanding numbers could select suitable recordings and review the mistakes afterwards. This kind of active decision-making helps students understand their learning rather than simply completing activities because someone else assigned them.",
+            "自主学习可按弱点和速度选择材料，如针对听数字困难做练习并复盘。",
+            "例子强调自主选择和复盘，而非单纯独处。"
+          ],
+          [
+            "On the other hand, teachers provide structure and feedback that beginners may not be able to create themselves. A student can practise regularly but repeat the same error without recognising it. Clear instruction can explain the basic method, demonstrate a useful example, and prevent unnecessary confusion. Teachers can also choose a sequence of tasks that builds towards a more difficult skill. This is especially valuable when students lack the background knowledge needed to judge which materials are reliable or appropriate. Following good guidance at this stage does not prevent independence; it can provide the foundation for it.",
+            "初学者可能重复错误而不自知，教师能解释、示范、安排顺序，提供自主所需基础。",
+            "教师作用具体到反馈与任务顺序。"
+          ],
+          [
+            "Overall, independent work offers flexibility and encourages responsibility, whereas teacher guidance supplies structure and correction. These approaches need not compete. A useful progression is to begin with clear explanations, allow increasing choice, and retain access to feedback as students become more capable of directing their own study.",
+            "先明确指导，再逐步增加选择并保留反馈。",
+            "给出两种方法如何结合。"
+          ]
+        ],
+        "practice": {
+          "frame": "Independent study allows students to [benefit], but teachers can help them [support].",
+          "answer": "Independent study allows students to focus on weaknesses, but teachers can help them recognise errors.",
+          "transfer": "用你学习英语的一项困难，分别写自己能做什么、老师可以补充什么。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 16,
       "name": "学习方法比较",
       "en": "Comparing study methods",
@@ -2237,6 +3663,80 @@
     },
     {
       "date": "2026-11-13",
+      "speakingGuide": {
+        "explain": "描述希望看到的环保改善。先缩小到一个地点和一个可行措施，避免同时讨论所有环保问题。",
+        "outline": ["指出地点和问题", "提出具体改善", "说明预期帮助"],
+        "phrases": [
+          ["recycling bins", "回收箱"],
+          ["clear instructions", "清楚的说明"],
+          ["take a small step", "迈出一小步"]
+        ],
+        "paragraphs": [
+          [
+            "An environmental improvement I would like to see is better recycling facilities in my neighbourhood. I noticed the problem last week when I tried to dispose of some cardboard boxes. The bins were difficult to identify, and the signs were faded.",
+            "上周丢纸箱时发现社区回收箱难辨、标识褪色。",
+            "从亲身遇到的小问题切入。"
+          ],
+          [
+            "I would like the community centre to provide clearly labelled bins and a simple guide showing what belongs in each one. A short demonstration for residents could also help. The bins would need regular collection, otherwise people might stop using them.",
+            "希望提供清楚标签和分类指南，做简短示范，并及时清运。",
+            "措施要回应问题：标识不清就改善标识。"
+          ],
+          [
+            "This change would make it easier for me and my neighbours to sort our waste properly. It would not solve every environmental problem, but it would remove a practical difficulty. I would be happy to help explain the system to other residents.",
+            "能方便居民分类，虽不能解决所有问题，却能消除实际障碍，自己愿意帮忙说明。",
+            "说明个人参与，让愿望更具体。"
+          ]
+        ],
+        "practice": {
+          "frame": "I'd like our community to [change] because [current problem]. This would help people [benefit].",
+          "answer": "I'd like our community to label recycling bins clearly because the signs are hard to read. This would help people sort their waste.",
+          "transfer": "换成你周围看见的一个问题，并提出一个能对应解决它的具体改变。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目只问如何鼓励家庭使用可再生能源，不必写成优缺点对半。措施要解决费用、可靠信息和住房条件等障碍。",
+        "outline": [
+          "引言：降低成本和实际障碍",
+          "主体一：可负担的财务支持",
+          "主体二：可靠信息与适用选项",
+          "结论：组合措施而非仅靠宣传"
+        ],
+        "phrases": [
+          ["upfront costs", "前期成本"],
+          ["reliable advice", "可靠建议"],
+          ["suitable for their home", "适合其住房的"]
+        ],
+        "paragraphs": [
+          [
+            "Encouraging households to use renewable energy requires more than general messages about the environment. Families need options that are affordable, understandable, and suitable for their homes. Financial support and reliable practical guidance are therefore likely to be important ways of helping people consider a change that might otherwise feel too expensive or complicated.",
+            "鼓励需要可负担、易理解且适合住房的选择，费用和实际指导都重要。",
+            "只围绕如何鼓励，避免离题大讲能源历史。"
+          ],
+          [
+            "The first barrier is often the initial cost. Even if a household expects to save money over time, it may be unable to pay for equipment and installation at once. Carefully designed grants or affordable payment arrangements could make suitable projects easier to begin. Support should be explained clearly, including who qualifies and what costs remain. It should also consider families with lower incomes, rather than benefiting only people who already have enough money to invest. Before recommending a purchase, advisers should help households compare realistic costs and likely performance under their particular conditions.",
+            "初始费用可能阻碍家庭，补助或合理分期应清晰并考虑低收入者，按实际条件比较表现。",
+            "每条措施先指出障碍，再解释解决方式。"
+          ],
+          [
+            "A second measure is to make trustworthy information easier to obtain. People may hesitate because they do not know which providers to trust or whether a system will work well in their property. Independent advice, clear installation standards, and transparent information about maintenance can reduce this uncertainty. Different housing situations also require different choices. Someone renting a flat may have little control over the roof, so encouragement cannot depend only on individual rooftop equipment. Where available, suitable renewable electricity options or community arrangements may give these households a way to participate without making changes they are not allowed to make.",
+            "独立建议、安装标准和维护信息降低疑虑；租房者不一定能装屋顶设备，可考虑当地可用的其他方案。",
+            "考虑不同家庭，不把一种技术当万能方案。"
+          ],
+          [
+            "In conclusion, households are more likely to consider renewable energy when the financial and practical barriers are addressed together. Affordable support should be matched with reliable advice and options for different types of home. Public encouragement will be more convincing when people can see a clear, realistic route from interest to action.",
+            "支持与指导结合，兴趣才有可行的行动路径。",
+            "总结措施互补，不承诺固定收益。"
+          ]
+        ],
+        "practice": {
+          "frame": "Households may hesitate because [barrier]. This could be addressed through [measure].",
+          "answer": "Households may hesitate because installation is expensive. This could be addressed through clearly explained financial support.",
+          "transfer": "选费用、信息或租房限制中的一项，写一个对症措施和它为何有用。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 17,
       "name": "能源选择",
       "en": "Energy choices",
@@ -2299,6 +3799,80 @@
     },
     {
       "date": "2026-11-14",
+      "speakingGuide": {
+        "explain": "描述隐私重要的一个场景。用日常借手机、填表或发照片的经历说明，不必透露真实敏感信息。",
+        "outline": ["介绍具体场景", "描述保护隐私的做法", "解释原因与原则"],
+        "phrases": [
+          ["personal messages", "私人消息"],
+          ["ask for permission", "征求同意"],
+          ["respect boundaries", "尊重界限"]
+        ],
+        "paragraphs": [
+          [
+            "A situation where privacy matters is lending someone my phone. Last month, a classmate asked to use mine to make a call because his battery was flat. I was happy to help, but I also had personal messages and photographs on the device.",
+            "同学手机没电借我手机打电话，我愿意帮忙，但手机有私信照片。",
+            "场景越具体，越容易说明 privacy。"
+          ],
+          [
+            "I opened the calling screen before handing it over. My classmate made the call and returned the phone without looking at anything else. If I borrow a phone myself, I try to do exactly the same and ask before opening another app.",
+            "先打开拨号界面再给他，他打完归还没看其他内容；自己借手机也先征求同意。",
+            "用行为解释如何尊重隐私。"
+          ],
+          [
+            "Privacy is important here because helping someone should not mean giving them access to every part of your life. I think simple habits like asking for permission can prevent awkward situations and help people trust one another.",
+            "帮助别人不等于开放所有信息，小习惯能避免尴尬并建立信任。",
+            "从小事提炼原则，不需要透露隐私本身。"
+          ]
+        ],
+        "practice": {
+          "frame": "Privacy matters when [situation]. I protect it by [action].",
+          "answer": "Privacy matters when I lend someone my phone. I protect it by opening only the app they need.",
+          "transfer": "换成发合照或填在线表格的场景；只描述做法，不写真实账号、证件或私人信息。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "需要判断公共交通数据收益是否大于隐私担忧。必须作比较，示范认为只有在收集最少数据、有保护措施时收益才更大。",
+        "outline": [
+          "引言：有条件认可收益更大",
+          "主体一：改善班次和资源配置",
+          "主体二：隐私风险与最小化收集",
+          "结论：收益依赖严格保护"
+        ],
+        "phrases": [
+          ["passenger demand", "乘客需求"],
+          ["collect only necessary data", "只收集必要数据"],
+          ["restrict access", "限制访问"]
+        ],
+        "paragraphs": [
+          [
+            "Public transport systems can collect information about when and where passengers travel. This may help operators improve services, but detailed travel records can also reveal aspects of people's private lives. In my view, the benefits can outweigh the concerns only when data collection is limited to a clear purpose and strong protections are in place.",
+            "数据有助改善服务，但需用途明确、收集有限、保护到位，才认为收益超过风险。",
+            "明确 outweigh 的条件判断。"
+          ],
+          [
+            "The main benefit is better understanding of passenger demand. If operators can see that a particular route is crowded at certain times, they may adjust capacity or scheduling. Information about lightly used services can also help them investigate whether routes or connections need improvement. This does not mean that every quiet service should be removed, since some provide essential access for a small group. Rather, data can provide a starting point for decisions alongside consultation with passengers. More informed planning may reduce unnecessary waiting and make better use of a limited transport budget.",
+            "客流帮助调整班次和容量，冷门线路也要结合乘客需求，不是直接取消。",
+            "把数据转化为服务决策的过程解释清楚。"
+          ],
+          [
+            "The privacy concerns are nevertheless substantial. A detailed record linked to a named person could reveal regular destinations or routines. People may worry about unauthorised access or later use for purposes they did not expect. Operators should therefore ask whether they actually need individual identities to answer a planning question. Often, grouped information may be more appropriate. They should collect only what is necessary, explain the purpose clearly, restrict access, and avoid keeping detailed records indefinitely. Independent oversight can also help ensure that promised safeguards are followed rather than remaining statements that passengers cannot verify.",
+            "实名轨迹可能泄露日常活动，应看是否真需身份、优先汇总、限制访问和保存时间。",
+            "风险和防护一一对应，避免空泛说保护隐私。"
+          ],
+          [
+            "In conclusion, transport data can support valuable service improvements, but these benefits do not automatically justify every form of collection. I would support a carefully limited system that protects passengers and is accountable for its use of information. Without those conditions, the privacy costs could be too great.",
+            "支持受约束且可监督的系统，非任何收集都合理。",
+            "不把有条件支持写成无条件赞成。"
+          ]
+        ],
+        "practice": {
+          "frame": "Travel data can help operators [benefit], but it should not reveal [private detail] unnecessarily.",
+          "answer": "Travel data can help operators plan bus frequency, but it should not reveal an individual's daily routine unnecessarily.",
+          "transfer": "写一个不需要知道乘客姓名也能回答的交通规划问题，再说明一种保护方式。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 18,
       "name": "技术与隐私",
       "en": "Technology and privacy",
@@ -2361,6 +3935,80 @@
     },
     {
       "date": "2026-11-15",
+      "speakingGuide": {
+        "explain": "描述让社区变好的一个改变。先解释现状，再说希望如何改和谁受益。",
+        "outline": ["说明地点和问题", "描述期待的改变", "解释受益者和意义"],
+        "phrases": [
+          ["a safer crossing", "更安全的过街设施"],
+          ["busy traffic", "繁忙的交通"],
+          ["reach the park", "到达公园"]
+        ],
+        "paragraphs": [
+          [
+            "A change that would improve my neighbourhood is a safer crossing near the park. I walk past that area several times a week. The park is popular, but the road outside it is busy, especially when children finish school.",
+            "公园外道路车多，放学时尤其忙，自己每周经过几次。",
+            "描述观察到的情况，避免空泛说社区不好。"
+          ],
+          [
+            "At present, people sometimes wait a long time for a gap in the traffic. I would like the local council to consider a clearly marked crossing with suitable traffic signals. Better lighting would also make the area easier to use in the evening.",
+            "现在常等很久才能过马路，希望设清晰的过街标识和合适信号，改善照明。",
+            "提出的设施直接对应交通问题。"
+          ],
+          [
+            "This would help families, older residents, and anyone who wants to walk to the park. I would feel more comfortable taking my grandparents there. It is a relatively small change, but it could make an everyday journey much less stressful.",
+            "家庭、老人和步行者受益，带祖父母去更安心，小改变能减少出行压力。",
+            "用自己的家人解释改变的意义。"
+          ]
+        ],
+        "practice": {
+          "frame": "Our neighbourhood needs [facility] because [problem]. It would help [people] to [benefit].",
+          "answer": "Our neighbourhood needs a safer crossing because the road is busy. It would help families to reach the park.",
+          "transfer": "换成你真实经过的一段路或设施，具体说谁遇到什么困难。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "比较步行便利与增加停车位的优先级。示范赞同步行优先，同时保留必要停车和无障碍需求。",
+        "outline": [
+          "引言：步行应优先",
+          "主体一：公共空间惠及更多人",
+          "主体二：必要停车与替代出行",
+          "结论：更均衡的城市设计"
+        ],
+        "phrases": [
+          ["safe pedestrian routes", "安全步行路线"],
+          ["limited urban space", "有限城市空间"],
+          ["essential vehicle access", "必要车辆通行"]
+        ],
+        "paragraphs": [
+          [
+            "Urban space is limited, so decisions about streets and parking affect how residents move around their city. I agree that making cities easier to walk around should generally take priority over adding more car parking. However, this should be combined with suitable transport alternatives and access for people who genuinely need to travel by vehicle.",
+            "一般支持步行优先，但需替代交通和必要车辆通行。",
+            "直答比较关系，不只赞美步行。"
+          ],
+          [
+            "Improving walking routes can benefit a wide range of residents. Even people who use buses or cars often walk for part of their journey. Clear pavements, safe crossings, and connected routes make it easier to reach shops, schools, and public services. For example, a short journey to a local park may become practical for a family once a dangerous crossing is improved. By contrast, additional parking mainly helps those arriving by car and occupies land that could serve other purposes. A city should therefore consider how many different users can benefit from the same amount of public space.",
+            "开车或公交者也需走部分路，安全路口让更多人到达公共设施，而停车主要服务驾车者并占地。",
+            "用空间和受益者比较支持优先级。"
+          ],
+          [
+            "Nevertheless, prioritising walking does not mean ignoring vehicle access. Some people have mobility limitations, and certain journeys involve equipment, deliveries, or distances that cannot reasonably be covered on foot. Cities should retain appropriate accessible parking and plan for essential services. Better public transport is also important, because residents living far from their destinations need a realistic alternative to driving. Changes should be based on local conditions and introduced with clear communication. Simply removing parking without considering these needs could create difficulties and reduce support for otherwise useful improvements.",
+            "行动受限者、配送和远距离出行需考虑，不能无替代就撤停车位。",
+            "承认特殊需要，让观点可执行。"
+          ],
+          [
+            "In conclusion, safer and more connected walking routes should usually be a higher priority than expanding ordinary car parking. They can make daily destinations accessible to more people and use urban space effectively. The strongest approach combines this priority with essential vehicle access and reliable options for longer journeys.",
+            "步行优先与必要通行、长途交通配合。",
+            "重申一般优先而非全面禁车。"
+          ]
+        ],
+        "practice": {
+          "frame": "Improving [walking feature] helps [group] reach [destination], while more parking mainly benefits [group].",
+          "answer": "Improving crossings helps families reach local parks, while more parking mainly benefits people arriving by car.",
+          "transfer": "选择你附近一处步行困难，写改善后谁受益，并补一句仍需保留的车辆需求。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 19,
       "name": "步行城市",
       "en": "Walkable places",
@@ -2423,6 +4071,80 @@
     },
     {
       "date": "2026-11-16",
+      "speakingGuide": {
+        "explain": "描述需要持续练习的目标。说出起点、反复做的动作和可观察的进步，目标不必很大。",
+        "outline": ["介绍目标和起点", "说明固定练习", "展示进步与感受"],
+        "phrases": [
+          ["practise regularly", "规律练习"],
+          ["break it into steps", "拆成步骤"],
+          ["notice a difference", "察觉变化"]
+        ],
+        "paragraphs": [
+          [
+            "A goal that required regular practice was learning to type without looking at the keyboard. I started earlier this year because typing assignments was taking me too long. At first, I had to search for almost every letter.",
+            "今年想学盲打，因为写作业打字慢，起初几乎每个字母都要找。",
+            "用开始时的困难建立前后对比。"
+          ],
+          [
+            "I practised for ten minutes after dinner on most days. I began with a few keys and gradually added more. Instead of trying to be fast immediately, I concentrated on accuracy. I also repeated short sentences that I had typed incorrectly.",
+            "多数日子饭后练十分钟，从少量键开始，重准确再提速，重练错句。",
+            "练习频率、方法和纠错动作都要具体。"
+          ],
+          [
+            "After several weeks, I noticed that I could finish a paragraph with fewer pauses. I still make mistakes, but I no longer look down all the time. The experience taught me to break a difficult goal into small steps and repeat them patiently.",
+            "几周后停顿变少，仍会错但不总低头，学会拆分目标耐心重复。",
+            "进步可用行为描述，不必编造精确速度。"
+          ]
+        ],
+        "practice": {
+          "frame": "I wanted to improve [skill], so I practised [action] for [time] each day.",
+          "answer": "I wanted to improve my typing, so I practised short sentences for ten minutes each day.",
+          "transfer": "换成运动、乐器或英语目标，讲一个你能观察到的前后变化。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论小习惯与偶尔高强度努力的两种价值。示范按任务类型区分：技能积累靠规律，完整项目还需集中时间。",
+        "outline": [
+          "引言：两者适用情境不同",
+          "主体一：日常重复形成积累",
+          "主体二：长时段适合完整任务",
+          "结论：规律为基础并安排集中练习"
+        ],
+        "phrases": [
+          ["maintain a routine", "保持规律"],
+          ["focused time", "专注时间"],
+          ["build on previous practice", "在前期练习基础上推进"]
+        ],
+        "paragraphs": [
+          [
+            "Some goals are pursued through small daily habits, while others involve occasional periods of intensive effort. Both approaches can be effective, but they suit different needs. Regular habits are particularly useful for building and maintaining skills, whereas longer sessions may be necessary when a task requires sustained concentration or a complete performance.",
+            "日常习惯适合积累维持技能，集中努力适合完整或深入任务。",
+            "为双方讨论设定任务差异。"
+          ],
+          [
+            "Daily practice has the advantage of being manageable and repeatable. A learner may find ten minutes of vocabulary review easier to fit into a busy day than a large study session at the weekend. Repeated contact also creates opportunities to notice forgotten material and practise it again. Progress may feel slow at first, but the routine keeps the goal present instead of allowing long gaps between attempts. This approach works best when the activity is purposeful. Repeating an exercise without checking mistakes is less valuable than using a short session to address one clear weakness and review the result.",
+            "十分钟复习容易安排、可多次发现遗忘，但应有目标和纠错，不是机械重复。",
+            "解释短练习如何带来进步，并指出质量条件。"
+          ],
+          [
+            "Intensive effort has different strengths. Some activities cannot be divided into very small pieces without losing their purpose. A student preparing for an examination, for instance, needs occasional practice completing a full paper under timed conditions. Similarly, writing a substantial report may require a longer period to connect ideas and revise the whole argument. The difficulty is that such sessions can be tiring and easy to postpone if they are the only form of preparation. They are likely to be more productive when the person has already developed basic knowledge and skills through regular work.",
+            "完整计时试卷或报告修改需较长时段，但仅靠突击易疲劳、拖延，基础来自日常工作。",
+            "给出不能切得太碎的反例。"
+          ],
+          [
+            "Overall, small habits provide continuity, while intensive sessions allow deeper or more complete practice. I would use daily activity as a foundation and schedule longer periods for tasks that genuinely require them. The most effective choice depends on the goal, rather than on the assumption that one pattern of effort is always superior.",
+            "规律打底，必要时安排长练习，按目标选择。",
+            "综合双方，不空泛重复都有效。"
+          ]
+        ],
+        "practice": {
+          "frame": "Daily practice helps me [benefit], but a longer session is needed when [task].",
+          "answer": "Daily practice helps me review vocabulary, but a longer session is needed when I complete a full mock test.",
+          "transfer": "把你的雅思准备拆成一个十分钟能做的动作和一个需要完整时段的任务。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 20,
       "name": "坚持与调整",
       "en": "Maintaining routines",
@@ -2485,6 +4207,80 @@
     },
     {
       "date": "2026-11-17",
+      "speakingGuide": {
+        "explain": "描述一次期限紧的任务。按任务、困难、应对、结果说，重点突出你如何分配时间。",
+        "outline": ["说明任务和期限", "讲安排与取舍", "总结结果和经验"],
+        "phrases": [
+          ["set priorities", "确定优先顺序"],
+          ["leave time to check", "留时间检查"],
+          ["finish the essential parts", "完成必要部分"]
+        ],
+        "paragraphs": [
+          [
+            "Last term, I had to finish a short report by Friday while preparing for another test. I realised on Wednesday evening that I had less time than I expected. I was worried because I had collected information but had not organised it.",
+            "上学期周五交报告，同时准备考试，周三才发现时间紧，资料有了却没组织。",
+            "困难要具体：不是只有 busy，而是两项任务冲突。"
+          ],
+          [
+            "I wrote a list of the essential parts and divided the remaining time into small blocks. First, I completed a simple draft. Then I checked the examples and corrected unclear sentences. I stopped trying to make every sentence perfect before moving on.",
+            "列必要部分、分配时间，先写初稿，再核对例子改句，不每句反复追求完美。",
+            "按先后顺序说采取了哪些动作。"
+          ],
+          [
+            "I submitted the report on time and still had a little time to review for the test. The experience taught me to set priorities and leave time for checking. Next time, I would make the outline earlier instead of waiting until the deadline was close.",
+            "按时交稿也能复习，下次更早列提纲并留检查时间。",
+            "结尾承认可以改进之处。"
+          ]
+        ],
+        "practice": {
+          "frame": "I had to finish [task] by [deadline]. I managed it by [action].",
+          "answer": "I had to finish a report by Friday. I managed it by writing an outline and dividing the work into short sessions.",
+          "transfer": "换成一次真实截止任务，补充你放弃或推迟了什么以保证完成。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "灵活截止日期是否提高质量？示范部分同意，区分有理由的延期和无限拖延，并考虑协作依赖。",
+        "outline": [
+          "引言：灵活性有条件有效",
+          "主体一：应对意外并留修改时间",
+          "主体二：拖延及连锁影响",
+          "结论：明确规则下适度灵活"
+        ],
+        "phrases": [
+          ["an unexpected difficulty", "意外困难"],
+          ["allow time for revision", "留出修改时间"],
+          ["depend on another person's work", "依赖他人的工作"]
+        ],
+        "paragraphs": [
+          [
+            "Deadlines help people organise their work, but an inflexible date can sometimes lead to rushed results. I partly agree that flexible deadlines improve quality. Extra time can be valuable when there is a genuine difficulty or a clear need for revision, although unlimited flexibility may create uncertainty and encourage people to delay important tasks.",
+            "合理延期可提高质量，但无上限灵活会带来不确定和拖延。",
+            "用 partly agree 明确程度。"
+          ],
+          [
+            "A reasonable extension can allow someone to address a problem properly rather than submit work they know is incomplete. For example, a student preparing a report may discover that an important source is unavailable and need time to find an appropriate alternative. A short extension could support a better argument instead of forcing the student to use weak evidence simply to finish. Flexibility can also help when illness or an unexpected responsibility interrupts a sensible plan. In these situations, the original deadline may no longer reflect the time actually available, so adjusting it can make the assessment of quality fairer.",
+            "关键资料拿不到或生病时，适度延期可避免用差证据、让条件更公平。",
+            "举额外时间真正能改善内容的场景。"
+          ],
+          [
+            "However, deadlines often connect several people's activities. If one team member submits work late, others may have less time to review it or complete the next stage. A policy that allows repeated extensions without explanation could also make planning difficult and reduce motivation to begin early. Flexibility should therefore come with clear expectations. People should communicate problems promptly, explain what additional time will achieve, and agree on a revised date. Smaller interim deadlines can help identify difficulties before the final stage, while preserving enough structure for everyone involved to organise their work.",
+            "协作中一人晚交会压缩他人时间，因此应及时说明、约定新日期、设置阶段节点。",
+            "解释外部影响，并给管理条件。"
+          ],
+          [
+            "In conclusion, flexible deadlines can improve quality when they respond to genuine obstacles and support purposeful revision. They are less useful when they simply remove accountability. A combination of clear planning, early communication, and limited adjustments is more effective than either rigid dates in every situation or unrestricted extensions.",
+            "清楚规划加有限调整，比全刚性或任意延期更有效。",
+            "立场与引言一致。"
+          ]
+        ],
+        "practice": {
+          "frame": "An extension may improve [task] if [reason], but it should include [condition].",
+          "answer": "An extension may improve a report if a key source is unavailable, but it should include a clear revised deadline.",
+          "transfer": "先写一个合理延期理由，再写延期怎样影响别人以及如何减少影响。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 21,
       "name": "工作安排",
       "en": "Organising work",
@@ -2547,6 +4343,80 @@
     },
     {
       "date": "2026-11-18",
+      "speakingGuide": {
+        "explain": "描述想进一步了解的地方。可以是本地老街或博物馆，讲已知信息、好奇点和了解方式。",
+        "outline": ["介绍地方和初次接触", "提出具体疑问", "说明探索计划与原因"],
+        "phrases": [
+          ["find out more", "了解更多"],
+          ["local history", "地方历史"],
+          ["look beyond appearances", "不只看表面"]
+        ],
+        "paragraphs": [
+          [
+            "I would like to learn more about an old street in my city. I walked through it with a friend last month and noticed several buildings with unusual doors and narrow courtyards. I had passed nearby before, but I had never explored the street properly.",
+            "上个月与朋友走过本市老街，看到特别的门和院落，以前没认真逛过。",
+            "不需要远方名胜，熟悉地点更容易讲。"
+          ],
+          [
+            "I am curious about who lived there and how the area has changed. I would like to visit the local museum and look for old photographs. If possible, I would also join a guided walk or speak to a resident who knows the area well.",
+            "想知道谁住过、地区如何变迁，计划查博物馆旧照片、参加讲解或询问居民。",
+            "提出两个具体问题替代泛泛说 interesting。"
+          ],
+          [
+            "Learning about the street would help me understand my own city better. It looks attractive, but I think its stories would make it much more meaningful. I would enjoy sharing what I learned with friends when we visited again.",
+            "故事能让漂亮建筑更有意义，也更了解自己的城市。",
+            "解释知识会怎样改变参观体验。"
+          ]
+        ],
+        "practice": {
+          "frame": "I'd like to know more about [place], especially [question]. I could learn by [method].",
+          "answer": "I'd like to know more about the old street, especially how it has changed. I could learn by looking at old photographs.",
+          "transfer": "换成你想了解的地方，写两个具体疑问，再选一个可行的查找方式。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论旅游对地方文化保护的利弊。不要只谈旅游收入和交通堵塞，要把每个点连回文化如何保存或改变。",
+        "outline": [
+          "引言：旅游既支持也可能扭曲文化",
+          "主体一：收入与传承机会",
+          "主体二：商业化和居民控制",
+          "结论：让当地人参与决定"
+        ],
+        "phrases": [
+          ["support traditional skills", "支持传统技艺"],
+          ["adapt for visitors", "迎合游客而调整"],
+          ["retain local control", "保留当地自主权"]
+        ],
+        "paragraphs": [
+          [
+            "Tourism can create interest in local culture and provide money to maintain it. However, the same commercial interest may change how traditions are practised and who controls them. Its advantages and disadvantages should therefore be considered together, rather than assuming that more visitors will automatically lead to better cultural preservation.",
+            "旅游带来关注和资金，也可能改变传统实践与控制权。",
+            "利弊都落在文化保护上。"
+          ],
+          [
+            "One advantage is that tourism can give traditional activities a practical source of support. A craftsperson may earn income by selling handmade products or offering demonstrations, making it easier to continue using skills that might otherwise disappear. Entrance fees can also contribute to the maintenance of historic buildings, provided that the money is managed appropriately. Visitors' questions may encourage communities to record stories and explain the meaning of local practices. When residents choose how to present their culture, this attention can create opportunities for younger people to learn from experienced members of the community.",
+            "手艺销售和示范提供收入，门票可维护历史建筑，游客兴趣也推动故事记录和年轻人学习。",
+            "解释收入如何转化为延续技艺。"
+          ],
+          [
+            "The disadvantage is that activities may be changed mainly to meet visitor expectations. A ceremony could be shortened, repeated, or moved to a convenient time until its original meaning becomes less important than its entertainment value. Income may also go mainly to outside businesses, leaving local people with little influence over decisions. If the most profitable activities receive all the attention, less visible parts of the culture may be neglected. These problems suggest that residents should participate in planning and decide which practices can be shared, how they are explained, and where tourism income is directed.",
+            "仪式为游客缩短或重复，意义可能被娱乐替代；外部企业获利、冷门文化被忽视。",
+            "用商业调整说明负面机制，不只说拥挤。"
+          ],
+          [
+            "Overall, tourism can help preserve culture through funding, employment, and renewed interest, but it can also encourage simplification and loss of local control. The balance depends on how tourism is organised. Cultural preservation is more likely when the community remains an active decision-maker rather than becoming only a background for visitors' experiences.",
+            "当地人参与决定展示方式和资金用途，才更可能实现保护。",
+            "总结决定利弊的组织条件。"
+          ]
+        ],
+        "practice": {
+          "frame": "Tourism can preserve [cultural activity] by [benefit], but it may also [risk].",
+          "answer": "Tourism can preserve traditional crafts by providing income, but it may also encourage simpler products made only for visitors.",
+          "transfer": "选一项地方文化，分别写一种旅游带来的支持和一种可能改变其意义的风险。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 22,
       "name": "旅游与文化交流",
       "en": "Travel and exchange",
@@ -2609,6 +4479,80 @@
     },
     {
       "date": "2026-11-19",
+      "speakingGuide": {
+        "explain": "描述获取新信息后改变判断的经历。旧结论和新结论要清楚不同，并说明是什么证据让你改变。",
+        "outline": ["说明原先看法", "介绍新信息和尝试", "说明新的结论"],
+        "phrases": [
+          ["change my mind", "改变想法"],
+          ["give it a try", "试一试"],
+          ["jump to conclusions", "贸然下结论"]
+        ],
+        "paragraphs": [
+          [
+            "I used to think that audiobooks were not useful for language learning because listening felt too passive. I formed this opinion after trying a recording that was much too difficult for me. I could hardly follow it and quickly gave up.",
+            "曾认为有声书学习太被动，因为第一次材料太难、听不懂就放弃。",
+            "说清旧看法从哪里来。"
+          ],
+          [
+            "Later, a friend showed me an easier story with a written version. I listened to a short section, read the text, and listened again. This time, I could connect the sounds with words I already knew. I also noticed how the speaker grouped phrases.",
+            "朋友提供带文本的简单故事，短段听读再听，能把声音和熟词对应，也注意到短语分组。",
+            "新证据必须能解释看法为什么改变。"
+          ],
+          [
+            "I changed my mind about audiobooks. I still think reading and speaking practice are necessary, but suitable recordings can be helpful too. The experience taught me not to judge a whole method from one attempt with the wrong material.",
+            "现在认为合适录音有帮助，仍需读说练习，不应凭一次不合适尝试否定方法。",
+            "新结论可以有条件，不需从全盘否定变全盘肯定。"
+          ]
+        ],
+        "practice": {
+          "frame": "I used to believe [old view]. After [new evidence], I realised [new view].",
+          "answer": "I used to believe audiobooks were unhelpful. After trying an easier story with a transcript, I realised they could support my learning.",
+          "transfer": "换成一次真实改变判断的经历，明确说新看到或尝试了什么。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问额外学业支持是否应强制。示范反对一律强制，但支持容易获得并针对有需要者主动提供。不要反对帮助本身。",
+        "outline": [
+          "引言：支持帮助，反对一刀切强制",
+          "主体一：学生需求与时间不同",
+          "主体二：识别困难并降低求助门槛",
+          "结论：针对性支持"
+        ],
+        "phrases": [
+          ["additional academic support", "额外学业支持"],
+          ["identify students at risk", "识别可能遇到困难的学生"],
+          ["use support effectively", "有效利用支持"]
+        ],
+        "paragraphs": [
+          [
+            "Universities should make academic help available to students who need it, but this does not necessarily mean that every student should be required to attend additional support sessions. I disagree with making such support compulsory for everyone. A more targeted approach can respond to genuine difficulties while respecting different needs and demands on students' time.",
+            "应提供支持，但反对人人强制参加，建议按需要定向帮助。",
+            "区分支持本身和 compulsory，避免答偏。"
+          ],
+          [
+            "Students do not all struggle with the same skills. One may need help organising an essay, while another is confident in writing but finds a particular mathematical method difficult. Requiring both to attend the same general session may use time without addressing either problem effectively. Some students also balance study with employment or family responsibilities. An extra compulsory commitment could make their schedule harder to manage, especially if the material repeats something they already understand. Universities should therefore consider whether attendance will provide a clear benefit rather than assuming that more scheduled hours always mean better learning.",
+            "学生弱点不同，统一课程可能不适用，工作和家庭责任也影响时间。",
+            "两种学生需求的例子说明一刀切问题。"
+          ],
+          [
+            "However, leaving students entirely responsible for finding help can also be ineffective. Those who are struggling may feel embarrassed, fail to recognise a weakness, or not know which service to contact. Universities can respond through early feedback, brief skills assessments, and personal invitations to suitable support. Teachers could explain why a particular workshop would help and offer different times or formats where possible. In cases where a specific foundation is essential for further study, a clearly justified requirement may be reasonable. The important distinction is between a targeted response to an identified need and a blanket rule covering all students.",
+            "完全等学生求助也不够，应早反馈、评估和邀请；必要基础可有明确理由地要求补习。",
+            "承认反方合理动机并给替代方案。"
+          ],
+          [
+            "In conclusion, additional support should be accessible and actively recommended, but it should not automatically be compulsory for everyone. Universities can use evidence about students' needs to direct help more effectively. This would preserve the value of support while avoiding unnecessary demands on people who require a different form of assistance.",
+            "积极推荐且容易获取，不一律强制。",
+            "结论与反对一律强制保持一致。"
+          ]
+        ],
+        "practice": {
+          "frame": "Compulsory support may not help students who [situation]. A better option is [targeted support].",
+          "answer": "Compulsory support may not help students who already understand the material. A better option is a workshop focused on an identified weakness.",
+          "transfer": "选你需要的一项支持，解释为什么同一种课未必适合每个同学。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 23,
       "name": "解释研究结果",
       "en": "Interpreting results",
@@ -2671,6 +4615,80 @@
     },
     {
       "date": "2026-11-20",
+      "speakingGuide": {
+        "explain": "描述希望更耐用的产品。可以是已经拥有的物品，说明哪里先坏、希望如何改善以及为何在意。",
+        "outline": ["介绍产品和使用", "描述耐用性问题", "提出希望与理由"],
+        "phrases": [
+          ["wear out", "磨损"],
+          ["replace a part", "更换部件"],
+          ["keep using it", "继续使用它"]
+        ],
+        "paragraphs": [
+          [
+            "A product I would like to last longer is my pair of headphones. I use them when I listen to English recordings at home and on the bus. I bought them about a year ago, and the sound is still clear.",
+            "耳机用约一年，在家和公交上听英语，声音本来清楚。",
+            "明确一个产品，而不是泛谈所有电子设备。"
+          ],
+          [
+            "The problem is that the cable near the plug has started to wear out. Sometimes I have to hold it at a particular angle to hear properly. I wish the cable were stronger or could be replaced easily without buying a whole new pair.",
+            "插头附近线磨损，要调角度，希望线更结实或可单独更换。",
+            "描述故障的表现，词简单也能说清楚。"
+          ],
+          [
+            "I would like to keep using these headphones because I am comfortable with them and do not need extra features. A longer life would save money and create less waste. I would be willing to pay a little more for a design with replaceable parts.",
+            "习惯现有耳机、不需新功能，耐用能省钱减废，愿为可换零件多付一点。",
+            "希望和理由要对应故障。"
+          ]
+        ],
+        "practice": {
+          "frame": "I wish my [product] had a replaceable [part], because [problem].",
+          "answer": "I wish my headphones had a replaceable cable, because the cable wears out before the rest of the product.",
+          "transfer": "换成鞋、包或手机，选一个最先损坏的部件并说明改善方法。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "是否应要求制造商让产品更易维修？主体必须讨论制造商设计和提供零件的责任，而不是重复个人应修理物品。",
+        "outline": [
+          "引言：支持合理维修要求",
+          "主体一：延长使用并让消费者可选择",
+          "主体二：安全与成本下的合理规则",
+          "结论：明确可执行的责任"
+        ],
+        "phrases": [
+          ["make spare parts available", "提供备件"],
+          ["design for repair", "为便于维修而设计"],
+          ["reasonable safety requirements", "合理安全要求"]
+        ],
+        "paragraphs": [
+          [
+            "Many products are discarded because one component fails, even though the rest remains useful. I agree that manufacturers should be required to make products easier to repair. Reasonable rules on design, spare parts, and information could give consumers a genuine choice, while still allowing appropriate limits where repair involves serious safety concerns.",
+            "支持要求制造商改善设计、备件和信息，让消费者能选择维修，同时保留安全限制。",
+            "明确法律要求的对象是厂家。"
+          ],
+          [
+            "The main benefit is that repairable products can remain in use for longer. If a battery or cable can be replaced without damaging the whole device, a small failure does not necessarily require a complete new purchase. This can reduce waste and help consumers avoid unnecessary expense. At present, willingness to repair is not enough if parts are unavailable or a product cannot be opened without breaking it. Manufacturers control many of these decisions at the design stage, so they are in a stronger position than individual buyers to remove the barriers. Clear information about repair options would also help people compare products before buying them.",
+            "电池或线坏不应导致整机丢弃，厂家比消费者更能从设计阶段消除维修障碍。",
+            "解释控制权为什么带来责任。"
+          ],
+          [
+            "However, requirements should be practical rather than assuming that every repair can be carried out at home. Certain components may require trained technicians or specific tools to handle safely. Manufacturers may also face additional costs when maintaining spare parts for older models. Rules should therefore define suitable periods and responsibilities for different product types, while allowing professional repair where needed. Independent repair services could benefit from access to appropriate parts and instructions, provided that relevant standards are followed. The goal is not to remove all technical complexity but to prevent avoidable obstacles that make otherwise useful products impossible to maintain.",
+            "有些维修需专业人员，旧型号备件也有成本，规则应按产品类型规定合理责任。",
+            "承认安全成本，提出规则设计边界。"
+          ],
+          [
+            "In conclusion, manufacturers should take greater responsibility for repairability because their choices strongly affect a product's useful life. Well-designed requirements can support longer use without ignoring cost or safety. Consumers should be able to consider repair as a realistic option rather than being pushed towards replacement by unnecessary design restrictions.",
+            "目标是消除人为障碍，不是假定人人都能在家修所有东西。",
+            "结论回扣 realistic option。"
+          ]
+        ],
+        "practice": {
+          "frame": "Manufacturers should provide [support] so that consumers can [benefit].",
+          "answer": "Manufacturers should provide replacement batteries so that consumers can keep using an otherwise functional device.",
+          "transfer": "选一件产品，写厂家能采取的一项设计或备件措施，以及消费者因此获得的选择。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 24,
       "name": "产品寿命",
       "en": "Product lifetimes",
@@ -2733,6 +4751,80 @@
     },
     {
       "date": "2026-11-21",
+      "speakingGuide": {
+        "explain": "描述邻里互助的一种方式。通过一个小例子说明谁帮助谁、怎样帮、带来什么作用。",
+        "outline": ["介绍互助方式", "描述一次具体帮助", "说明对社区的意义"],
+        "phrases": [
+          ["offer to help", "主动帮忙"],
+          ["lend a hand", "帮一把"],
+          ["feel less isolated", "不那么孤立"]
+        ],
+        "paragraphs": [
+          [
+            "In my neighbourhood, people help one another by collecting parcels for neighbours who are away. I first noticed this when I moved into my building last year. There is a small residents' group where people can ask for help.",
+            "去年搬入楼里后发现邻居会在住户群里互相代收包裹。",
+            "先概括一种互助，不必罗列很多。"
+          ],
+          [
+            "Last month, I was waiting for an important delivery but had to attend a class. A neighbour offered to receive it for me. I collected it that evening and thanked her. Later, I returned the favour when she needed someone to water her plants for a weekend.",
+            "上个月上课时邻居帮收重要快递，后来她外出我帮浇花。",
+            "一次帮助和一次回报形成完整故事。"
+          ],
+          [
+            "These are small actions, but they make daily life easier. They also give people a reason to talk and build trust. I think a friendly community often begins with simple, practical help rather than large organised events.",
+            "小事让生活方便、建立信任，友好社区常从实际帮助开始。",
+            "从个人经历自然上升到社区意义。"
+          ]
+        ],
+        "practice": {
+          "frame": "A neighbour helped me [action] when [situation]. Later, I [returned favour].",
+          "answer": "A neighbour helped me collect a parcel when I was at class. Later, I watered her plants.",
+          "transfer": "换成你见过的互助，没亲身接受过时可说 I saw a neighbour help...。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论食品浪费应由企业负责还是由其他参与者承担，并给观点。示范认为企业在其可控环节有重要责任，家庭与公共政策也需参与。",
+        "outline": [
+          "引言：企业重要但不是唯一责任方",
+          "主体一：企业控制采购和销售",
+          "主体二：消费者与公共支持的责任",
+          "结论：按可控环节分担"
+        ],
+        "phrases": [
+          ["share responsibility", "分担责任"],
+          ["adjust portion sizes", "调整份量"],
+          ["prevent waste at source", "从源头避免浪费"]
+        ],
+        "paragraphs": [
+          [
+            "Businesses play a major role in how food is purchased, prepared, and sold, so some people believe they should be responsible for reducing waste. Others emphasise the choices of consumers and the role of public policy. In my view, businesses should take substantial responsibility for the stages they control, but lasting improvement requires action from other groups as well.",
+            "企业应对可控环节负主要责任，但消费者和公共政策同样必要。",
+            "给出明确个人意见：重要但共享责任。"
+          ],
+          [
+            "The case for business responsibility is strong because companies can influence large quantities of food. A retailer decides how much to order, how products are displayed, and whether unsold items are discounted in time. Restaurants can review which dishes are frequently left unfinished and offer suitable portion sizes. These changes may prevent waste before it occurs, rather than relying only on disposal arrangements afterwards. Businesses also have information about sales patterns that individual customers cannot access. Using this information carefully can help them match supplies to demand and reduce unnecessary excess while continuing to offer customers a reasonable choice.",
+            "企业决定订货、陈列、折扣、份量，掌握销量信息，可源头减少剩余。",
+            "企业行为列举后解释如何减少损失。"
+          ],
+          [
+            "Consumers, however, affect what happens after food is bought. A shop cannot fully control whether a household stores an item correctly or plans to use it. People therefore need to check supplies, buy appropriate amounts, and understand reliable storage information. Public authorities and community organisations can support both businesses and households through clear guidance and practical arrangements for handling suitable surplus food safely. Small businesses may need help understanding these systems rather than simply receiving criticism. Treating waste as the fault of only one group risks leaving important parts of the process unchanged.",
+            "售后家庭储存和购买量由消费者决定，公共机构可提供清晰说明和安全处理剩余的支持。",
+            "另一观点不是免除企业责任，而是补齐后续环节。"
+          ],
+          [
+            "In conclusion, businesses should be accountable for reducing food waste within their operations because they control important decisions and resources. Yet they cannot solve the entire problem alone. A shared approach, with responsibilities linked to what each participant can influence, is more effective than assigning all blame to either companies or consumers.",
+            "按各方能影响的环节分担，而非把所有责任推给一方。",
+            "总结责任分配原则。"
+          ]
+        ],
+        "practice": {
+          "frame": "Businesses can reduce waste by [action], while households should [action].",
+          "answer": "Businesses can reduce waste by adjusting orders to demand, while households should check supplies before shopping.",
+          "transfer": "以超市或餐厅为例，写它能控制的一件事和消费者应配合的一件事。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 25,
       "name": "食物供应",
       "en": "Food distribution",
@@ -2795,6 +4887,80 @@
     },
     {
       "date": "2026-11-22",
+      "speakingGuide": {
+        "explain": "描述澄清误会的一次经历。讲清双方误解在哪里、你如何确认，避免只责备别人。",
+        "outline": ["说明误会如何发生", "描述澄清过程", "总结结果与新习惯"],
+        "phrases": [
+          ["clear up a misunderstanding", "澄清误会"],
+          ["confirm the details", "确认细节"],
+          ["avoid blaming anyone", "避免责怪别人"]
+        ],
+        "paragraphs": [
+          [
+            "Last month, I arranged to meet a friend at a café before going to a film. I sent a short message saying we should meet at six. Unfortunately, there were two cafés with the same name, and we went to different branches.",
+            "约朋友六点在咖啡馆见，但同名两店，双方去了不同分店。",
+            "误会要能用一句话说明。"
+          ],
+          [
+            "When I arrived and could not see him, I called instead of sending more short messages. We compared the addresses and realised what had happened. I sent a map location, and we agreed to meet at the branch closer to the cinema.",
+            "找不到后打电话对地址，发地图位置，改在影院附近分店会合。",
+            "给出解决沟通的具体动作。"
+          ],
+          [
+            "We still reached the film on time. I apologised for not including the address, and we both laughed about the confusion. Since then, I have tried to confirm the place and time clearly whenever I make plans with someone.",
+            "没错过电影，也为没写地址道歉，从此明确时间地点。",
+            "讲自己的责任与改进，故事更自然。"
+          ]
+        ],
+        "practice": {
+          "frame": "We misunderstood [detail], so I [action] to clear it up.",
+          "answer": "We misunderstood which café to meet at, so I called my friend to confirm the address.",
+          "transfer": "换成一次消息或任务误会，说清你如何核对而不是只说 I explained it。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "这是困难与解决办法双问题，讨论转发前核查信息。写出普通用户为什么难做到，并给对应的低门槛方法，不要只谴责造谣。",
+        "outline": [
+          "引言：认可核查但有现实障碍",
+          "主体一：速度压力与缺乏背景",
+          "主体二：简单核查习惯与平台支持",
+          "结论：用户与平台共同降低门槛"
+        ],
+        "phrases": [
+          ["trace the original source", "追溯原始来源"],
+          ["pause before sharing", "转发前停一下"],
+          ["provide context", "提供背景"]
+        ],
+        "paragraphs": [
+          [
+            "Checking information before sharing it is a sensible expectation, but ordinary social media users face practical difficulties. Posts move quickly, sources may be unclear, and users often lack specialist knowledge. These barriers can be reduced through simple checking habits and platform features that make reliable context easier to find before a message spreads further.",
+            "核查合理，但快节奏、来源不清和知识不足构成障碍。",
+            "双问题分别安排主体，结构清楚。"
+          ],
+          [
+            "One difficulty is the pressure to react immediately. A surprising or emotional post may encourage someone to share it before considering whether it is accurate. The original source may also be missing from a screenshot or short video, making it hard to understand when and where the material was produced. Even when a report is linked, a user may not have the knowledge to assess a technical claim. Searching online can produce more copies of the same unsupported statement rather than independent confirmation. As a result, a person may mistake repetition for evidence and become more confident without actually learning anything new.",
+            "情绪化消息催促转发，截图缺日期地点，搜索可能只找到重复传言，误把重复当证据。",
+            "描述普通人会遇到的具体困难。"
+          ],
+          [
+            "A useful solution is to establish a short routine before sharing. Users can look for the original source, check the date, and ask whether the available evidence supports the headline. If the claim cannot be verified, choosing not to share it is a reasonable response. Platforms can support this by making source information visible and encouraging users to open linked material before forwarding it. Schools and community programmes can also demonstrate checking with everyday examples. The aim should be to develop a manageable process, not to expect everyone to become an expert in every subject they encounter.",
+            "先查原始来源、日期和标题证据，无法核实可不转；平台提供背景和阅读提示，教学用日常例子。",
+            "解决措施逐项对应速度、背景、知识。"
+          ],
+          [
+            "In conclusion, speed, missing context, and limited knowledge make verification difficult. A combination of practical user habits and better platform support can reduce these problems. Creating a brief pause and making uncertainty acceptable may be more effective than simply telling people to be responsible without showing them how.",
+            "建立可做的小流程，比空泛要求负责更有帮助。",
+            "不要求用户掌握所有专业知识。"
+          ]
+        ],
+        "practice": {
+          "frame": "One difficulty is [barrier]. A practical response is to [checking action].",
+          "answer": "One difficulty is that screenshots often lack dates. A practical response is to find the original post before sharing.",
+          "transfer": "用一张无日期截图作例子，写一个困难和两步可执行的核查动作。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 26,
       "name": "信息可信度",
       "en": "Trusting information",
@@ -2857,6 +5023,80 @@
     },
     {
       "date": "2026-11-23",
+      "speakingGuide": {
+        "explain": "描述用数字帮助决策的一次经历。选预算、时间或价格，说明比较了什么和如何算。",
+        "outline": ["介绍决定和数据", "说明比较方法", "给出选择与反思"],
+        "phrases": [
+          ["work out the total", "算出总额"],
+          ["within my budget", "在预算内"],
+          ["compare like with like", "按同样条件比较"]
+        ],
+        "paragraphs": [
+          [
+            "I used numbers to decide whether to buy a monthly bus pass. This happened when I started visiting the library more often. I wrote down the price of one return trip and estimated how many trips I would make in a month.",
+            "去图书馆频率增加后考虑买公交月票，记下往返单价和预计次数。",
+            "交代要作出的决定，数字才有用途。"
+          ],
+          [
+            "Then I multiplied the trip cost by the number of visits and compared the total with the pass price. I also considered that I might miss a few visits during a busy week. This helped me avoid assuming I would travel every day.",
+            "计算单价乘次数，与月票比较，也考虑忙时少去几次。",
+            "可讲计算过程，不一定报精确金额。"
+          ],
+          [
+            "I decided to pay for individual journeys because my expected use was still quite low. The calculation was simple, but it stopped me from choosing a pass just because it sounded like a bargain. I learned to check the numbers against my actual habits.",
+            "最终次数少，选单次付费，避免只因听起来优惠而购买，要符合实际习惯。",
+            "解释选择如何来自比较结果。"
+          ]
+        ],
+        "practice": {
+          "frame": "I compared [cost A] with [cost B]. Because [reason], I chose [option].",
+          "answer": "I compared the cost of separate journeys with a monthly pass. Because I travelled less often, I chose separate tickets.",
+          "transfer": "换成你的预算决定；若说具体数字，先检查计算一致。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "是否应更重视统计理解？重点是读懂数据、比例与不确定性，不等于多教复杂计算。示范支持，并解释课程如何落实。",
+        "outline": [
+          "引言：支持更重视理解",
+          "主体一：改善日常判断",
+          "主体二：实际案例与基础结合",
+          "结论：理解数字而非只会计算"
+        ],
+        "phrases": [
+          ["interpret numerical information", "理解数字信息"],
+          ["the size of the sample", "样本大小"],
+          ["draw a reasonable conclusion", "得出合理结论"]
+        ],
+        "paragraphs": [
+          [
+            "Numerical information appears in news, advertising, and many everyday decisions. I agree that schools should place more emphasis on understanding statistics. Students need to do more than perform calculations correctly; they also need to recognise what a set of numbers can show, what it leaves out, and which conclusions are justified by the evidence.",
+            "支持加强统计理解，学生不仅要算对，还要懂数字能说明什么和限制。",
+            "抓住 understanding，不把题目写成是否多学数学。"
+          ],
+          [
+            "A stronger understanding of statistics can help students interpret claims more carefully. For example, a report may describe a large percentage increase without showing the original quantity. A change from a very small starting point can sound dramatic even when the absolute difference is limited. Students should learn to ask about the baseline, the source of the data, and the group being described. Similarly, a survey of a few volunteers may not represent an entire population. Recognising these limitations would help young people avoid accepting a conclusion simply because it contains figures or is presented in a professional-looking chart.",
+            "百分比增幅可能掩盖很小的基数，少量自愿者调查也不代表所有人，应查基数、来源、群体。",
+            "用基数和样本两个直观例子。"
+          ],
+          [
+            "This emphasis can be introduced through practical examples rather than only more difficult formulas. Students could compare two charts showing the same information with different scales, or design a small class survey and discuss who was not included. Such activities should build on basic mathematical knowledge, not replace it. Teachers also need to connect the calculations with the questions being investigated. Finding an average is more meaningful when students consider whether it gives a useful picture of the data. This approach would make statistics relevant to other subjects and encourage careful reasoning about evidence.",
+            "比较不同刻度图表、设计班级调查等实操结合基础数学，计算要服务问题。",
+            "说明实际教学方法，使建议可理解。"
+          ],
+          [
+            "In conclusion, schools should give greater attention to statistical understanding because it supports informed judgement in many situations. The aim should be to combine essential calculations with interpretation, context, and awareness of limitations. Students would then be better prepared to use numbers thoughtfully rather than being impressed or confused by them.",
+            "把计算、解读和局限一起教，帮助理性判断。",
+            "重申核心能力。"
+          ]
+        ],
+        "practice": {
+          "frame": "A statistic may be misleading if [missing context]. Students should ask [question].",
+          "answer": "A statistic may be misleading if the starting value is missing. Students should ask how large the original quantity was.",
+          "transfer": "用“从 1 增至 2”说明百分比和实际增量的差别，再写查基数的重要性。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 27,
       "name": "比较数据",
       "en": "Comparing data",
@@ -2919,6 +5159,80 @@
     },
     {
       "date": "2026-11-24",
+      "speakingGuide": {
+        "explain": "描述社区需要的一项设施。说明谁的什么需求没满足，以及设施应有哪些实际功能。",
+        "outline": ["介绍需要的设施", "描述功能和使用者", "说明意义与可行安排"],
+        "phrases": [
+          ["a shared study room", "共享自习室"],
+          ["an affordable space", "价格可负担的空间"],
+          ["book a place", "预约位置"]
+        ],
+        "paragraphs": [
+          [
+            "I think my community needs a shared study room. Many people live in small flats, and it can be difficult to find a quiet place to read. I noticed this myself when I tried to study while building work was taking place nearby.",
+            "社区小户型多，附近施工时难学习，因此需要共享自习室。",
+            "从自己遇到的需要切入。"
+          ],
+          [
+            "The room would not need to be large. It could have desks, good lighting, and a few power sockets. Students and adults preparing for exams could book a place for a short session. Clear rules about noise would help everyone use it comfortably.",
+            "不用大，但要桌子、照明、插座，学生和备考成人可预约，明确安静规则。",
+            "功能选三项即可，别变设备清单。"
+          ],
+          [
+            "This facility would give residents an affordable space to concentrate. I would use it in the evening after work or class. If there were enough interest, an unused room in the community centre might be a practical starting point.",
+            "提供负担得起的专注空间，可先利用社区中心空房。",
+            "补一个实际实施方式，让建议完整。"
+          ]
+        ],
+        "practice": {
+          "frame": "Our community needs [facility] so that [people] can [activity].",
+          "answer": "Our community needs a shared study room so that residents can read in a quiet place.",
+          "transfer": "换成你社区缺少的设施，写出两个必要功能与一个受益群体。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论公共设施是否人人免费，双方都要写并给观点。示范基本服务免费，部分额外项目可合理收费，注意免费不等于没有运营成本。",
+        "outline": [
+          "引言：普遍可及但需经费",
+          "主体一：免费减少门槛",
+          "主体二：运营成本与适当收费",
+          "结论：基础免费、额外项目灵活"
+        ],
+        "phrases": [
+          ["remove a financial barrier", "消除经济门槛"],
+          ["cover running costs", "承担运营费用"],
+          ["basic access", "基本使用机会"]
+        ],
+        "paragraphs": [
+          [
+            "Public facilities serve the wider community, so some people argue that everyone should be able to use them free of charge. Others believe that users should contribute to their costs. I support free access to essential community resources, while allowing reasonable charges for certain optional services where these help maintain quality without excluding people in need.",
+            "支持基本公共资源免费，部分额外服务可合理收费且照顾困难群体。",
+            "明确区别不同服务，但仍回应人人免费争议。"
+          ],
+          [
+            "Free access can remove a barrier for residents with limited incomes. A public library, park, or basic community space may provide opportunities to learn, exercise, and meet others that would otherwise be difficult to afford. Requiring a fee every time someone enters could discourage regular use, especially for families. These facilities also create benefits beyond the individual visitor. For example, a library that supports reading and study can contribute to a community's educational life. This provides a reason for sharing some costs through public funding rather than expecting each user to pay the full amount at the door.",
+            "收费会阻碍低收入家庭使用，图书馆、公园也带来社区教育和交往收益，适合共同承担成本。",
+            "说明免费如何带来个人与公共收益。"
+          ],
+          [
+            "However, facilities need staff, cleaning, repairs, and equipment. If funding is insufficient, making every service free could lead to overcrowding or declining quality. Some activities also involve additional costs that are not created by ordinary access. A specialist class or a private booking of a sports space may reasonably carry a charge. The important issue is how fees are designed. Reduced prices, exemptions, and free sessions can protect access for people who would otherwise be excluded. Decisions should reflect the purpose and actual costs of the service, rather than treating all facilities and activities as identical.",
+            "维护和人手需经费，特殊课程或专用场地可收费，通过减免和免费时段防止排除。",
+            "讨论真实成本并提出公平安排。"
+          ],
+          [
+            "In conclusion, basic public access should generally be protected because these facilities support the whole community. Nevertheless, carefully designed charges for some optional services may help keep them sustainable. A fair system combines dependable public funding with appropriate support for users who cannot afford extra costs.",
+            "基础可及与持续运营应结合。",
+            "有具体立场，不只是两边都好。"
+          ]
+        ],
+        "practice": {
+          "frame": "Free access helps [group] to [benefit], but charges for [optional service] may cover [cost].",
+          "answer": "Free access helps families use the library, but charges for an optional workshop may cover specialist materials.",
+          "transfer": "选一种公共设施，分别写应免费的基本部分和可能合理收费的额外部分。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 28,
       "name": "资源分配",
       "en": "Allocating resources",
@@ -2981,6 +5295,80 @@
     },
     {
       "date": "2026-11-25",
+      "speakingGuide": {
+        "explain": "描述随时间变化的一个地方。用过去、现在对比，既能说改善也能说失去的东西。",
+        "outline": ["介绍地点和过去", "说明现在的变化", "评价个人感受"],
+        "phrases": [
+          ["used to be", "过去是"],
+          ["has been replaced by", "已被……取代"],
+          ["keep its character", "保留特色"]
+        ],
+        "paragraphs": [
+          [
+            "A place that has changed is a small shopping street near my old school. When I was a child, it had several family shops and a narrow pavement. I used to buy snacks there after class with my friends.",
+            "以前学校旁的小商业街有人家小店、人行道窄，放学常买零食。",
+            "用童年或过去一次来访建立时间点。"
+          ],
+          [
+            "I visited again recently and found wider pavements, new trees, and a small café where an old grocery shop had been. Some familiar shops were still there, but the street looked brighter and felt easier to walk along. There were also more places to sit.",
+            "重访发现人行道更宽、有树和新咖啡馆，也保留部分老店，座椅更多。",
+            "选择可见变化进行对照。"
+          ],
+          [
+            "I liked the improvements because the area was more comfortable for pedestrians. At the same time, I missed a few shops I remembered. I hope future changes will make the street convenient while allowing it to keep some of its original character.",
+            "步行舒服了，也怀念老店，希望便利与原有特色兼顾。",
+            "两种感受能让回答更真实。"
+          ]
+        ],
+        "practice": {
+          "frame": "The street used to have [past feature], but now it has [new feature].",
+          "answer": "The street used to have narrow pavements, but now it has wider paths and more trees.",
+          "transfer": "换成你重访过的地方，列出两个前后差异，注意过去和现在的时态。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "题目问学校应否让学生参加本地环保项目。示范赞同有教育目的、安全且与课堂相连的项目，不能只讨论环保总体重要性。",
+        "outline": [
+          "引言：支持有教学设计的参与",
+          "主体一：把知识连到实际",
+          "主体二：安全、可及与时间安排",
+          "结论：项目应服务学习"
+        ],
+        "phrases": [
+          ["connect theory with practice", "联系理论与实践"],
+          ["take part safely", "安全参与"],
+          ["reflect on the results", "反思结果"]
+        ],
+        "paragraphs": [
+          [
+            "Schools can teach environmental topics through classroom lessons, but local projects offer a different way to understand them. I agree that students should be involved in such activities, provided that the projects have clear learning goals and are organised safely. Participation should strengthen education rather than simply provide unpaid labour or an opportunity for publicity.",
+            "支持本地环保活动，但需明确学习目标和安全安排，不只是劳动或宣传。",
+            "直接赞同并限定有教学意义的参与。"
+          ],
+          [
+            "A local project can connect an abstract idea with something students can observe. For example, a class studying waste could examine how materials are sorted at school, identify a problem, and test clearer signs near the bins. Students would then have a reason to collect information, compare results, and explain what changed. Working with others can also develop practical communication and planning skills. The value lies not only in completing the activity but in understanding why a particular action was chosen and whether it achieved its purpose. This makes the project part of a learning process rather than an isolated event.",
+            "学校垃圾分类项目能让学生观察、找问题、试标识、比结果，练沟通规划，理解为何有效。",
+            "用完整的小调查过程说明学习收益。"
+          ],
+          [
+            "However, schools must consider safety, access, and the demands of the curriculum. Activities should be suitable for students' ages and abilities, with appropriate supervision. Not every student can take part in the same physical task, so useful roles might include recording information, preparing explanations, or presenting findings. Teachers also need time to connect the project with lessons before and afterwards. A brief, well-planned investigation may be more educational than a large event with no preparation or reflection. Local organisations can provide expertise, but the school should remain responsible for ensuring that the experience serves students' needs.",
+            "年龄能力、安全、课程时间都需考虑，可分记录和展示等不同角色，活动前后应有教学。",
+            "实际限制配对应解决办法。"
+          ],
+          [
+            "In conclusion, local environmental projects can be a valuable part of school education when they combine action with explanation and reflection. I support their use as a complement to classroom learning. Clear goals, inclusive roles, and careful organisation are necessary to make participation both meaningful and manageable.",
+            "项目是课堂补充，重点在行动结合解释反思。",
+            "收束为行动加反思，而非只做一次活动。"
+          ]
+        ],
+        "practice": {
+          "frame": "A local project can help students understand [topic] by [specific activity].",
+          "answer": "A local project can help students understand waste sorting by testing clearer signs near school bins.",
+          "transfer": "设计一个安全的小调查：看什么、改变什么、怎样判断有没有改善。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 29,
       "name": "保护与监测",
       "en": "Conservation monitoring",
@@ -3043,6 +5431,80 @@
     },
     {
       "date": "2026-11-26",
+      "speakingGuide": {
+        "explain": "描述通过练习改善的能力。以一个可观察的进步结束这30天，也可以讲英语之外的技能。",
+        "outline": ["说明原先困难", "描述重复练习与反馈", "展示进步和下一步"],
+        "phrases": [
+          ["record myself", "给自己录音"],
+          ["speak more clearly", "说得更清楚"],
+          ["build confidence", "建立信心"]
+        ],
+        "paragraphs": [
+          [
+            "Something I have improved through practice is introducing myself in English. A few weeks ago, I could understand simple introductions, but I felt nervous when I had to speak. I often stopped after saying my name because I was trying to make every sentence perfect.",
+            "几周前理解简单自我介绍，但轮到自己常说完名字就停，过度追求完美。",
+            "起点要具体到一个困难。"
+          ],
+          [
+            "I began by writing three simple points about my studies, interests, and future plans. Then I recorded myself and listened for places where I paused. I practised the same ideas again using slightly different words instead of memorising one fixed paragraph.",
+            "先写学习、兴趣、计划三点，录音找停顿，用不同表达重练而不是背固定段落。",
+            "说明怎样利用回听反馈改进。"
+          ],
+          [
+            "Now I can give a short introduction with fewer pauses. I still need to improve my pronunciation and develop longer answers, but I am more willing to begin. The main lesson for me is that small, repeated attempts can make speaking feel less frightening.",
+            "现在短介绍停顿少，仍需练发音和长回答，但更愿开口，重复尝试减轻紧张。",
+            "既肯定进步，也提出下一步目标。"
+          ]
+        ],
+        "practice": {
+          "frame": "I used to find [task] difficult. After practising [method], I can now [improvement].",
+          "answer": "I used to find introductions difficult. After practising with recordings, I can now speak with fewer pauses.",
+          "transfer": "用自己的真实进步替换示例；尚未进步也可先录一次，数日后比较，再完成这题。"
+        },
+        "sourceIds": ["bc-speaking-guide", "speaking-bands"]
+      },
+      "writingGuide": {
+        "explain": "讨论以个人进步还是与他人比较来判断进展。示范日常学习重自身变化，选拔或资格判断仍需共同标准；不要把竞争一概否定。",
+        "outline": [
+          "引言：两种比较用途不同",
+          "主体一：自身进步提供具体反馈",
+          "主体二：共同标准帮助判断水平",
+          "结论：按目的选指标"
+        ],
+        "phrases": [
+          ["measure personal improvement", "衡量个人进步"],
+          ["a common standard", "共同标准"],
+          ["identify the next step", "确定下一步"]
+        ],
+        "paragraphs": [
+          [
+            "Progress can be judged by comparing someone's current performance with their earlier work or by comparing them with other people. Both approaches provide information, but they answer different questions. I believe personal improvement should be central to everyday learning, while shared standards remain useful when a decision requires a clear measure of current ability.",
+            "日常学习应重个人进步，共同标准适合判断当前是否能完成特定任务。",
+            "区分问题用途，给讨论双方的框架。"
+          ],
+          [
+            "Looking at personal improvement can make feedback more meaningful. Two learners may begin with very different levels of experience, so their positions in a ranking do not show how much either has developed. A student who moves from writing disconnected sentences to producing a clear paragraph has made progress even if classmates still write more fluently. Recognising that change can help the student identify what worked and what to practise next. It also encourages attention to specific skills rather than a general feeling of being better or worse than others. This is especially useful for beginners who might otherwise feel discouraged by constant comparison.",
+            "起点不同，名次不反映发展；从散句到清楚段落也是进步，有助发现有效方法和下一步。",
+            "用初学写作例子支持个人比较。"
+          ],
+          [
+            "However, comparison with a wider standard has legitimate uses. An employer or university may need to know whether a person can perform certain tasks now, not only whether they have improved. External examples can also reveal weaknesses that a learner has not noticed. The difficulty is that competition becomes unhelpful when rankings are treated as a complete description of someone's ability or worth. A common assessment standard, supported by specific feedback, is more informative than simply announcing who came first. Learners need to understand both their current level and the practical steps that could help them develop further.",
+            "学校或雇主需知道现有能力，外部样例可暴露盲点，但不能用排名代表全部价值，应给具体反馈。",
+            "承认共同标准的现实功能并说明限制。"
+          ],
+          [
+            "In conclusion, personal improvement is a valuable guide for daily practice because it recognises different starting points and directs future effort. Comparison can still help establish readiness for a particular task. Using each measure for a clear purpose is more useful than allowing rankings alone to define progress.",
+            "自身变化指导日常练习，外部标准判断准备程度，按目的使用。",
+            "综合但不是模糊折中。"
+          ]
+        ],
+        "practice": {
+          "frame": "Personal improvement shows [change], while a common standard helps us judge [purpose].",
+          "answer": "Personal improvement shows that I can write a clearer paragraph, while a common standard helps me judge whether I am ready for an exam.",
+          "transfer": "对比自己两次练习，写出一个具体进步和一个仍需对照官方标准检查的方面。"
+        },
+        "sourceIds": ["ielts-writing-guide", "bc-writing-models", "writing-bands"]
+      },
       "number": 30,
       "name": "展示进步与复盘",
       "en": "Reflecting on progress",
