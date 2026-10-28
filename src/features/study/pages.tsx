@@ -37,8 +37,17 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
-import { addDays, dayDiff, stateSchema, useStudy, type StudyState } from './store'
+import {
+  addDays,
+  dayDiff,
+  stateSchema,
+  studyDateFromSearch,
+  useStudy,
+  type StudyState,
+} from './store'
 import { sources, taskDefs, topics, words, type Source, type Word } from './content'
+import { curriculum, lessons, courseStart, courseEnd, courseSource } from './curriculum'
+import { lessonTasks } from './course-schema'
 
 export function Action({ className = '', ...props }: ComponentProps<typeof Button>) {
   return <Button className={`action ${className}`} {...props} />
@@ -80,6 +89,10 @@ function prettyDate(date: string) {
 export function Layout() {
   const s = useStudy()
   const location = useLocation()
+  const linkedDate = studyDateFromSearch(location.search)
+  useEffect(() => {
+    if (linkedDate) s.setSelected(linkedDate)
+  }, [linkedDate])
   useEffect(() => {
     document.title = `${navigation.find((n) => n.path !== '/' && location.pathname.startsWith(n.path))?.title || '今日学习'} · IELTS Study`
     window.scrollTo(0, 0)
@@ -166,7 +179,7 @@ export function Layout() {
         <footer className="page-footer">
           个人备考工具 · 非 IELTS 官方产品{' '}
           <span>
-            内容核查：2026-10-26 · <Link to="/resources">查看来源与使用说明</Link>
+            课程来源核查：{curriculum.checkedAt} · <Link to="/resources">查看来源与使用说明</Link>
           </span>
         </footer>
       </div>
@@ -259,6 +272,7 @@ function Complete({ id }: { id: string }) {
 export function TodayPage() {
   const s = useStudy()
   const topic = topics[s.topicIndex]
+  const dailyTasks = s.lesson ? lessonTasks(s.lesson) : []
   const count = s.day.completed.length
   const minutes = taskDefs
     .filter((t) => s.day.completed.includes(t.id))
@@ -283,7 +297,9 @@ export function TodayPage() {
             <div className="hero-content">
               <span className="pill light">
                 <Sprout size={14} />
-                {s.cycle === 1 ? '起步周 · 建立学习节奏' : `第 ${s.cycle} 周 · 主题循环与巩固`}
+                {s.lesson
+                  ? `${lessons.length} 天课程 · 第 ${s.lesson.number} 天`
+                  : '旧版起步课程 · 复习'}
               </span>
               <h2>
                 {topic.name}
@@ -352,9 +368,17 @@ export function TodayPage() {
                       </span>
                     </div>
                     <h3>
-                      <Link to={t.path}>{t.title}</Link>
+                      <Link to={t.path}>
+                        {s.lesson && t.id === 'writing'
+                          ? s.lesson.writingPart === 'task1'
+                            ? '完成今日 Task 1 图表微练习'
+                            : '完成今日 Task 2 论证微练习'
+                          : s.lesson && t.id === 'vocabulary' && s.lesson.number > 15
+                            ? '复习 10 个词，用搭配组织表达'
+                            : t.title}
+                      </Link>
                     </h3>
-                    <p>{t.hint}</p>
+                    <p>{dailyTasks.find((task) => task.id === t.id)?.text ?? t.hint}</p>
                   </div>
                   <Link to={t.path} className="task-arrow" aria-label={`进入${t.label}练习`}>
                     <ArrowRight size={19} />
@@ -433,36 +457,98 @@ export function TodayPage() {
             <Clock3 size={17} />
             <div>
               <strong>每天 21:00 · 学习提醒</strong>
-              <p>提醒通过当前聊天的日程发送；网页内查看和记录学习。</p>
+              <p>
+                聊天提醒与网页读取同一份日期课程。网页每天自动切换；提醒运行需要电脑与应用在线。
+              </p>
             </div>
           </div>
         </aside>
       </div>
+      {s.lesson ? (
+        <Panel>
+          <h2>本课来源与安排</h2>
+          <p>
+            {s.lesson.date} · 学术类 6.5 基础训练 · 60 分钟 · 来源核查 {curriculum.checkedAt}
+          </p>
+          <p>
+            本站词表、例句、虚构阅读、话题与图表为原创编排；官方材料在原站练习。每日微练习不能代替完整限时模拟。
+          </p>
+          {s.lesson.sourceIds.map((id) => (
+            <div key={id}>
+              <External source={courseSource(id)} />
+            </div>
+          ))}
+          {s.lesson.sourceIds.includes('books') && <p>{courseSource('books').note}</p>}
+          <p className="caption">
+            当天课程从北京时间 00:00 起显示；21:00 的聊天提醒推送同一课。已备课程不依赖电脑开机。
+          </p>
+        </Panel>
+      ) : (
+        <Panel>
+          <h2>当前日期没有已发布的新课程</h2>
+          <p>
+            已备课程范围：{courseStart} 至 {courseEnd}
+            。当前显示旧版起步复习，可从下方选课；这不代表新课程已更新。
+          </p>
+        </Panel>
+      )}
       <Panel className="week-panel">
         <div className="section-heading">
-          <h2>起步周主题</h2>
-          <span>7 天内容，可循环巩固</span>
+          <h2>{lessons.length} 天课程日历</h2>
+          <span>
+            {courseStart} — {courseEnd}
+          </span>
         </div>
         <div className="week-grid">
-          {topics.map((t, i) => (
+          {lessons.map((lesson) => (
             <button
-              className={i === s.topicIndex ? 'active' : ''}
-              key={t.en}
-              onClick={() =>
-                s.setSelected(addDays(s.data.profile.startDate, (s.cycle - 1) * 7 + i))
-              }
+              key={lesson.date}
+              className={lesson.date === s.selected && s.lesson ? 'active' : ''}
+              onClick={() => s.setSelected(lesson.date)}
+              aria-label={`${lesson.date} ${lesson.name}`}
             >
-              <span>第 {i + 1} 天</span>
-              <strong>{t.name}</strong>
-              {i === s.topicIndex && <span className="week-selected">当前主题</span>}
+              <span>
+                {lesson.date.slice(5)} · 第 {lesson.number} 天
+              </span>
+              <strong>{lesson.name}</strong>
+              <span>
+                {lesson.date > s.actual ? '预览' : lesson.date === s.actual ? '今天' : '回看'}
+              </span>
             </button>
           ))}
         </div>
         <p className="caption">
-          内置 7 组主题、70
-          个词和配套微练习。第二周起重复主题并复习，不会自动联网生成新课程。官方样题与正版教材用于后续扩展。
+          {words.length} 个精选词，{lessons.length} 天共 {lessons.length * 10}
+          词次，包含计划复习；后半程逐步加强同义替换、限时与复盘。课程按统一日期发布，个人记录只保存在本浏览器。
         </p>
       </Panel>
+      {!s.lesson && (
+        <Panel className="week-panel">
+          <div className="section-heading">
+            <h2>起步周主题</h2>
+            <span>7 天内容，可循环巩固</span>
+          </div>
+          <div className="week-grid">
+            {topics.slice(0, 7).map((t, i) => (
+              <button
+                className={i === s.topicIndex ? 'active' : ''}
+                key={t.en}
+                onClick={() =>
+                  s.setSelected(addDays(s.data.profile.startDate, (s.cycle - 1) * 7 + i), true)
+                }
+              >
+                <span>第 {i + 1} 天</span>
+                <strong>{t.name}</strong>
+                {i === s.topicIndex && <span className="week-selected">当前主题</span>}
+              </button>
+            ))}
+          </div>
+          <p className="caption">
+            内置 7 组主题、70
+            个词和配套微练习。第二周起重复主题并复习，不会自动联网生成新课程。官方样题与正版教材用于后续扩展。
+          </p>
+        </Panel>
+      )}
     </>
   )
 }
@@ -544,7 +630,7 @@ export function VocabularyPage() {
   const list = words.filter(
     (w) =>
       (filter === 'all' ||
-        (filter === 'today' && w.topic === s.topicIndex) ||
+        (filter === 'today' && s.wordIds.includes(w.id)) ||
         (filter === 'due' && s.data.reviews[w.id]?.due <= s.actual) ||
         (filter === 'learning' && !!s.data.reviews[w.id])) &&
       `${w.word} ${w.meaning} ${w.phrase}`.toLowerCase().includes(query.toLowerCase()),
@@ -563,7 +649,7 @@ export function VocabularyPage() {
             ['today', '今日词汇'],
             ['due', '到期复习'],
             ['learning', '已学词汇'],
-            ['all', '全部 70 词'],
+            ['all', `全部 ${words.length} 词`],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -749,10 +835,16 @@ export function PracticePage() {
   const { kind } = useParams()
   const s = useStudy()
   const [writingTask, setWritingTask] = useState('task2')
+  useEffect(() => {
+    setWritingTask(s.lesson?.writingPart ?? 'task2')
+  }, [s.selected, s.lesson?.writingPart])
   const topic = topics[s.topicIndex]
   const def = taskDefs.find((t) => t.id === kind)
   if (!def || kind === 'vocabulary') return <Navigate to="/practice/listening" replace />
   const source = s.data.profile.track === 'academic' ? sources.academic : sources.general
+  const practiceSource =
+    s.lesson && s.data.profile.track === 'academic' ? courseSource(kind!) : source
+  const listeningSource = s.lesson ? courseSource(s.lesson.listeningSource) : sources.listening
   const reading = s.day.reading
   const score = topic.questions.filter((q, i) => reading[i] === q[1]).length
   return (
@@ -798,7 +890,7 @@ export function PracticePage() {
                     <p>查看答案和 transcript，记录拼写、同义替换或连读造成的错误。</p>
                   </li>
                 </ol>
-                <External source={sources.listening} label="打开官方听力材料" />
+                <External source={listeningSource} label="打开官方听力材料" />
                 <p className="caption">
                   音频与答案在来源页提供。外部页面需要联网，本站不托管原站音频。
                 </p>
@@ -820,6 +912,7 @@ export function PracticePage() {
                   <span className="caption">非官方真题</span>
                 </div>
                 <h2 lang="en">{topic.readingTitle}</h2>
+                {s.lesson && <p className="tip-box">{s.lesson.readingTask}</p>}
                 <p lang="en" className="reading-text">
                   {topic.text}
                 </p>
@@ -874,7 +967,7 @@ export function PracticePage() {
                   </p>
                 )}
                 <div className="resource-inline">
-                  <External source={source} label="继续练习官方阅读样题" />
+                  <External source={practiceSource} label="继续练习官方阅读样题" />
                 </div>
               </Panel>
             </>
@@ -891,8 +984,8 @@ export function PracticePage() {
                   ))}
                 </ul>
                 <div className="tip-box">
-                  先用关键词组织内容，再尝试说满 1–2
-                  分钟。优先讲真实、具体的经历，避免逐字背诵整篇答案。
+                  {s.lesson?.speakingTask ??
+                    '先用关键词组织内容，再尝试说满 1–2 分钟。优先讲真实、具体的经历，避免逐字背诵整篇答案。'}
                 </div>
               </Panel>
               <Panel>
@@ -906,7 +999,7 @@ export function PracticePage() {
                   placeholder="我卡住的表达：\n下一次想换一种说法的句子：\n我的具体例子："
                   rows={6}
                 />
-                <External source={source} label="查看官方口语样题" />
+                <External source={practiceSource} label="查看官方口语样题" />
               </Panel>
             </>
           )}
@@ -938,6 +1031,12 @@ export function PracticePage() {
                       ? '图表描述练习'
                       : '书信练习'}
                 </span>
+                {s.lesson && (
+                  <p className="tip-box">
+                    今日安排：{s.lesson.writingPart === 'task1' ? 'Task 1' : 'Task 2'} ·{' '}
+                    {s.lesson.writingTask}
+                  </p>
+                )}
                 {writingTask === 'task2' ? (
                   <>
                     <p className="writing-prompt" lang="en">
@@ -947,6 +1046,35 @@ export function PracticePage() {
                       今晚先用 10 分钟写一个 80–120 词的主体段：观点 → 原因 → 具体例子。完整 Task 2
                       训练另安排约 40 分钟，至少 250 词。
                     </p>
+                  </>
+                ) : s.data.profile.track === 'academic' && s.lesson ? (
+                  <>
+                    <p className="writing-prompt" lang="en">
+                      Summarise the information in the table, selecting the main features and making
+                      relevant comparisons.
+                    </p>
+                    <div className="table-scroll">
+                      <table>
+                        <caption>{s.lesson.chart.title}</caption>
+                        <thead>
+                          <tr>
+                            {s.lesson.chart.headers.map((h) => (
+                              <th key={h}>{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {s.lesson.chart.rows.map((row) => (
+                            <tr key={row[0]}>
+                              {row.map((cell, i) => (
+                                <td key={i}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>今日为 10 分钟微练习；完整 Task 1 需另留约 20 分钟，至少 150 词。</p>
                   </>
                 ) : s.data.profile.track === 'academic' ? (
                   <>
@@ -1003,7 +1131,7 @@ export function PracticePage() {
                     <p>先写开头和一个请求段。完整 Task 1 至少 150 词，建议约 20 分钟。</p>
                   </>
                 )}
-                <External source={source} label="核对官方写作样题与要求" />
+                <External source={practiceSource} label="核对官方写作样题与要求" />
               </Panel>
               <Panel>
                 <Draft
@@ -1047,7 +1175,9 @@ export function PracticePage() {
               <h2>
                 {def.label} · {def.minutes} 分钟
               </h2>
-              <p>{def.hint}</p>
+              <p>
+                {s.lesson ? lessonTasks(s.lesson).find((task) => task.id === kind)?.text : def.hint}
+              </p>
               <div className="tip-box">
                 第一周重在熟悉题型和找出薄弱处。正确率只是当前练习反馈，不等同于考试成绩。
               </div>
@@ -1055,17 +1185,18 @@ export function PracticePage() {
           )}
           <Panel>
             <h2>可查证的来源</h2>
-            <p>{kind === 'listening' ? sources.listening.note : source.note}</p>
-            <External source={kind === 'listening' ? sources.listening : source} />
+            <p>{kind === 'listening' ? listeningSource.note : practiceSource.note}</p>
+            <External source={kind === 'listening' ? listeningSource : practiceSource} />
             <p className="caption">
-              参考来源核查于 2026-10-26。外站内容可能调整；链接不可用时可从资料书架访问总入口。
+              参考来源核查于 {s.lesson ? curriculum.checkedAt : '2026-10-26'}
+              。外站内容可能调整；链接不可用时可从资料书架访问总入口。
             </p>
           </Panel>
           <Panel>
             <h2>用上今天的词</h2>
             <div className="mini-words">
               {words
-                .filter((w) => w.topic === s.topicIndex)
+                .filter((w) => s.wordIds.includes(w.id))
                 .slice(0, 4)
                 .map((w) => (
                   <div key={w.id}>
@@ -1178,12 +1309,13 @@ export function ResourcesPage() {
       <Panel className="source-policy">
         <h2>这里如何选择和使用资料</h2>
         <p>
-          站内 70
+          站内 {words.length}
           个主题词、例句、短文和写作题为本站编排的入门内容，不是官方词表或预测真题。词典链接用于核对释义与发音；官方考试材料始终保留原站链接。
         </p>
         <p>
-          每日 60 分钟与复习间隔是本站建议，可根据实际完成情况调整。7
-          组内置主题会循环使用，当前版本没有后台爬取、自动更新课程或自动评分功能。英文整本书阅读暂作为扩展，优先完成与考试题型对应的材料。
+          每日 60 分钟与复习间隔是本站建议，可根据实际完成情况调整。已备 30
+          天课程按北京时间切换，日期范围 {courseStart} 至 {courseEnd}
+          ；没有后台实时生成或自动评分。英文整本书阅读作为扩展，优先完成与考试题型对应的材料。
         </p>
       </Panel>
     </>
@@ -1191,7 +1323,10 @@ export function ResourcesPage() {
 }
 export function ProgressPage() {
   const s = useStudy()
-  const days = Object.entries(s.data.days)
+  const days = [
+    ...Object.entries(s.data.days).map(([key, day]) => [key + '|legacy', day] as const),
+    ...Object.entries(s.data.courseDays ?? {}).map(([key, day]) => [key + '|daily', day] as const),
+  ]
     .filter(
       ([, d]) =>
         d.completed.length ||
@@ -1241,7 +1376,7 @@ export function ProgressPage() {
           <span>已学词汇</span>
           <strong className="stat-value">
             {learned}
-            <small>/ 70</small>
+            <small>/ {words.length}</small>
           </strong>
         </Panel>
         <Panel>
@@ -1293,13 +1428,17 @@ export function ProgressPage() {
       {days.length ? (
         <div className="history-list">
           {days.map(([key, d]) => {
-            const [date, track] = key.split('|')
+            const [date, track, edition] = key.split('|')
             return (
               <article className="history-row" key={key}>
                 <CalendarDays size={22} />
                 <div>
                   <h3>
-                    {date} <small>{track === 'academic' ? 'A 类' : 'G 类'}</small>
+                    {date}{' '}
+                    <small>
+                      {track === 'academic' ? 'A 类' : 'G 类'} ·{' '}
+                      {edition === 'daily' ? '日期课程' : '起步版'}
+                    </small>
                   </h3>
                   <p>
                     {d.completed.length
@@ -1321,7 +1460,7 @@ export function ProgressPage() {
                         profile: { ...state.profile, track: track as 'academic' | 'general' },
                       }))
                     )
-                      s.setSelected(date)
+                      s.setSelected(date, edition === 'legacy')
                   }}
                   asChild
                 >
@@ -1520,7 +1659,10 @@ export function SettingsPage() {
             </DialogDescription>
           </DialogHeader>
           <p>
-            备份内包含 {Object.keys(pending?.days || {}).length} 条每日记录、
+            备份内包含{' '}
+            {Object.keys(pending?.days || {}).length +
+              Object.keys(pending?.courseDays || {}).length}{' '}
+            条每日记录、
             {Object.keys(pending?.reviews || {}).length} 个词汇记录，目标 {pending?.profile.target}{' '}
             分。
           </p>

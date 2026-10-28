@@ -10,11 +10,15 @@ const base =
     '/',
   )
 const directory = resolve('dist-pages')
+const localPlan = JSON.parse(
+  await readFile(new URL('../src/data/plan.json', import.meta.url), 'utf8'),
+)
 const mime = {
   '.html': 'text/html',
   '.js': 'text/javascript',
   '.css': 'text/css',
   '.svg': 'image/svg+xml',
+  '.json': 'application/json',
 }
 let server
 let target = process.argv[2]
@@ -73,7 +77,7 @@ try {
       if (response.url().startsWith(origin) && response.status() >= 400)
         errors.push(`${response.status()} ${response.url()}`)
     })
-    await page.clock.install({ time: new Date('2026-10-26T13:00:00+08:00') })
+    await page.clock.install({ time: new Date('2026-10-28T13:00:00+08:00') })
     for (const route of routes) {
       const response = await page.goto(`${target}#${route}`)
       if (response) expect(response.status()).toBe(200)
@@ -90,6 +94,9 @@ try {
       .getByRole('link', { name: '今日学习', exact: true })
       .click()
     await expect(page.getByRole('heading', { name: '今天，也向 6.5 靠近一点。' })).toBeVisible()
+    await expect(
+      page.getByText(`${localPlan.lessons.length} 天课程 · 第 1 天`, { exact: true }),
+    ).toBeVisible()
     const beforeSkip = page.url()
     const skipLink = page.getByRole('link', { name: '跳到主要内容' })
     await skipLink.focus()
@@ -109,6 +116,15 @@ try {
     )
     const favicon = await page.locator('link[rel="icon"]').getAttribute('href')
     expect((await context.request.get(new URL(favicon, page.url()).href)).status()).toBe(200)
+    const planResponse = await context.request.get(`${target}courses/plan.json`)
+    expect(planResponse.status()).toBe(200)
+    const plan = await planResponse.json()
+    expect(plan).toEqual(localPlan)
+    await page.goto(`${target}#/?date=2026-11-26`)
+    await expect(
+      page.getByText(`${localPlan.lessons.length} 天课程 · 第 30 天`, { exact: true }),
+    ).toBeVisible()
+    await expect(page.getByRole('checkbox', { name: '词汇完成状态' })).toBeDisabled()
     await context.close()
   }
   const isolated = await browser.newContext()

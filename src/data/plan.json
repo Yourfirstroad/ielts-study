@@ -1,0 +1,3107 @@
+{
+  "version": 1,
+  "timeZone": "Asia/Shanghai",
+  "checkedAt": "2026-10-28",
+  "sources": [
+    {
+      "id": "listening",
+      "name": "British Council · 官方听力样题",
+      "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/listening",
+      "note": "使用来源页的题目、音频、答案和原文；同一材料分轮复听，不声称每天有新官方录音。"
+    },
+    {
+      "id": "reading",
+      "name": "British Council · 学术类阅读样题",
+      "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/reading",
+      "note": "题型与练习方法参考；本站30篇热身短文为原创虚构场景，不是真题或科学报道。"
+    },
+    {
+      "id": "writing",
+      "name": "British Council · 学术类写作样题",
+      "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/writing",
+      "note": "核对任务要求；本站题目、图表和练习步骤为原创。"
+    },
+    {
+      "id": "speaking",
+      "name": "British Council · 口语样题",
+      "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/speaking",
+      "note": "核对练习形式；本站话题为原创，不是考题预测。"
+    },
+    {
+      "id": "books",
+      "name": "Cambridge English · 正版备考资料",
+      "url": "https://www.cambridgeenglish.org/exams-and-tests/ielts/preparation/",
+      "note": "可选延伸：The Official Cambridge Guide to IELTS。按所练科目选择章节；未核验具体版次页码，不复制付费内容。"
+    },
+    {
+      "id": "dictionary",
+      "name": "Cambridge Dictionary · 词义与发音核对",
+      "url": "https://dictionary.cambridge.org/",
+      "note": "词表为本站选编，含计划复习；非官方必背词表。卡片提供逐词词典链接，例句为原创。"
+    }
+  ],
+  "wordBank": [
+    {
+      "id": "acquire",
+      "word": "acquire",
+      "meaning": "v. 获得；学会",
+      "phrase": "acquire knowledge",
+      "example": "Students acquire knowledge through practice.",
+      "topic": 0
+    },
+    {
+      "id": "assessment",
+      "word": "assessment",
+      "meaning": "n. 评估",
+      "phrase": "continuous assessment",
+      "example": "Continuous assessment can reveal gaps in understanding.",
+      "topic": 0
+    },
+    {
+      "id": "curriculum",
+      "word": "curriculum",
+      "meaning": "n. 课程体系",
+      "phrase": "a balanced curriculum",
+      "example": "A balanced curriculum includes arts and science.",
+      "topic": 0
+    },
+    {
+      "id": "independent",
+      "word": "independent",
+      "meaning": "adj. 独立的",
+      "phrase": "independent learning",
+      "example": "Independent learning requires careful planning.",
+      "topic": 0
+    },
+    {
+      "id": "concentrate",
+      "word": "concentrate",
+      "meaning": "v. 集中注意力",
+      "phrase": "concentrate on a task",
+      "example": "I find it easier to concentrate in the library.",
+      "topic": 0
+    },
+    {
+      "id": "qualification",
+      "word": "qualification",
+      "meaning": "n. 资格；学历",
+      "phrase": "a professional qualification",
+      "example": "The course leads to a professional qualification.",
+      "topic": 0
+    },
+    {
+      "id": "participate",
+      "word": "participate",
+      "meaning": "v. 参与",
+      "phrase": "participate in discussions",
+      "example": "All students should participate in discussions.",
+      "topic": 0
+    },
+    {
+      "id": "feedback",
+      "word": "feedback",
+      "meaning": "n. 反馈",
+      "phrase": "constructive feedback",
+      "example": "Constructive feedback helps me improve my writing.",
+      "topic": 0
+    },
+    {
+      "id": "approach",
+      "word": "approach",
+      "meaning": "n. 方法；v. 接近",
+      "phrase": "an effective approach",
+      "example": "This approach encourages students to ask questions.",
+      "topic": 0
+    },
+    {
+      "id": "retain",
+      "word": "retain",
+      "meaning": "v. 保留；记住",
+      "phrase": "retain information",
+      "example": "Short review sessions help learners retain information.",
+      "topic": 0
+    },
+    {
+      "id": "sustainable",
+      "word": "sustainable",
+      "meaning": "adj. 可持续的",
+      "phrase": "sustainable development",
+      "example": "Cities need a plan for sustainable development.",
+      "topic": 1
+    },
+    {
+      "id": "emission",
+      "word": "emission",
+      "meaning": "n. 排放",
+      "phrase": "carbon emissions",
+      "example": "Better public transport may reduce carbon emissions.",
+      "topic": 1
+    },
+    {
+      "id": "conservation",
+      "word": "conservation",
+      "meaning": "n. 保护；节约",
+      "phrase": "wildlife conservation",
+      "example": "Wildlife conservation requires long-term funding.",
+      "topic": 1
+    },
+    {
+      "id": "renewable",
+      "word": "renewable",
+      "meaning": "adj. 可再生的",
+      "phrase": "renewable energy",
+      "example": "The town invests in renewable energy.",
+      "topic": 1
+    },
+    {
+      "id": "resource",
+      "word": "resource",
+      "meaning": "n. 资源",
+      "phrase": "natural resources",
+      "example": "We should use natural resources carefully.",
+      "topic": 1
+    },
+    {
+      "id": "habitat",
+      "word": "habitat",
+      "meaning": "n. 栖息地",
+      "phrase": "protect a habitat",
+      "example": "New roads can damage an animal’s habitat.",
+      "topic": 1
+    },
+    {
+      "id": "consume",
+      "word": "consume",
+      "meaning": "v. 消耗；消费",
+      "phrase": "consume energy",
+      "example": "Older buildings often consume more energy.",
+      "topic": 1
+    },
+    {
+      "id": "waste",
+      "word": "waste",
+      "meaning": "n. 废弃物；v. 浪费",
+      "phrase": "reduce food waste",
+      "example": "Planning meals can reduce food waste.",
+      "topic": 1
+    },
+    {
+      "id": "preserve",
+      "word": "preserve",
+      "meaning": "v. 保护；保存",
+      "phrase": "preserve biodiversity",
+      "example": "Local projects can help preserve biodiversity.",
+      "topic": 1
+    },
+    {
+      "id": "impact",
+      "word": "impact",
+      "meaning": "n. 影响",
+      "phrase": "environmental impact",
+      "example": "The report examines the environmental impact of tourism.",
+      "topic": 1
+    },
+    {
+      "id": "access",
+      "word": "access",
+      "meaning": "n. 使用机会；v. 访问",
+      "phrase": "access to information",
+      "example": "Students need reliable access to information.",
+      "topic": 2
+    },
+    {
+      "id": "innovation",
+      "word": "innovation",
+      "meaning": "n. 创新",
+      "phrase": "technological innovation",
+      "example": "Technological innovation can change how we work.",
+      "topic": 2
+    },
+    {
+      "id": "privacy",
+      "word": "privacy",
+      "meaning": "n. 隐私",
+      "phrase": "protect privacy",
+      "example": "Users should know how an app protects their privacy.",
+      "topic": 2
+    },
+    {
+      "id": "reliable",
+      "word": "reliable",
+      "meaning": "adj. 可靠的",
+      "phrase": "a reliable source",
+      "example": "Check whether the website is a reliable source.",
+      "topic": 2
+    },
+    {
+      "id": "efficient",
+      "word": "efficient",
+      "meaning": "adj. 高效的",
+      "phrase": "an efficient system",
+      "example": "An efficient system saves staff time.",
+      "topic": 2
+    },
+    {
+      "id": "automate",
+      "word": "automate",
+      "meaning": "v. 使自动化",
+      "phrase": "automate routine tasks",
+      "example": "Software can automate routine tasks.",
+      "topic": 2
+    },
+    {
+      "id": "device",
+      "word": "device",
+      "meaning": "n. 设备",
+      "phrase": "a mobile device",
+      "example": "The lesson can be viewed on a mobile device.",
+      "topic": 2
+    },
+    {
+      "id": "replace",
+      "word": "replace",
+      "meaning": "v. 替代",
+      "phrase": "replace an old system",
+      "example": "The company plans to replace its old system.",
+      "topic": 2
+    },
+    {
+      "id": "benefit",
+      "word": "benefit",
+      "meaning": "n. 益处；v. 受益",
+      "phrase": "benefit from technology",
+      "example": "Rural communities may benefit from online services.",
+      "topic": 2
+    },
+    {
+      "id": "digital",
+      "word": "digital",
+      "meaning": "adj. 数字的",
+      "phrase": "digital skills",
+      "example": "Many jobs require basic digital skills.",
+      "topic": 2
+    },
+    {
+      "id": "commute",
+      "word": "commute",
+      "meaning": "v. 通勤",
+      "phrase": "commute to work",
+      "example": "I commute to work by train.",
+      "topic": 3
+    },
+    {
+      "id": "congestion",
+      "word": "congestion",
+      "meaning": "n. 拥堵",
+      "phrase": "traffic congestion",
+      "example": "Traffic congestion is a daily problem in the city.",
+      "topic": 3
+    },
+    {
+      "id": "infrastructure",
+      "word": "infrastructure",
+      "meaning": "n. 基础设施",
+      "phrase": "transport infrastructure",
+      "example": "Transport infrastructure needs regular maintenance.",
+      "topic": 3
+    },
+    {
+      "id": "affordable",
+      "word": "affordable",
+      "meaning": "adj. 负担得起的",
+      "phrase": "affordable housing",
+      "example": "Young workers often struggle to find affordable housing.",
+      "topic": 3
+    },
+    {
+      "id": "resident",
+      "word": "resident",
+      "meaning": "n. 居民",
+      "phrase": "local residents",
+      "example": "Local residents asked for a safer crossing.",
+      "topic": 3
+    },
+    {
+      "id": "pedestrian",
+      "word": "pedestrian",
+      "meaning": "n. 行人",
+      "phrase": "pedestrian safety",
+      "example": "The new crossing improves pedestrian safety.",
+      "topic": 3
+    },
+    {
+      "id": "accessible",
+      "word": "accessible",
+      "meaning": "adj. 易到达的；可使用的",
+      "phrase": "accessible public transport",
+      "example": "Accessible public transport helps more people travel independently.",
+      "topic": 3
+    },
+    {
+      "id": "urban",
+      "word": "urban",
+      "meaning": "adj. 城市的",
+      "phrase": "urban planning",
+      "example": "Urban planning should include green spaces.",
+      "topic": 3
+    },
+    {
+      "id": "facility",
+      "word": "facility",
+      "meaning": "n. 设施",
+      "phrase": "public facilities",
+      "example": "The neighbourhood has several public facilities.",
+      "topic": 3
+    },
+    {
+      "id": "expand",
+      "word": "expand",
+      "meaning": "v. 扩大",
+      "phrase": "expand a network",
+      "example": "The city will expand its bus network.",
+      "topic": 3
+    },
+    {
+      "id": "balanced",
+      "word": "balanced",
+      "meaning": "adj. 均衡的",
+      "phrase": "a balanced diet",
+      "example": "A balanced diet includes a variety of foods.",
+      "topic": 4
+    },
+    {
+      "id": "sedentary",
+      "word": "sedentary",
+      "meaning": "adj. 久坐的",
+      "phrase": "a sedentary lifestyle",
+      "example": "A sedentary lifestyle can leave little time for movement.",
+      "topic": 4
+    },
+    {
+      "id": "physical",
+      "word": "physical",
+      "meaning": "adj. 身体的",
+      "phrase": "physical activity",
+      "example": "Walking is a simple form of physical activity.",
+      "topic": 4
+    },
+    {
+      "id": "wellbeing",
+      "word": "wellbeing",
+      "meaning": "n. 身心健康",
+      "phrase": "mental wellbeing",
+      "example": "Time with friends can support mental wellbeing.",
+      "topic": 4
+    },
+    {
+      "id": "habit",
+      "word": "habit",
+      "meaning": "n. 习惯",
+      "phrase": "develop a habit",
+      "example": "It takes practice to develop a new habit.",
+      "topic": 4
+    },
+    {
+      "id": "prevent",
+      "word": "prevent",
+      "meaning": "v. 预防；阻止",
+      "phrase": "prevent problems",
+      "example": "Regular checks can help prevent problems.",
+      "topic": 4
+    },
+    {
+      "id": "routine",
+      "word": "routine",
+      "meaning": "n. 常规；惯例",
+      "phrase": "a daily routine",
+      "example": "A daily routine makes study time more predictable.",
+      "topic": 4
+    },
+    {
+      "id": "nutritious",
+      "word": "nutritious",
+      "meaning": "adj. 有营养的",
+      "phrase": "nutritious meals",
+      "example": "The café serves affordable, nutritious meals.",
+      "topic": 4
+    },
+    {
+      "id": "moderate",
+      "word": "moderate",
+      "meaning": "adj. 适度的",
+      "phrase": "moderate exercise",
+      "example": "She prefers moderate exercise to competitive sport.",
+      "topic": 4
+    },
+    {
+      "id": "maintain",
+      "word": "maintain",
+      "meaning": "v. 维持",
+      "phrase": "maintain a balance",
+      "example": "Students need to maintain a balance between study and rest.",
+      "topic": 4
+    },
+    {
+      "id": "flexible",
+      "word": "flexible",
+      "meaning": "adj. 灵活的",
+      "phrase": "flexible working hours",
+      "example": "Flexible working hours help some parents manage childcare.",
+      "topic": 5
+    },
+    {
+      "id": "productivity",
+      "word": "productivity",
+      "meaning": "n. 生产效率",
+      "phrase": "improve productivity",
+      "example": "Clear priorities can improve productivity.",
+      "topic": 5
+    },
+    {
+      "id": "collaborate",
+      "word": "collaborate",
+      "meaning": "v. 协作",
+      "phrase": "collaborate with colleagues",
+      "example": "Designers collaborate with colleagues on new products.",
+      "topic": 5
+    },
+    {
+      "id": "responsibility",
+      "word": "responsibility",
+      "meaning": "n. 责任",
+      "phrase": "take responsibility",
+      "example": "Team members should take responsibility for their tasks.",
+      "topic": 5
+    },
+    {
+      "id": "occupation",
+      "word": "occupation",
+      "meaning": "n. 职业",
+      "phrase": "choose an occupation",
+      "example": "It can take time to choose an occupation.",
+      "topic": 5
+    },
+    {
+      "id": "income",
+      "word": "income",
+      "meaning": "n. 收入",
+      "phrase": "a stable income",
+      "example": "A stable income helps people plan their spending.",
+      "topic": 5
+    },
+    {
+      "id": "opportunity",
+      "word": "opportunity",
+      "meaning": "n. 机会",
+      "phrase": "career opportunities",
+      "example": "Further training can create career opportunities.",
+      "topic": 5
+    },
+    {
+      "id": "deadline",
+      "word": "deadline",
+      "meaning": "n. 截止日期",
+      "phrase": "meet a deadline",
+      "example": "We divided the work to meet the deadline.",
+      "topic": 5
+    },
+    {
+      "id": "motivate",
+      "word": "motivate",
+      "meaning": "v. 激励",
+      "phrase": "motivate employees",
+      "example": "Useful feedback can motivate employees.",
+      "topic": 5
+    },
+    {
+      "id": "balance",
+      "word": "balance",
+      "meaning": "n. 平衡",
+      "phrase": "work-life balance",
+      "example": "A shorter commute may improve work-life balance.",
+      "topic": 5
+    },
+    {
+      "id": "heritage",
+      "word": "heritage",
+      "meaning": "n. 遗产",
+      "phrase": "cultural heritage",
+      "example": "The museum helps visitors understand local cultural heritage.",
+      "topic": 6
+    },
+    {
+      "id": "tradition",
+      "word": "tradition",
+      "meaning": "n. 传统",
+      "phrase": "a local tradition",
+      "example": "The festival celebrates a local tradition.",
+      "topic": 6
+    },
+    {
+      "id": "diverse",
+      "word": "diverse",
+      "meaning": "adj. 多样的",
+      "phrase": "diverse backgrounds",
+      "example": "The class includes people from diverse backgrounds.",
+      "topic": 6
+    },
+    {
+      "id": "community",
+      "word": "community",
+      "meaning": "n. 社区；群体",
+      "phrase": "a local community",
+      "example": "The library is important to the local community.",
+      "topic": 6
+    },
+    {
+      "id": "destination",
+      "word": "destination",
+      "meaning": "n. 目的地",
+      "phrase": "a tourist destination",
+      "example": "The town has become a popular tourist destination.",
+      "topic": 6
+    },
+    {
+      "id": "authentic",
+      "word": "authentic",
+      "meaning": "adj. 真实的；地道的",
+      "phrase": "an authentic experience",
+      "example": "Visitors often look for an authentic experience.",
+      "topic": 6
+    },
+    {
+      "id": "perspective",
+      "word": "perspective",
+      "meaning": "n. 视角",
+      "phrase": "a different perspective",
+      "example": "Living abroad can offer a different perspective.",
+      "topic": 6
+    },
+    {
+      "id": "exchange",
+      "word": "exchange",
+      "meaning": "n. 交流；v. 交换",
+      "phrase": "cultural exchange",
+      "example": "Student visits encourage cultural exchange.",
+      "topic": 6
+    },
+    {
+      "id": "adapt",
+      "word": "adapt",
+      "meaning": "v. 适应",
+      "phrase": "adapt to a new environment",
+      "example": "It takes time to adapt to a new environment.",
+      "topic": 6
+    },
+    {
+      "id": "respect",
+      "word": "respect",
+      "meaning": "v. 尊重；n. 尊重",
+      "phrase": "respect local customs",
+      "example": "Travellers should respect local customs.",
+      "topic": 6
+    },
+    {
+      "id": "hypothesis",
+      "word": "hypothesis",
+      "meaning": "n. 假设",
+      "phrase": "test a hypothesis",
+      "example": "The team designed an experiment to test its hypothesis.",
+      "topic": 14
+    },
+    {
+      "id": "evidence",
+      "word": "evidence",
+      "meaning": "n. 证据",
+      "phrase": "supporting evidence",
+      "example": "A strong argument needs supporting evidence.",
+      "topic": 14
+    },
+    {
+      "id": "variable",
+      "word": "variable",
+      "meaning": "n. 变量",
+      "phrase": "control a variable",
+      "example": "Researchers controlled one variable at a time.",
+      "topic": 14
+    },
+    {
+      "id": "outcome",
+      "word": "outcome",
+      "meaning": "n. 结果",
+      "phrase": "a possible outcome",
+      "example": "Better attendance is one possible outcome of the change.",
+      "topic": 14
+    },
+    {
+      "id": "sample",
+      "word": "sample",
+      "meaning": "n. 样本",
+      "phrase": "a representative sample",
+      "example": "The survey needs a representative sample of residents.",
+      "topic": 14
+    },
+    {
+      "id": "survey",
+      "word": "survey",
+      "meaning": "n. 调查；v. 调查",
+      "phrase": "conduct a survey",
+      "example": "Students conducted a survey about transport.",
+      "topic": 14
+    },
+    {
+      "id": "interpret",
+      "word": "interpret",
+      "meaning": "v. 解读",
+      "phrase": "interpret the results",
+      "example": "We should interpret the results with care.",
+      "topic": 14
+    },
+    {
+      "id": "valid",
+      "word": "valid",
+      "meaning": "adj. 有效的；合理的",
+      "phrase": "a valid conclusion",
+      "example": "The small study cannot support that conclusion as valid.",
+      "topic": 14
+    },
+    {
+      "id": "bias",
+      "word": "bias",
+      "meaning": "n. 偏差；偏见",
+      "phrase": "reduce bias",
+      "example": "Anonymous responses may help reduce bias.",
+      "topic": 14
+    },
+    {
+      "id": "method",
+      "word": "method",
+      "meaning": "n. 方法",
+      "phrase": "a research method",
+      "example": "Interviews are one useful research method.",
+      "topic": 14
+    },
+    {
+      "id": "purchase",
+      "word": "purchase",
+      "meaning": "n. 购买；v. 购买",
+      "phrase": "make a purchase",
+      "example": "I compare prices before making a purchase.",
+      "topic": 15
+    },
+    {
+      "id": "budget",
+      "word": "budget",
+      "meaning": "n. 预算",
+      "phrase": "a limited budget",
+      "example": "Students often manage a limited budget.",
+      "topic": 15
+    },
+    {
+      "id": "durable",
+      "word": "durable",
+      "meaning": "adj. 耐用的",
+      "phrase": "durable materials",
+      "example": "Durable materials can make products last longer.",
+      "topic": 15
+    },
+    {
+      "id": "discount",
+      "word": "discount",
+      "meaning": "n. 折扣",
+      "phrase": "offer a discount",
+      "example": "The shop offers a discount on repaired items.",
+      "topic": 15
+    },
+    {
+      "id": "warranty",
+      "word": "warranty",
+      "meaning": "n. 保修承诺",
+      "phrase": "a two-year warranty",
+      "example": "The appliance comes with a two-year warranty.",
+      "topic": 15
+    },
+    {
+      "id": "refund",
+      "word": "refund",
+      "meaning": "n. 退款",
+      "phrase": "request a refund",
+      "example": "Keep your receipt if you need to request a refund.",
+      "topic": 15
+    },
+    {
+      "id": "receipt",
+      "word": "receipt",
+      "meaning": "n. 收据",
+      "phrase": "keep a receipt",
+      "example": "I keep a receipt for each major purchase.",
+      "topic": 15
+    },
+    {
+      "id": "demand",
+      "word": "demand",
+      "meaning": "n. 需求",
+      "phrase": "meet demand",
+      "example": "Small shops cannot always meet sudden demand.",
+      "topic": 15
+    },
+    {
+      "id": "supply",
+      "word": "supply",
+      "meaning": "n. 供应",
+      "phrase": "a steady supply",
+      "example": "The workshop needs a steady supply of parts.",
+      "topic": 15
+    },
+    {
+      "id": "value",
+      "word": "value",
+      "meaning": "n. 价值",
+      "phrase": "value for money",
+      "example": "The cheapest item does not always offer the best value for money.",
+      "topic": 15
+    },
+    {
+      "id": "harvest",
+      "word": "harvest",
+      "meaning": "n. 收获；v. 收割",
+      "phrase": "a successful harvest",
+      "example": "The farmers celebrated a successful harvest.",
+      "topic": 16
+    },
+    {
+      "id": "crop",
+      "word": "crop",
+      "meaning": "n. 作物",
+      "phrase": "grow crops",
+      "example": "Some families grow crops for local markets.",
+      "topic": 16
+    },
+    {
+      "id": "fertile",
+      "word": "fertile",
+      "meaning": "adj. 肥沃的",
+      "phrase": "fertile soil",
+      "example": "Healthy roots need fertile soil and sufficient water.",
+      "topic": 16
+    },
+    {
+      "id": "irrigation",
+      "word": "irrigation",
+      "meaning": "n. 灌溉",
+      "phrase": "an irrigation system",
+      "example": "The garden uses a simple irrigation system.",
+      "topic": 16
+    },
+    {
+      "id": "storage",
+      "word": "storage",
+      "meaning": "n. 储存",
+      "phrase": "food storage",
+      "example": "Good food storage can reduce avoidable waste.",
+      "topic": 16
+    },
+    {
+      "id": "packaging",
+      "word": "packaging",
+      "meaning": "n. 包装",
+      "phrase": "reusable packaging",
+      "example": "The shop is testing reusable packaging.",
+      "topic": 16
+    },
+    {
+      "id": "surplus",
+      "word": "surplus",
+      "meaning": "n. 剩余；过剩",
+      "phrase": "a food surplus",
+      "example": "The cafe shares its food surplus with volunteers.",
+      "topic": 16
+    },
+    {
+      "id": "distribute",
+      "word": "distribute",
+      "meaning": "v. 分发；分配",
+      "phrase": "distribute food",
+      "example": "The organisers distribute food twice a week.",
+      "topic": 16
+    },
+    {
+      "id": "seasonal",
+      "word": "seasonal",
+      "meaning": "adj. 季节性的",
+      "phrase": "seasonal produce",
+      "example": "The menu changes to include seasonal produce.",
+      "topic": 16
+    },
+    {
+      "id": "portion",
+      "word": "portion",
+      "meaning": "n. 一份；部分",
+      "phrase": "a smaller portion",
+      "example": "Customers can choose a smaller portion.",
+      "topic": 16
+    },
+    {
+      "id": "claim",
+      "word": "claim",
+      "meaning": "n. 说法；v. 声称",
+      "phrase": "check a claim",
+      "example": "Readers should check a claim before sharing it.",
+      "topic": 17
+    },
+    {
+      "id": "source",
+      "word": "source",
+      "meaning": "n. 来源",
+      "phrase": "an original source",
+      "example": "The article links to an original source.",
+      "topic": 17
+    },
+    {
+      "id": "verify",
+      "word": "verify",
+      "meaning": "v. 核实",
+      "phrase": "verify information",
+      "example": "It takes time to verify information carefully.",
+      "topic": 17
+    },
+    {
+      "id": "accurate",
+      "word": "accurate",
+      "meaning": "adj. 准确的",
+      "phrase": "accurate information",
+      "example": "Travel decisions depend on accurate information.",
+      "topic": 17
+    },
+    {
+      "id": "misleading",
+      "word": "misleading",
+      "meaning": "adj. 误导性的",
+      "phrase": "a misleading headline",
+      "example": "A misleading headline can hide important details.",
+      "topic": 17
+    },
+    {
+      "id": "audience",
+      "word": "audience",
+      "meaning": "n. 受众",
+      "phrase": "a wider audience",
+      "example": "Subtitles can help a film reach a wider audience.",
+      "topic": 17
+    },
+    {
+      "id": "broadcast",
+      "word": "broadcast",
+      "meaning": "v. 广播；n. 广播节目",
+      "phrase": "broadcast a programme",
+      "example": "The station broadcasts a programme about local history.",
+      "topic": 17
+    },
+    {
+      "id": "editor",
+      "word": "editor",
+      "meaning": "n. 编辑",
+      "phrase": "a newspaper editor",
+      "example": "The newspaper editor asked for more evidence.",
+      "topic": 17
+    },
+    {
+      "id": "context",
+      "word": "context",
+      "meaning": "n. 语境；背景",
+      "phrase": "understand the context",
+      "example": "We need to understand the context of the quotation.",
+      "topic": 17
+    },
+    {
+      "id": "distinguish",
+      "word": "distinguish",
+      "meaning": "v. 区分",
+      "phrase": "distinguish fact from opinion",
+      "example": "Students practise distinguishing fact from opinion.",
+      "topic": 17
+    },
+    {
+      "id": "proportion",
+      "word": "proportion",
+      "meaning": "n. 比例",
+      "phrase": "a large proportion",
+      "example": "A large proportion of visitors arrived by bus.",
+      "topic": 18
+    },
+    {
+      "id": "increase",
+      "word": "increase",
+      "meaning": "n. 增加；v. 增加",
+      "phrase": "a gradual increase",
+      "example": "The table shows a gradual increase in attendance.",
+      "topic": 18
+    },
+    {
+      "id": "decrease",
+      "word": "decrease",
+      "meaning": "n. 减少；v. 减少",
+      "phrase": "a slight decrease",
+      "example": "There was a slight decrease in car use.",
+      "topic": 18
+    },
+    {
+      "id": "fluctuate",
+      "word": "fluctuate",
+      "meaning": "v. 波动",
+      "phrase": "fluctuate over time",
+      "example": "Attendance can fluctuate over time.",
+      "topic": 18
+    },
+    {
+      "id": "stable",
+      "word": "stable",
+      "meaning": "adj. 稳定的",
+      "phrase": "remain stable",
+      "example": "The total remained stable during the final year.",
+      "topic": 18
+    },
+    {
+      "id": "peak",
+      "word": "peak",
+      "meaning": "n. 峰值；v. 达到峰值",
+      "phrase": "reach a peak",
+      "example": "Demand reached a peak in July.",
+      "topic": 18
+    },
+    {
+      "id": "overall",
+      "word": "overall",
+      "meaning": "adv. 总体上",
+      "phrase": "overall trend",
+      "example": "The overview should describe the overall trend.",
+      "topic": 18
+    },
+    {
+      "id": "approximately",
+      "word": "approximately",
+      "meaning": "adv. 大约",
+      "phrase": "approximately half",
+      "example": "Approximately half of the students chose science.",
+      "topic": 18
+    },
+    {
+      "id": "contrast",
+      "word": "contrast",
+      "meaning": "n. 对比",
+      "phrase": "in contrast",
+      "example": "Bus use increased; in contrast, car use fell.",
+      "topic": 18
+    },
+    {
+      "id": "respectively",
+      "word": "respectively",
+      "meaning": "adv. 分别地",
+      "phrase": "twenty and thirty respectively",
+      "example": "The two classes had twenty and thirty students respectively.",
+      "topic": 18
+    },
+    {
+      "id": "fund",
+      "word": "fund",
+      "meaning": "v. 资助；n. 资金",
+      "phrase": "fund a service",
+      "example": "The council plans to fund a new advice service.",
+      "topic": 19
+    },
+    {
+      "id": "allocate",
+      "word": "allocate",
+      "meaning": "v. 分配",
+      "phrase": "allocate resources",
+      "example": "Managers must allocate resources carefully.",
+      "topic": 19
+    },
+    {
+      "id": "priority",
+      "word": "priority",
+      "meaning": "n. 优先事项",
+      "phrase": "a high priority",
+      "example": "Reliable transport is a high priority for residents.",
+      "topic": 19
+    },
+    {
+      "id": "beneficiary",
+      "word": "beneficiary",
+      "meaning": "n. 受益者",
+      "phrase": "the main beneficiary",
+      "example": "Local families are the main beneficiaries of the scheme.",
+      "topic": 19
+    },
+    {
+      "id": "subsidy",
+      "word": "subsidy",
+      "meaning": "n. 补贴",
+      "phrase": "a transport subsidy",
+      "example": "A transport subsidy could lower ticket prices.",
+      "topic": 19
+    },
+    {
+      "id": "eligible",
+      "word": "eligible",
+      "meaning": "adj. 符合条件的",
+      "phrase": "eligible for support",
+      "example": "Some students are eligible for additional support.",
+      "topic": 19
+    },
+    {
+      "id": "application",
+      "word": "application",
+      "meaning": "n. 申请",
+      "phrase": "complete an application",
+      "example": "Visitors can complete an application online.",
+      "topic": 19
+    },
+    {
+      "id": "capacity",
+      "word": "capacity",
+      "meaning": "n. 容量；能力",
+      "phrase": "limited capacity",
+      "example": "The hall has limited capacity.",
+      "topic": 19
+    },
+    {
+      "id": "volunteer",
+      "word": "volunteer",
+      "meaning": "n. 志愿者；v. 志愿服务",
+      "phrase": "train volunteers",
+      "example": "The centre trains volunteers to guide visitors.",
+      "topic": 19
+    },
+    {
+      "id": "evaluate",
+      "word": "evaluate",
+      "meaning": "v. 评估",
+      "phrase": "evaluate a programme",
+      "example": "The team will evaluate the programme after six months.",
+      "topic": 19
+    },
+    {
+      "id": "species",
+      "word": "species",
+      "meaning": "n. 物种",
+      "phrase": "a native species",
+      "example": "The survey recorded several native species.",
+      "topic": 20
+    },
+    {
+      "id": "ecosystem",
+      "word": "ecosystem",
+      "meaning": "n. 生态系统",
+      "phrase": "a local ecosystem",
+      "example": "Changes in water quality may affect a local ecosystem.",
+      "topic": 20
+    },
+    {
+      "id": "biodiversity",
+      "word": "biodiversity",
+      "meaning": "n. 生物多样性",
+      "phrase": "protect biodiversity",
+      "example": "The project aims to protect biodiversity.",
+      "topic": 20
+    },
+    {
+      "id": "pollination",
+      "word": "pollination",
+      "meaning": "n. 授粉",
+      "phrase": "insect pollination",
+      "example": "Some crops depend on insect pollination.",
+      "topic": 20
+    },
+    {
+      "id": "migration",
+      "word": "migration",
+      "meaning": "n. 迁徙",
+      "phrase": "seasonal migration",
+      "example": "Volunteers record birds during seasonal migration.",
+      "topic": 20
+    },
+    {
+      "id": "predator",
+      "word": "predator",
+      "meaning": "n. 捕食者",
+      "phrase": "a natural predator",
+      "example": "A natural predator can influence animal numbers.",
+      "topic": 20
+    },
+    {
+      "id": "threat",
+      "word": "threat",
+      "meaning": "n. 威胁",
+      "phrase": "a potential threat",
+      "example": "Habitat loss is a potential threat to wildlife.",
+      "topic": 20
+    },
+    {
+      "id": "restore",
+      "word": "restore",
+      "meaning": "v. 恢复",
+      "phrase": "restore a wetland",
+      "example": "Residents helped restore a small wetland.",
+      "topic": 20
+    },
+    {
+      "id": "monitor",
+      "word": "monitor",
+      "meaning": "v. 监测",
+      "phrase": "monitor changes",
+      "example": "Researchers monitor changes over several years.",
+      "topic": 20
+    },
+    {
+      "id": "decline",
+      "word": "decline",
+      "meaning": "n. 下降；v. 减少",
+      "phrase": "a population decline",
+      "example": "The report described a population decline.",
+      "topic": 20
+    },
+    {
+      "id": "exhibition",
+      "word": "exhibition",
+      "meaning": "n. 展览",
+      "phrase": "a temporary exhibition",
+      "example": "The museum opened a temporary exhibition.",
+      "topic": 21
+    },
+    {
+      "id": "craft",
+      "word": "craft",
+      "meaning": "n. 手艺",
+      "phrase": "a traditional craft",
+      "example": "She learnt a traditional craft from her neighbour.",
+      "topic": 21
+    },
+    {
+      "id": "creative",
+      "word": "creative",
+      "meaning": "adj. 有创造力的",
+      "phrase": "creative work",
+      "example": "Creative work can involve careful planning.",
+      "topic": 21
+    },
+    {
+      "id": "inspire",
+      "word": "inspire",
+      "meaning": "v. 启发",
+      "phrase": "inspire young people",
+      "example": "The workshop aims to inspire young people.",
+      "topic": 21
+    },
+    {
+      "id": "interpretation",
+      "word": "interpretation",
+      "meaning": "n. 解释；演绎",
+      "phrase": "a personal interpretation",
+      "example": "Each visitor offered a personal interpretation of the painting.",
+      "topic": 21
+    },
+    {
+      "id": "venue",
+      "word": "venue",
+      "meaning": "n. 场地",
+      "phrase": "a suitable venue",
+      "example": "The organisers searched for a suitable venue.",
+      "topic": 21
+    },
+    {
+      "id": "perform",
+      "word": "perform",
+      "meaning": "v. 表演",
+      "phrase": "perform on stage",
+      "example": "Local musicians will perform on stage.",
+      "topic": 21
+    },
+    {
+      "id": "admission",
+      "word": "admission",
+      "meaning": "n. 入场；入场费",
+      "phrase": "free admission",
+      "example": "The gallery offers free admission on Sundays.",
+      "topic": 21
+    },
+    {
+      "id": "funding",
+      "word": "funding",
+      "meaning": "n. 资金支持",
+      "phrase": "public funding",
+      "example": "The festival receives some public funding.",
+      "topic": 21
+    },
+    {
+      "id": "participation",
+      "word": "participation",
+      "meaning": "n. 参与",
+      "phrase": "encourage participation",
+      "example": "Small workshops can encourage participation.",
+      "topic": 21
+    }
+  ],
+  "lessons": [
+    {
+      "date": "2026-10-28",
+      "number": 1,
+      "name": "校园学习空间",
+      "en": "Study spaces",
+      "focus": "建立基线：定位事实，分清原文与推测。",
+      "wordIds": [
+        "acquire",
+        "assessment",
+        "curriculum",
+        "independent",
+        "concentrate",
+        "qualification",
+        "participate",
+        "feedback",
+        "approach",
+        "retain"
+      ],
+      "readingTitle": "A room for focused study",
+      "text": "A college converted an unused office into a quiet study room. Students can reserve a desk for up to two hours, but they must leave the room to make phone calls. During the first month, the room opened only on weekdays. Staff recorded bookings rather than examination results. Several students asked for weekend access, so the college agreed to test Saturday opening in November. No decision has been made about Sundays. The college will compare attendance on different days before changing the permanent timetable.",
+      "questions": [
+        [
+          "Students can reserve a desk for two hours.",
+          "TRUE",
+          "与原文一致。证据：Students can reserve a desk for up to two hours, but they must leave the room to make phone calls."
+        ],
+        [
+          "Phone calls are allowed inside the room.",
+          "FALSE",
+          "与原文矛盾。证据：Students can reserve a desk for up to two hours, but they must leave the room to make phone calls."
+        ],
+        [
+          "Students using the room obtained higher exam scores.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "先读标题，再用7分钟做3道判断题；逐题划出证据，余下时间复盘。",
+      "speaking": "Describe a place where you can study well.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Universities should provide more quiet study spaces than social spaces. To what extent do you agree or disagree?",
+      "writingTask": "用10分钟写80–120词主体段：观点→原因→具体例子。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Note Completion」（笔记填空：二手家具）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-10-29",
+      "number": 2,
+      "name": "维修与再利用",
+      "en": "Repair and reuse",
+      "focus": "识别限定词，避免把部分情况读成全部。",
+      "wordIds": [
+        "sustainable",
+        "emission",
+        "conservation",
+        "renewable",
+        "resource",
+        "habitat",
+        "consume",
+        "waste",
+        "preserve",
+        "impact"
+      ],
+      "readingTitle": "Borrowing instead of buying",
+      "text": "A neighbourhood centre lends tools to residents who need them for occasional repairs. Borrowing is free, although a refundable deposit is required for larger items. Volunteers demonstrate safe use before a tool leaves the building. The centre originally opened on Wednesday afternoons only. It now also opens on Saturday mornings following requests from people who work during the week. Staff count how often each item is borrowed. They have not calculated how much money households save. Tools that cannot be repaired are removed from the collection.",
+      "questions": [
+        [
+          "The centre still opens only on Wednesdays.",
+          "FALSE",
+          "与原文矛盾。证据：It now also opens on Saturday mornings following requests from people who work during the week."
+        ],
+        [
+          "Each household saves fifty pounds per month.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Some large items require a refundable deposit.",
+          "TRUE",
+          "与原文一致。证据：Borrowing is free, although a refundable deposit is required for larger items."
+        ]
+      ],
+      "readingTask": "圈出 all、some 等限定词；说明为何 FALSE 不能替换为 NOT GIVEN。",
+      "speaking": "Describe an object you repaired or reused.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "People should repair damaged possessions instead of replacing them. To what extent do you agree or disagree?",
+      "writingTask": "用10分钟写80–120词主体段：观点→原因→具体例子。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Multiple Choice (one answer)」（单选：学生研究讨论）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-10-30",
+      "number": 3,
+      "name": "数字学习提醒",
+      "en": "Digital reminders",
+      "focus": "找出转折后的信息，注意提醒与成效的区别。",
+      "wordIds": [
+        "access",
+        "innovation",
+        "privacy",
+        "reliable",
+        "efficient",
+        "automate",
+        "device",
+        "replace",
+        "benefit",
+        "digital"
+      ],
+      "readingTitle": "Choosing fewer notifications",
+      "text": "A tutor asked adult learners to choose when they wanted study reminders. Some selected a message each evening, while others preferred a weekly summary. The tutor allowed everyone to change their choice during the course. One learner stopped receiving messages because they interrupted her work, but she continued attending classes. At the end of six weeks, the tutor collected comments about the system. Most respondents liked having a choice. The survey did not compare test results between the two reminder groups, and participation in the survey was voluntary.",
+      "questions": [
+        [
+          "Evening reminders produced better test scores than weekly summaries.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Learners could change how often they received reminders.",
+          "TRUE",
+          "与原文一致。证据：The tutor allowed everyone to change their choice during the course."
+        ],
+        [
+          "The learner who stopped messages also left the course.",
+          "FALSE",
+          "与原文矛盾。证据：One learner stopped receiving messages because they interrupted her work, but she continued attending classes."
+        ]
+      ],
+      "readingTask": "圈出 but、however 等转折信号；为每题找出最小证据句。",
+      "speaking": "Describe a useful digital tool for learning.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Digital reminders make people more independent learners. To what extent do you agree or disagree?",
+      "writingTask": "用10分钟写80–120词主体段：观点→原因→具体例子。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Plan/Map/Diagram Labelling」（地图标注：城镇导览）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-10-31",
+      "number": 4,
+      "name": "公交与通勤",
+      "en": "Commuting choices",
+      "focus": "练习概述主要变化，避免罗列所有数字。",
+      "wordIds": [
+        "commute",
+        "congestion",
+        "infrastructure",
+        "affordable",
+        "resident",
+        "pedestrian",
+        "accessible",
+        "urban",
+        "facility",
+        "expand"
+      ],
+      "readingTitle": "An earlier bus",
+      "text": "A business park introduced a bus that arrived twenty minutes before the usual service. Managers hoped it would help employees whose shifts began early. During the trial, passengers could use their existing travel passes. The route was unchanged, but the new service stopped at fewer places. Some employees welcomed the shorter journey. Others continued driving because their homes were far from any stop. The operator counted passengers every morning for four weeks. It has not yet decided whether to offer the same service at weekends.",
+      "questions": [
+        [
+          "Existing travel passes were accepted during the trial.",
+          "TRUE",
+          "与原文一致。证据：During the trial, passengers could use their existing travel passes."
+        ],
+        [
+          "The new service stopped at more places than the usual bus.",
+          "FALSE",
+          "与原文矛盾。证据：The route was unchanged, but the new service stopped at fewer places."
+        ],
+        [
+          "The operator has agreed to run the service every Sunday.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "先写一句中文主旨，再做判断；把地点或时间变化单独列出。",
+      "speaking": "Describe a journey you make regularly.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Employers should help workers use public transport. Discuss the advantages and disadvantages.",
+      "writingTask": "写2–3句概述，只选最显著的整体变化。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Table Completion」（表格填空：学习坚持）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-01",
+      "number": 5,
+      "name": "日常活动与习惯",
+      "en": "Everyday routines",
+      "focus": "用 may、can 表达有条件的影响。",
+      "wordIds": [
+        "balanced",
+        "sedentary",
+        "physical",
+        "wellbeing",
+        "habit",
+        "prevent",
+        "routine",
+        "nutritious",
+        "moderate",
+        "maintain"
+      ],
+      "readingTitle": "A different kind of break",
+      "text": "A small office offered staff a choice of three lunchtime activities: a walk, a quiet reading session or an informal conversation group. Taking part was optional, and employees could choose a different activity each day. The organiser kept a list of attendance but collected no health measurements. After a month, several people asked for the reading session to continue. The walking group met less often because of rain. Managers decided to keep all three choices for another month before reviewing how much meeting space they required.",
+      "questions": [
+        [
+          "Every employee was required to join an activity.",
+          "FALSE",
+          "与原文矛盾。证据：Taking part was optional, and employees could choose a different activity each day."
+        ],
+        [
+          "The walking group improved participants' physical fitness.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Employees could change activities from day to day.",
+          "TRUE",
+          "与原文一致。证据：Taking part was optional, and employees could choose a different activity each day."
+        ]
+      ],
+      "readingTask": "找出测量过与未测量的信息；不能根据常识补充结论。",
+      "speaking": "Describe a routine you would like to develop.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Employers should provide more opportunities for staff to relax during the working day. To what extent do you agree or disagree?",
+      "writingTask": "用10分钟写80–120词主体段：观点→原因→具体例子。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Sentence Completion」（句子填空：开放大学）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-02",
+      "number": 6,
+      "name": "团队合作",
+      "en": "Working together",
+      "focus": "区分建议与已实施的行动。",
+      "wordIds": [
+        "flexible",
+        "productivity",
+        "collaborate",
+        "responsibility",
+        "occupation",
+        "income",
+        "opportunity",
+        "deadline",
+        "motivate",
+        "balance"
+      ],
+      "readingTitle": "Sharing project updates",
+      "text": "A design team replaced one long weekly meeting with brief written updates. Each person posted progress and questions before noon on Friday. The manager then arranged a short meeting only when a problem needed discussion. Team members said the written notes helped colleagues in different time zones. However, two new employees wanted more opportunities to ask informal questions. The manager proposed a weekly optional conversation session. This proposal has not yet been tested. The team has measured time spent in meetings, but not changes in the quality of its designs.",
+      "questions": [
+        [
+          "The new arrangement improved the quality of the designs.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Updates were posted before noon on Fridays.",
+          "TRUE",
+          "与原文一致。证据：Each person posted progress and questions before noon on Friday."
+        ],
+        [
+          "The optional conversation session has already been tested.",
+          "FALSE",
+          "与原文矛盾。证据：This proposal has not yet been tested."
+        ]
+      ],
+      "readingTask": "把 proposed、tested、measured 分开列出，再判断行动是否已经发生。",
+      "speaking": "Describe a time you worked successfully with others.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Written communication is more useful than meetings at work. Discuss both views and give your opinion.",
+      "writingTask": "用10分钟写80–120词主体段：观点→原因→具体例子。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某镇通勤方式占比（%）",
+        "headers": ["Year", "Car", "Bus", "Bicycle"],
+        "rows": [
+          ["2010", "50", "30", "20"],
+          ["2015", "40", "40", "20"],
+          ["2020", "30", "45", "25"]
+        ]
+      },
+      "listen": "官方听力页「Short Answer Questions」（简答：服装公司讲解）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-03",
+      "number": 7,
+      "name": "文化与归属",
+      "en": "Culture and belonging",
+      "focus": "第 1 周复盘：为每个判断写出证据。",
+      "wordIds": [
+        "heritage",
+        "tradition",
+        "diverse",
+        "community",
+        "destination",
+        "authentic",
+        "perspective",
+        "exchange",
+        "adapt",
+        "respect"
+      ],
+      "readingTitle": "Stories from the neighbourhood",
+      "text": "A local archive invited residents to record stories about their neighbourhood. Contributors could speak in any language, and volunteers prepared summaries in English. The archive asked for permission before making recordings public. Some residents chose to share photographs but not their voices. The first collection focused on changes to local shops. A second collection about schools is planned for next year. Visitors can listen free of charge inside the archive. The organisers have not published the age distribution of people who contributed to the project.",
+      "questions": [
+        [
+          "Permission was requested before recordings became public.",
+          "TRUE",
+          "与原文一致。证据：The archive asked for permission before making recordings public."
+        ],
+        [
+          "All contributors were required to record their voices.",
+          "FALSE",
+          "与原文矛盾。证据：Some residents chose to share photographs but not their voices."
+        ],
+        [
+          "Most contributors were over sixty years old.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "不看之前答案做3题；记录本周最常犯的一个错误和改进动作。",
+      "speaking": "Describe a tradition that matters to you.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答1–2分钟；回听停顿，再用两个今日词重说。",
+      "writing": "Communities should spend more money recording local history. To what extent do you agree or disagree?",
+      "writingTask": "列双方观点，再写80–120词主体段，说明自己为何支持其中一方。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Multiple choice (more than one answer)」（多选：图书馆指南）。首轮：预读题目2分钟，首听作答5分钟，对照答案与原文复盘8分钟。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary", "books"]
+    },
+    {
+      "date": "2026-11-04",
+      "number": 8,
+      "name": "调查与证据",
+      "en": "Surveys and evidence",
+      "focus": "看清样本限制；写作中不把相关性当因果。",
+      "wordIds": [
+        "hypothesis",
+        "evidence",
+        "variable",
+        "outcome",
+        "sample",
+        "survey",
+        "interpret",
+        "valid",
+        "bias",
+        "method"
+      ],
+      "readingTitle": "Who answered the survey?",
+      "text": "A university wanted to know how students travelled to campus. It placed a questionnaire on the library website for one week. Completing it was voluntary, and only current students were invited to respond. Many answers came from people who visited the library regularly. The research team warned that the results might not represent all students. It recommended another survey using invitations sent across every department. No travel policy was changed immediately. The team also explained that asking about travel habits could not, by itself, show why individual students chose particular routes.",
+      "questions": [
+        [
+          "The university immediately changed its travel policy.",
+          "FALSE",
+          "与原文矛盾。证据：No travel policy was changed immediately."
+        ],
+        [
+          "The majority of all students travelled by bicycle.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Only current students were invited to complete the questionnaire.",
+          "TRUE",
+          "与原文一致。证据：Completing it was voluntary, and only current students were invited to respond."
+        ]
+      ],
+      "readingTask": "短文热身后，到官方阅读页找判断题；练习把题干名词换成原文表达。",
+      "speaking": "Describe a time you needed to check information.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Schools should teach students how to evaluate information. To what extent do you agree or disagree?",
+      "writingTask": "写80–100词比较段，按相似趋势分组，不逐项罗列。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Note Completion」（笔记填空：二手家具）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-05",
+      "number": 9,
+      "name": "消费与预算",
+      "en": "Spending choices",
+      "focus": "识别价格、价值和总成本之间的区别。",
+      "wordIds": [
+        "purchase",
+        "budget",
+        "durable",
+        "discount",
+        "warranty",
+        "refund",
+        "receipt",
+        "demand",
+        "supply",
+        "value"
+      ],
+      "readingTitle": "The price of keeping things",
+      "text": "A student compared two second-hand bicycles before buying one. The cheaper bicycle needed new tyres, while the more expensive one had recently been serviced. Both sellers allowed a short test ride. The student wrote down the purchase price and expected repair costs, then chose the serviced bicycle. A friend preferred the cheaper option because she could repair it herself. Neither bicycle came with a warranty. The student kept a record of later expenses, but she did not track how many kilometres she travelled during the first month.",
+      "questions": [
+        [
+          "The serviced bicycle travelled further in the first month.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The cheaper bicycle needed new tyres.",
+          "TRUE",
+          "与原文一致。证据：The cheaper bicycle needed new tyres, while the more expensive one had recently been serviced."
+        ],
+        [
+          "Both bicycles included a warranty.",
+          "FALSE",
+          "与原文矛盾。证据：Neither bicycle came with a warranty."
+        ]
+      ],
+      "readingTask": "为短文每句话写一个关键词；用这些词复述购买决策的理由。",
+      "speaking": "Describe a purchase that was good value for money.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "The lowest price is the most important factor when buying a product. To what extent do you agree or disagree?",
+      "writingTask": "列双方观点，再写80–120词主体段，说明自己为何支持其中一方。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Multiple Choice (one answer)」（单选：学生研究讨论）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-06",
+      "number": 10,
+      "name": "食物与浪费",
+      "en": "Food and waste",
+      "focus": "练习原因与解决办法的对应关系。",
+      "wordIds": [
+        "harvest",
+        "crop",
+        "fertile",
+        "irrigation",
+        "storage",
+        "packaging",
+        "surplus",
+        "distribute",
+        "seasonal",
+        "portion"
+      ],
+      "readingTitle": "Choosing a smaller serving",
+      "text": "A college cafe introduced smaller lunch portions at a lower price. Customers could still choose the original size, and the ingredients remained the same. Staff weighed food left on plates during two separate weeks. They found less leftover food after the smaller option appeared, but the menu had also changed between the two weeks. The manager therefore avoided claiming that portion size alone explained the difference. Students suggested displaying the available sizes more clearly. The cafe plans to improve its signs before collecting another set of measurements.",
+      "questions": [
+        [
+          "Customers could still order the original portion size.",
+          "TRUE",
+          "与原文一致。证据：Customers could still choose the original size, and the ingredients remained the same."
+        ],
+        [
+          "The ingredients were changed specifically for the smaller portions.",
+          "FALSE",
+          "与原文矛盾。证据：Customers could still choose the original size, and the ingredients remained the same."
+        ],
+        [
+          "The cafe's profits rose after the change.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "画出措施→观察→限制三步关系；比较题干因果与原文证据。",
+      "speaking": "Describe a meal you enjoyed preparing.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "What are the causes of food waste, and what measures could reduce it?",
+      "writingTask": "列双方观点，再写80–120词主体段，说明自己为何支持其中一方。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Plan/Map/Diagram Labelling」（地图标注：城镇导览）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-07",
+      "number": 11,
+      "name": "媒体与核查",
+      "en": "Media literacy",
+      "focus": "注意观点、证据与标题之间的差异。",
+      "wordIds": [
+        "claim",
+        "source",
+        "verify",
+        "accurate",
+        "misleading",
+        "audience",
+        "broadcast",
+        "editor",
+        "context",
+        "distinguish"
+      ],
+      "readingTitle": "Reading beyond a headline",
+      "text": "A student newspaper published a headline about falling library use. The article reported fewer physical visits during the summer, when many students were away. It also noted an increase in online borrowing, but this detail was absent from the headline. After readers complained, the editor added a short explanation beside the article. The original figures were not changed. The newspaper then introduced a rule requiring headlines to be reviewed by a second editor. It has not studied whether this change affects the number of people who read each story.",
+      "questions": [
+        [
+          "The editor changed the original figures.",
+          "FALSE",
+          "与原文矛盾。证据：The original figures were not changed."
+        ],
+        [
+          "The new rule increased the newspaper's readership.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Online borrowing increased during the period described.",
+          "TRUE",
+          "与原文一致。证据：It also noted an increase in online borrowing, but this detail was absent from the headline."
+        ]
+      ],
+      "readingTask": "短文热身后，在官方阅读页选择单选样题；为排除选项写理由。",
+      "speaking": "Describe a news story you checked carefully.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "News organisations should prioritise accuracy over speed. To what extent do you agree or disagree?",
+      "writingTask": "列双方观点，再写80–120词主体段，说明自己为何支持其中一方。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Table Completion」（表格填空：学习坚持）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-08",
+      "number": 12,
+      "name": "图表与趋势",
+      "en": "Describing trends",
+      "focus": "用概述组织信息；区分百分比与百分点。",
+      "wordIds": [
+        "proportion",
+        "increase",
+        "decrease",
+        "fluctuate",
+        "stable",
+        "peak",
+        "overall",
+        "approximately",
+        "contrast",
+        "respectively"
+      ],
+      "readingTitle": "Two ways to count visitors",
+      "text": "A museum reported both the number of visits and the number of individual visitors. These figures differed because some people came more than once. A new membership scheme allowed unlimited entry for a year. After it began, total visits increased more quickly than the number of individual visitors. Staff reminded readers that this did not necessarily mean the museum had reached many new people. The report included monthly totals but no information about visitors' incomes. Managers planned to ask about first visits in the following year's survey.",
+      "questions": [
+        [
+          "Most visitors had high incomes.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Some people visited the museum more than once.",
+          "TRUE",
+          "与原文一致。证据：These figures differed because some people came more than once."
+        ],
+        [
+          "The membership scheme allowed only one visit each year.",
+          "FALSE",
+          "与原文矛盾。证据：A new membership scheme allowed unlimited entry for a year."
+        ]
+      ],
+      "readingTask": "先看标题预测内容，再检查每一处 percentage/number 所指对象。",
+      "speaking": "Describe a chart or piece of information that you found useful.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Visitor numbers are the best way to judge the success of a museum. To what extent do you agree or disagree?",
+      "writingTask": "写80–100词比较段，按相似趋势分组，不逐项罗列。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某图书馆借阅量（千册）",
+        "headers": ["Year", "Printed books", "E-books", "Audio books"],
+        "rows": [
+          ["2016", "40", "5", "2"],
+          ["2020", "35", "15", "8"],
+          ["2024", "30", "25", "15"]
+        ]
+      },
+      "listen": "官方听力页「Sentence Completion」（句子填空：开放大学）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-09",
+      "number": 13,
+      "name": "公共服务",
+      "en": "Public services",
+      "focus": "比较不同群体的需求，用具体例子支持观点。",
+      "wordIds": [
+        "fund",
+        "allocate",
+        "priority",
+        "beneficiary",
+        "subsidy",
+        "eligible",
+        "application",
+        "capacity",
+        "volunteer",
+        "evaluate"
+      ],
+      "readingTitle": "A desk for practical advice",
+      "text": "A community centre opened an advice desk to help residents complete online forms. Trained volunteers could explain the questions, but they were not allowed to submit applications on another person's behalf. Residents could book an appointment or wait for a free slot. The centre provided printed guidance for people who preferred to practise at home. Demand was highest on Monday mornings. The manager is considering longer hours, although no additional funding has been approved. The centre has not compared the success rates of applications made with and without its help.",
+      "questions": [
+        [
+          "Volunteers could explain questions on application forms.",
+          "TRUE",
+          "与原文一致。证据：Trained volunteers could explain the questions, but they were not allowed to submit applications on another person's behalf."
+        ],
+        [
+          "Volunteers were allowed to submit applications for residents.",
+          "FALSE",
+          "与原文矛盾。证据：Trained volunteers could explain the questions, but they were not allowed to submit applications on another person's behalf."
+        ],
+        [
+          "People using the desk had more successful applications.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "用3分钟读短文，接着在官方阅读页找笔记填空；按题目限制填写。",
+      "speaking": "Describe a public service you have used.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Governments should give priority to digital public services. Discuss both views and give your opinion.",
+      "writingTask": "写80–120词主体段，加入一个让步句并解释适用条件。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Short Answer Questions」（简答：服装公司讲解）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-10",
+      "number": 14,
+      "name": "自然观察",
+      "en": "Observing nature",
+      "focus": "比较观察结果与解释，保留不确定性。",
+      "wordIds": [
+        "species",
+        "ecosystem",
+        "biodiversity",
+        "pollination",
+        "migration",
+        "predator",
+        "threat",
+        "restore",
+        "monitor",
+        "decline"
+      ],
+      "readingTitle": "Counting birds in a park",
+      "text": "Volunteers counted birds in a city park on four Saturday mornings. They followed the same route each time and started at the same hour. The weather, however, was different on each visit. Fewer birds were recorded on the wettest morning. The organiser warned that this might reflect how easily birds could be seen rather than an actual decline in their number. The group plans to continue throughout the year. It has not marked individual birds, so it cannot identify whether the same birds return on different weekends.",
+      "questions": [
+        [
+          "Weather conditions were identical on all four mornings.",
+          "FALSE",
+          "与原文矛盾。证据：The weather, however, was different on each visit."
+        ],
+        [
+          "The same birds returned every Saturday.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The volunteers used the same route on every visit.",
+          "TRUE",
+          "与原文一致。证据：They followed the same route each time and started at the same hour."
+        ]
+      ],
+      "readingTask": "识别可能性与确定性表达；选3句改写成保留限定条件的句子。",
+      "speaking": "Describe an animal you find interesting.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Cities should protect natural habitats even when land is needed for housing. To what extent do you agree or disagree?",
+      "writingTask": "写改写后的引言与概述；检查对象、单位和年份。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Multiple choice (more than one answer)」（多选：图书馆指南）。第二轮复听：先回忆上轮错误；不看原文重做，再抄出3处题干与录音的同义替换。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary", "books"]
+    },
+    {
+      "date": "2026-11-11",
+      "number": 15,
+      "name": "艺术与参与",
+      "en": "Arts participation",
+      "focus": "第二阶段检查：把例子和论点连起来。",
+      "wordIds": [
+        "exhibition",
+        "craft",
+        "creative",
+        "inspire",
+        "interpretation",
+        "venue",
+        "perform",
+        "admission",
+        "funding",
+        "participation"
+      ],
+      "readingTitle": "A workshop without an audience",
+      "text": "An arts centre changed the format of its weekend music workshop. Previously, participants performed in front of visitors at the end of every session. Several beginners said this made them nervous. The centre introduced an alternative session focused on experimenting together, with no final performance. Experienced musicians could still choose the original workshop. Attendance at the new session was recorded, but participants were not asked to rate their musical ability. The centre plans to interview both groups before deciding how many sessions of each type to offer next term.",
+      "questions": [
+        [
+          "Participants in the new session became more skilled musicians.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The new session had no final performance.",
+          "TRUE",
+          "与原文一致。证据：Experienced musicians could still choose the original workshop."
+        ],
+        [
+          "The original workshop was cancelled.",
+          "FALSE",
+          "与原文矛盾。证据：Experienced musicians could still choose the original workshop."
+        ]
+      ],
+      "readingTask": "完成短文后口头概括40秒；区分目的、措施和未验证结果。",
+      "speaking": "Describe a creative activity you would like to try.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Arts education should focus on participation rather than competition. To what extent do you agree or disagree?",
+      "writingTask": "写80–120词主体段，加入一个让步句并解释适用条件。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Note Completion」（笔记填空：二手家具）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-12",
+      "number": 16,
+      "name": "学习方法比较",
+      "en": "Comparing study methods",
+      "focus": "复习教育词汇；把同义替换整理成对照表。",
+      "wordIds": [
+        "acquire",
+        "assessment",
+        "curriculum",
+        "independent",
+        "concentrate",
+        "qualification",
+        "participate",
+        "feedback",
+        "approach",
+        "retain"
+      ],
+      "readingTitle": "Notes written from memory",
+      "text": "Two study groups tried different ways of reviewing a short article. One group reread the text, while the other closed it and wrote down what they remembered. Both groups spent the same amount of time on the task. The tutor then discussed missing ideas with everyone. Students were allowed to choose either method for future homework. Because the groups had read different articles before the activity, the tutor did not present the exercise as a controlled experiment. No long-term follow-up was carried out after the lesson.",
+      "questions": [
+        [
+          "Both groups spent equal time on the activity.",
+          "TRUE",
+          "与原文一致。证据：Both groups spent the same amount of time on the task."
+        ],
+        [
+          "Students had to keep using the method assigned to their group.",
+          "FALSE",
+          "与原文矛盾。证据：Students were allowed to choose either method for future homework."
+        ],
+        [
+          "One method led to better memory six months later.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "将题干与原文的同义表达写成三对；不逐词翻译全文。",
+      "speaking": "Describe a study method you have changed.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Students learn more effectively by working independently than by following teachers' instructions. Discuss both views.",
+      "writingTask": "写80–120词主体段，加入一个让步句并解释适用条件。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Multiple Choice (one answer)」（单选：学生研究讨论）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-13",
+      "number": 17,
+      "name": "能源选择",
+      "en": "Energy choices",
+      "focus": "复习环境词汇；练习承认限制的让步句。",
+      "wordIds": [
+        "sustainable",
+        "emission",
+        "conservation",
+        "renewable",
+        "resource",
+        "habitat",
+        "consume",
+        "waste",
+        "preserve",
+        "impact"
+      ],
+      "readingTitle": "A roof shared by neighbours",
+      "text": "Residents of an apartment building discussed installing solar panels on their shared roof. An engineer first checked the roof's condition and estimated how much electricity the panels might generate. The estimate depended on weather and shading from nearby buildings. Residents voted to request quotations, but this did not authorise installation. Some wanted more information about maintenance costs. The building manager agreed to circulate the quotations before a second meeting. No final supplier has been selected, and the residents have not decided how costs would be divided among households.",
+      "questions": [
+        [
+          "Residents authorised installation at the first meeting.",
+          "FALSE",
+          "与原文矛盾。证据：Residents voted to request quotations, but this did not authorise installation."
+        ],
+        [
+          "Every household will pay an equal share.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The engineer's estimate depended partly on weather.",
+          "TRUE",
+          "与原文一致。证据：The estimate depended on weather and shading from nearby buildings."
+        ]
+      ],
+      "readingTask": "用两列记录已决定与未决定的事项；关注投票究竟批准了什么。",
+      "speaking": "Describe an environmental improvement you would like to see.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "What could encourage households to use renewable energy?",
+      "writingTask": "写80–120词主体段，加入一个让步句并解释适用条件。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Plan/Map/Diagram Labelling」（地图标注：城镇导览）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-14",
+      "number": 18,
+      "name": "技术与隐私",
+      "en": "Technology and privacy",
+      "focus": "复习科技词汇；概述时同时报告上升和下降。",
+      "wordIds": [
+        "access",
+        "innovation",
+        "privacy",
+        "reliable",
+        "efficient",
+        "automate",
+        "device",
+        "replace",
+        "benefit",
+        "digital"
+      ],
+      "readingTitle": "A map without names",
+      "text": "A transport researcher used anonymous counts from station entrances to map busy travel periods. The dataset showed how many people entered each station in fifteen-minute intervals. It did not include passengers' names or destinations. The researcher explained that the map could identify crowded periods but could not show complete journeys. A city department asked whether the data could help plan staffing. Before making changes, it requested observations from staff at the busiest stations. The department has not released a comparison of staffing costs before and after the research.",
+      "questions": [
+        [
+          "The research has reduced staffing costs.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The dataset contained counts for fifteen-minute intervals.",
+          "TRUE",
+          "与原文一致。证据：The dataset showed how many people entered each station in fifteen-minute intervals."
+        ],
+        [
+          "The dataset included each passenger's destination.",
+          "FALSE",
+          "与原文矛盾。证据：It did not include passengers' names or destinations."
+        ]
+      ],
+      "readingTask": "短文后去官方阅读页做表格填空；核对答案所指单位和范围。",
+      "speaking": "Describe a situation where privacy is important.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "The benefits of collecting public transport data outweigh the privacy concerns. Discuss your view.",
+      "writingTask": "写改写后的引言与概述；检查对象、单位和年份。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某学院三类课程人数（人）",
+        "headers": ["Year", "Science", "Arts", "Business"],
+        "rows": [
+          ["2015", "120", "100", "80"],
+          ["2020", "150", "90", "110"],
+          ["2025", "180", "110", "130"]
+        ]
+      },
+      "listen": "官方听力页「Table Completion」（表格填空：学习坚持）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-15",
+      "number": 19,
+      "name": "步行城市",
+      "en": "Walkable places",
+      "focus": "先判断段落目的，再定位细节。",
+      "wordIds": [
+        "commute",
+        "congestion",
+        "infrastructure",
+        "affordable",
+        "resident",
+        "pedestrian",
+        "accessible",
+        "urban",
+        "facility",
+        "expand"
+      ],
+      "readingTitle": "A crossing moved closer",
+      "text": "A town moved a pedestrian crossing closer to a bus stop after residents reported difficulty reaching it. The new location shortened the walk between the stop and a public clinic. Engineers observed traffic for two weeks before approving the change. Some shop owners worried that a nearby loading area would disappear, but the final design retained it. Residents were invited to comment after the crossing opened. The council recorded their comments without measuring changes in clinic attendance. It plans to review the crossing again after the winter months.",
+      "questions": [
+        [
+          "The loading area was retained in the final design.",
+          "TRUE",
+          "与原文一致。证据：Some shop owners worried that a nearby loading area would disappear, but the final design retained it."
+        ],
+        [
+          "The crossing was moved further from the bus stop.",
+          "FALSE",
+          "与原文矛盾。证据：The new location shortened the walk between the stop and a public clinic."
+        ],
+        [
+          "Clinic attendance increased after the crossing opened.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "自己拟一个短标题并说明理由；继续官方匹配类样题，先定位再比较。",
+      "speaking": "Describe a change that would improve your neighbourhood.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Making cities easier to walk around is more important than increasing car parking. To what extent do you agree?",
+      "writingTask": "写引言和一个主体段，检查论点是否直接回答题目。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Sentence Completion」（句子填空：开放大学）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-16",
+      "number": 20,
+      "name": "坚持与调整",
+      "en": "Maintaining routines",
+      "focus": "复习习惯词汇；先解释原因，再给可执行建议。",
+      "wordIds": [
+        "balanced",
+        "sedentary",
+        "physical",
+        "wellbeing",
+        "habit",
+        "prevent",
+        "routine",
+        "nutritious",
+        "moderate",
+        "maintain"
+      ],
+      "readingTitle": "Starting with ten minutes",
+      "text": "A language club invited members to try a daily reading routine for one month. Participants chose their own books and were encouraged to begin with ten minutes. There was no requirement to finish a particular number of pages. Members kept private notes and could share ideas at weekly meetings. Several said that choosing easier texts helped them continue on busy days. The organiser collected comments rather than checking every reading record. The club did not test whether members' vocabulary had improved. Next month, it will offer a session on selecting suitable reading material.",
+      "questions": [
+        [
+          "Members were required to finish a fixed number of pages.",
+          "FALSE",
+          "与原文矛盾。证据：There was no requirement to finish a particular number of pages."
+        ],
+        [
+          "Vocabulary test scores improved during the month.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Participants could choose their own books.",
+          "TRUE",
+          "与原文一致。证据：Participants chose their own books and were encouraged to begin with ten minutes."
+        ]
+      ],
+      "readingTask": "写一段30–40词摘要；不得加入文中未测量的学习效果。",
+      "speaking": "Describe a goal that required regular practice.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Small daily habits are more effective than occasional intensive effort. Discuss both views.",
+      "writingTask": "写引言和一个主体段，检查论点是否直接回答题目。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Short Answer Questions」（简答：服装公司讲解）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-17",
+      "number": 21,
+      "name": "工作安排",
+      "en": "Organising work",
+      "focus": "复习工作词汇；比较图表中的最大差异。",
+      "wordIds": [
+        "flexible",
+        "productivity",
+        "collaborate",
+        "responsibility",
+        "occupation",
+        "income",
+        "opportunity",
+        "deadline",
+        "motivate",
+        "balance"
+      ],
+      "readingTitle": "When a deadline moves",
+      "text": "A publishing team introduced an earlier internal deadline for draft articles. Writers submitted drafts three days before the external deadline so editors could request changes. The final publication date stayed the same. Some writers welcomed the extra feedback, while others found that interviews were still unfinished at the new deadline. The manager allowed exceptions when a source was unavailable, provided the writer explained the delay. The team counted late submissions but did not survey readers about article quality. It will review the arrangement after the next two editions.",
+      "questions": [
+        [
+          "Readers preferred the articles produced under the new arrangement.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The external publication date remained unchanged.",
+          "TRUE",
+          "与原文一致。证据：The final publication date stayed the same."
+        ],
+        [
+          "No exceptions to the internal deadline were permitted.",
+          "FALSE",
+          "与原文矛盾。证据：The manager allowed exceptions when a source was unavailable, provided the writer explained the delay."
+        ]
+      ],
+      "readingTask": "先限时6分钟做3题，再查证例外条件；复盘不计入首轮用时。",
+      "speaking": "Describe a time you managed a difficult deadline.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "准备1分钟、回答2分钟；补充一个具体例子，再回答 Why? 和 How has it changed?。",
+      "writing": "Flexible deadlines improve the quality of work. To what extent do you agree or disagree?",
+      "writingTask": "选两组数据作比较，注意 percentage points 与 percent 的区别（仅百分比图适用）。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Multiple choice (more than one answer)」（多选：图书馆指南）。第三轮精听：挑选2句难句，听写、核对、跟读；最后用自己的话复述录音要点。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary", "books"]
+    },
+    {
+      "date": "2026-11-18",
+      "number": 22,
+      "name": "旅游与文化交流",
+      "en": "Travel and exchange",
+      "focus": "比较双方观点，各给一个具体理由。",
+      "wordIds": [
+        "heritage",
+        "tradition",
+        "diverse",
+        "community",
+        "destination",
+        "authentic",
+        "perspective",
+        "exchange",
+        "adapt",
+        "respect"
+      ],
+      "readingTitle": "Visitors as listeners",
+      "text": "A village introduced guided walks led by local residents. Visitors were asked to listen to personal stories before taking photographs. The guides could choose which places to include, and some avoided locations connected with private family events. Tours were limited to small groups because several paths were narrow. Income paid for guide training and maintenance of the meeting room. The organisers have not compared this income with that from other tourist activities. They plan to ask residents whether the walks affect everyday life before increasing the number of tours.",
+      "questions": [
+        [
+          "Group sizes were limited partly because paths were narrow.",
+          "TRUE",
+          "与原文一致。证据：Tours were limited to small groups because several paths were narrow."
+        ],
+        [
+          "Every guide had to follow exactly the same route.",
+          "FALSE",
+          "与原文矛盾。证据：The guides could choose which places to include, and some avoided locations connected with private family events."
+        ],
+        [
+          "Guided walks earned more than all other tourist activities.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "做完短文后在官方阅读页选匹配样题；练习人物与观点对应。",
+      "speaking": "Describe a place you would like to learn more about.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Tourism can help preserve local culture. Discuss the advantages and disadvantages.",
+      "writingTask": "写引言和一个主体段，检查论点是否直接回答题目。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Note Completion」（笔记填空：二手家具）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-19",
+      "number": 23,
+      "name": "解释研究结果",
+      "en": "Interpreting results",
+      "focus": "复习证据词汇；检查结论是否超出材料。",
+      "wordIds": [
+        "hypothesis",
+        "evidence",
+        "variable",
+        "outcome",
+        "sample",
+        "survey",
+        "interpret",
+        "valid",
+        "bias",
+        "method"
+      ],
+      "readingTitle": "More practice, or more time?",
+      "text": "A college introduced optional evening tutorials before an examination. Students who attended generally achieved higher marks than those who did not. The tutor cautioned that attendance was voluntary and that the groups might differ in motivation or prior knowledge. The results therefore did not prove that the tutorials alone caused the difference. Students were invited to describe which activities they found helpful. Several mentioned feedback on draft answers. The college plans to offer tutorials again, but it has not decided whether to change their length or frequency.",
+      "questions": [
+        [
+          "The results proved that tutorials alone caused higher marks.",
+          "FALSE",
+          "与原文矛盾。证据：The results therefore did not prove that the tutorials alone caused the difference."
+        ],
+        [
+          "Most non-attenders had full-time jobs.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Tutorial attendance was voluntary.",
+          "TRUE",
+          "与原文一致。证据：A college introduced optional evening tutorials before an examination."
+        ]
+      ],
+      "readingTask": "指出结论的限制；把一个过强结论改写为证据允许的表述。",
+      "speaking": "Describe a conclusion you changed after learning more.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Universities should make additional academic support compulsory. To what extent do you agree or disagree?",
+      "writingTask": "写引言和一个主体段，检查论点是否直接回答题目。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Multiple Choice (one answer)」（单选：学生研究讨论）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-20",
+      "number": 24,
+      "name": "产品寿命",
+      "en": "Product lifetimes",
+      "focus": "复习消费词汇；在概述中不添加原因。",
+      "wordIds": [
+        "purchase",
+        "budget",
+        "durable",
+        "discount",
+        "warranty",
+        "refund",
+        "receipt",
+        "demand",
+        "supply",
+        "value"
+      ],
+      "readingTitle": "A label about repair",
+      "text": "A shop added a repair information card to selected appliances. The card described where replacement parts could be obtained and how long the manufacturer expected to supply them. It was not a guarantee that every fault could be repaired. Customers could ask staff to explain the information before buying. During a trial, staff noted how often shoppers asked about repair options. Sales figures were collected separately and have not yet been compared with the questions. The shop intends to extend the cards to more products if manufacturers provide sufficient information.",
+      "questions": [
+        [
+          "The cards increased sales of all selected appliances.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The cards explained where replacement parts could be obtained.",
+          "TRUE",
+          "与原文一致。证据：The card described where replacement parts could be obtained and how long the manufacturer expected to supply them."
+        ],
+        [
+          "The cards guaranteed that every fault could be repaired.",
+          "FALSE",
+          "与原文矛盾。证据：It was not a guarantee that every fault could be repaired."
+        ]
+      ],
+      "readingTask": "找出保证与信息说明的区别；官方摘要填空练习优先核对语法。",
+      "speaking": "Describe a product you would like to last longer.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Manufacturers should be required to make products easier to repair. To what extent do you agree?",
+      "writingTask": "选两组数据作比较，注意 percentage points 与 percent 的区别（仅百分比图适用）。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某中心的服务使用人次（千人次）",
+        "headers": ["Year", "Advice", "Classes", "Sport"],
+        "rows": [
+          ["2018", "10", "18", "22"],
+          ["2021", "14", "12", "16"],
+          ["2024", "20", "21", "24"]
+        ]
+      },
+      "listen": "官方听力页「Plan/Map/Diagram Labelling」（地图标注：城镇导览）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-21",
+      "number": 25,
+      "name": "食物供应",
+      "en": "Food distribution",
+      "focus": "复习食物词汇；用流程语言描述顺序。",
+      "wordIds": [
+        "harvest",
+        "crop",
+        "fertile",
+        "irrigation",
+        "storage",
+        "packaging",
+        "surplus",
+        "distribute",
+        "seasonal",
+        "portion"
+      ],
+      "readingTitle": "Collecting the evening surplus",
+      "text": "A volunteer group collected unsold bread from three bakeries at closing time. Each bakery decided which items were suitable to share. Volunteers recorded the amount collected and took it to a community centre the same evening. Recipients did not need to pay, but supplies varied from day to day. The group warned people not to rely on receiving a particular product. It has not measured how much waste the bakeries produced before the scheme began. A fourth bakery has expressed interest, although no collection arrangement has been agreed.",
+      "questions": [
+        [
+          "Bread was taken to the centre on the evening it was collected.",
+          "TRUE",
+          "与原文一致。证据：Volunteers recorded the amount collected and took it to a community centre the same evening."
+        ],
+        [
+          "Recipients had to pay for the bread.",
+          "FALSE",
+          "与原文矛盾。证据：Recipients did not need to pay, but supplies varied from day to day."
+        ],
+        [
+          "The scheme reduced bakery waste by half.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "按时间顺序列出流程；用 first、then、finally 复述，但不添加步骤。",
+      "speaking": "Describe a way people in your area help one another.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Businesses should be responsible for reducing food waste. Discuss both views and give your opinion.",
+      "writingTask": "回读草稿，修改3处词汇搭配或语法，再重写主题句。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Table Completion」（表格填空：学习坚持）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-22",
+      "number": 26,
+      "name": "信息可信度",
+      "en": "Trusting information",
+      "focus": "练习 Y/N/NG 与 T/F/NG 的区别；不把作者观点当事实题。",
+      "wordIds": [
+        "claim",
+        "source",
+        "verify",
+        "accurate",
+        "misleading",
+        "audience",
+        "broadcast",
+        "editor",
+        "context",
+        "distinguish"
+      ],
+      "readingTitle": "The missing date",
+      "text": "A social media account shared a photograph of a closed railway station with a warning about travel disruption. A reader noticed that the original photograph had been taken during repairs two years earlier. The station operator confirmed that normal services were currently running. The account added a correction and a link to the operator's timetable. It did not remove the original post because it wanted readers to see the correction. There is no published information about how many people changed their travel plans after seeing the first message.",
+      "questions": [
+        [
+          "The account removed its original post.",
+          "FALSE",
+          "与原文矛盾。证据：It did not remove the original post because it wanted readers to see the correction."
+        ],
+        [
+          "Hundreds of passengers changed their travel plans.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The photograph was taken two years before the warning was shared.",
+          "TRUE",
+          "与原文一致。证据：A reader noticed that the original photograph had been taken during repairs two years earlier."
+        ]
+      ],
+      "readingTask": "本站事实判断热身后，对照官方题型说明区分作者观点判断与事实判断。",
+      "speaking": "Describe a time you corrected a misunderstanding.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Social media users should check information before sharing it. What are the difficulties and possible solutions?",
+      "writingTask": "回读草稿，修改3处词汇搭配或语法，再重写主题句。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Sentence Completion」（句子填空：开放大学）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-23",
+      "number": 27,
+      "name": "比较数据",
+      "en": "Comparing data",
+      "focus": "复习趋势词汇；同一单位内比较，避免混淆总量和比例。",
+      "wordIds": [
+        "proportion",
+        "increase",
+        "decrease",
+        "fluctuate",
+        "stable",
+        "peak",
+        "overall",
+        "approximately",
+        "contrast",
+        "respectively"
+      ],
+      "readingTitle": "Percentages and totals",
+      "text": "A community college reported that the proportion of students using online materials rose from one year to the next. During the same period, total enrolment fell. A teacher pointed out that a higher proportion did not necessarily mean a higher number of users. To calculate the number, readers would need both the percentage and the total enrolment for each year. The published summary included percentages only. The college plans to include the missing totals in its next report. It has not asked students why they chose particular materials.",
+      "questions": [
+        [
+          "Students preferred online materials because they were cheaper.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The published summary omitted total enrolment figures.",
+          "TRUE",
+          "与原文一致。证据：The published summary included percentages only."
+        ],
+        [
+          "Total enrolment increased during the period.",
+          "FALSE",
+          "与原文矛盾。证据：During the same period, total enrolment fell."
+        ]
+      ],
+      "readingTask": "用原文解释为什么比例上升不一定代表人数上升；避免用常识猜题。",
+      "speaking": "Describe a time you used numbers to make a decision.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Schools should place more emphasis on understanding statistics. To what extent do you agree?",
+      "writingTask": "用10分钟检查并重写之前的一段，删去图表没有提供的原因。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Short Answer Questions」（简答：服装公司讲解）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-24",
+      "number": 28,
+      "name": "资源分配",
+      "en": "Allocating resources",
+      "focus": "用对照关系写清楚主要差异，保留数字单位。",
+      "wordIds": [
+        "fund",
+        "allocate",
+        "priority",
+        "beneficiary",
+        "subsidy",
+        "eligible",
+        "application",
+        "capacity",
+        "volunteer",
+        "evaluate"
+      ],
+      "readingTitle": "One hall, several uses",
+      "text": "A council reviewed bookings for a public hall used by sports clubs, classes and community meetings. Evening slots were almost full, while many weekday mornings remained available. A proposal suggested lower morning fees to attract new groups. Existing evening bookings would not be cancelled. Before introducing the change, the council asked potential users about suitable times and transport. Several groups said cheaper fees alone would not solve their difficulties. The council has not estimated the additional income the proposal might generate. A decision is expected after the consultation ends.",
+      "questions": [
+        [
+          "Many weekday morning slots were still available.",
+          "TRUE",
+          "与原文一致。证据：Evening slots were almost full, while many weekday mornings remained available."
+        ],
+        [
+          "Existing evening bookings would be cancelled.",
+          "FALSE",
+          "与原文矛盾。证据：Existing evening bookings would not be cancelled."
+        ],
+        [
+          "The proposal will double the hall's income.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ]
+      ],
+      "readingTask": "在短文中标出每个群体的需求；把两句不同说法对应到同一事实。",
+      "speaking": "Describe a facility that your community needs.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Public facilities should be free for everyone. Discuss both views and give your opinion.",
+      "writingTask": "用10分钟检查并重写之前的一段，删去图表没有提供的原因。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Multiple choice (more than one answer)」（多选：图书馆指南）。第四轮检查：限时重做，标记仍错的题；按拼写、定位、干扰选项分类，选一项改进。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary", "books"]
+    },
+    {
+      "date": "2026-11-25",
+      "number": 29,
+      "name": "保护与监测",
+      "en": "Conservation monitoring",
+      "focus": "四科整合：限时定位、两分钟表达、检查证据。",
+      "wordIds": [
+        "species",
+        "ecosystem",
+        "biodiversity",
+        "pollination",
+        "migration",
+        "predator",
+        "threat",
+        "restore",
+        "monitor",
+        "decline"
+      ],
+      "readingTitle": "Watching a restored pond",
+      "text": "A school restored a neglected pond with help from local volunteers. Students planted native vegetation around the edge and recorded visible animals once a month. More types of insects were observed during the summer than during the first winter survey. Their teacher explained that seasonal differences made a direct comparison difficult. The class will repeat the winter survey before discussing longer-term changes. Students have not tested the water for chemical pollutants. They keep photographs alongside their notes so that future classes can see how the pond developed.",
+      "questions": [
+        [
+          "Students have already tested the water for chemical pollutants.",
+          "FALSE",
+          "与原文矛盾。证据：Students have not tested the water for chemical pollutants."
+        ],
+        [
+          "Restoration doubled the total number of animals.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "The class plans to repeat the winter survey.",
+          "TRUE",
+          "与原文一致。证据：The class will repeat the winter survey before discussing longer-term changes."
+        ]
+      ],
+      "readingTask": "限时做题后只复查错题；把错误分成定位、逻辑或词义问题。",
+      "speaking": "Describe a place that has changed over time.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Schools should involve students in local environmental projects. To what extent do you agree?",
+      "writingTask": "回读草稿，修改3处词汇搭配或语法，再重写主题句。",
+      "writingPart": "task2",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Note Completion」（笔记填空：二手家具）。巩固：选择前面最薄弱的一段，重做并解释答案证据，不以熟悉录音代替理解。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    },
+    {
+      "date": "2026-11-26",
+      "number": 30,
+      "name": "展示进步与复盘",
+      "en": "Reflecting on progress",
+      "focus": "第 30 天：复测薄弱点，写下一阶段具体计划。",
+      "wordIds": [
+        "exhibition",
+        "craft",
+        "creative",
+        "inspire",
+        "interpretation",
+        "venue",
+        "perform",
+        "admission",
+        "funding",
+        "participation"
+      ],
+      "readingTitle": "Choosing work for an exhibition",
+      "text": "An evening art class asked learners to select two pieces for a small exhibition. One piece had to come from the beginning of the course and the other from a later session. Learners wrote short notes describing what they had tried to improve. Visitors could leave comments, but there were no prizes or rankings. Some learners selected unfinished work because it showed an important experiment. The teacher photographed the display with permission. No formal assessment scores were published, and the class has not decided whether to repeat the exhibition next year.",
+      "questions": [
+        [
+          "Most visitors preferred the later pieces.",
+          "NOT GIVEN",
+          "原文没有提供这项结果或数量，不能凭常识推断。"
+        ],
+        [
+          "Learners selected work from two stages of the course.",
+          "TRUE",
+          "与原文一致。证据：One piece had to come from the beginning of the course and the other from a later session."
+        ],
+        [
+          "Only finished pieces could be included.",
+          "FALSE",
+          "与原文矛盾。证据：Some learners selected unfinished work because it showed an important experiment."
+        ]
+      ],
+      "readingTask": "闭卷完成3题，再和第1天比较自己的查证步骤；列出下一阶段最需要练的两种官方题型。",
+      "speaking": "Describe something you have improved through practice.",
+      "cues": [
+        "What it is or what happened",
+        "When and where you experienced it",
+        "What you did or would do",
+        "Why it matters to you"
+      ],
+      "speakingTask": "按准备1分钟、回答2分钟练习；回听后仅看关键词重说，检查理由与例子是否相连。",
+      "writing": "Progress should be judged by personal improvement rather than comparison with others. Discuss both views.",
+      "writingTask": "用10分钟检查并重写之前的一段，删去图表没有提供的原因。",
+      "writingPart": "task1",
+      "chart": {
+        "title": "自编数据：某商店三类商品销售额（千英镑）",
+        "headers": ["Year", "New goods", "Repaired goods", "Spare parts"],
+        "rows": [
+          ["2019", "80", "10", "5"],
+          ["2022", "75", "20", "12"],
+          ["2025", "65", "35", "20"]
+        ]
+      },
+      "listen": "官方听力页「Multiple Choice (one answer)」（单选：学生研究讨论）。巩固：选择前面最薄弱的一段，重做并解释答案证据，不以熟悉录音代替理解。",
+      "listeningSource": "listening",
+      "sourceIds": ["listening", "reading", "speaking", "writing", "dictionary"]
+    }
+  ]
+}

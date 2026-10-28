@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useRef, useState, type ReactNode 
 import { z } from 'zod'
 import { toast } from 'sonner'
 import { words } from './content'
+import { getLesson, lessons } from './curriculum'
+import type { DailyLesson } from './course-schema'
 
 export const STORAGE_KEY = 'ielts-study-78a4ab06:study:v1'
 export function today() {
@@ -28,6 +30,10 @@ const date = z
     return !isNaN(+n) && n.toISOString().slice(0, 10) === v
   }, '日期无效')
 const text = z.string().max(50000)
+export function studyDateFromSearch(search: string) {
+  const requested = new URLSearchParams(search).get('date')
+  return requested && date.safeParse(requested).success ? requested : undefined
+}
 const wordId = z.string().refine((id) => words.some((w) => w.id === id), '未知词汇')
 const daySchema = z
   .object({
@@ -39,7 +45,7 @@ const daySchema = z
     reading: z.array(z.enum(['', 'TRUE', 'FALSE', 'NOT GIVEN'])).length(3),
     readingChecked: z.boolean(),
     notes: text,
-    vocabulary: z.array(wordId).max(70).optional(),
+    vocabulary: z.array(wordId).max(words.length).optional(),
   })
   .strict()
 export const stateSchema = z
@@ -63,6 +69,15 @@ export const stateSchema = z
         .refine((v) => date.safeParse(v.slice(0, 10)).success),
       daySchema,
     ),
+    courseDays: z
+      .record(
+        z
+          .string()
+          .regex(/^\d{4}-\d{2}-\d{2}\|(academic|general)$/)
+          .refine((v) => date.safeParse(v.slice(0, 10)).success),
+        daySchema,
+      )
+      .optional(),
     reviews: z.record(
       wordId,
       z
@@ -106,7 +121,7 @@ type Store = {
   data: StudyState
   error: string
   selected: string
-  setSelected: (date: string) => void
+  setSelected: (date: string, legacy?: boolean) => void
   actual: string
   day: Day
   updateDay: (change: Partial<Day>) => boolean
@@ -114,6 +129,8 @@ type Store = {
   review: (id: string, known: boolean) => void
   topicIndex: number
   cycle: number
+  lesson: DailyLesson | undefined
+  wordIds: string[]
   exportData: () => void
 }
 const Context = createContext<Store | null>(null)
@@ -132,17 +149,37 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState(loaded.error)
   const blocked = useRef(!!loaded.error)
   const [actual, setActual] = useState(today())
-  const [selected, setSelected] = useState(today())
+  const [legacy, setLegacy] = useState(false)
+  const [selected, changeSelected] = useState(() => {
+    const query = window.location.hash.includes('?')
+      ? window.location.hash.split('?')[1]
+      : window.location.search
+    return studyDateFromSearch(query) ?? today()
+  })
+  function setSelected(value: string, useLegacy = false) {
+    setLegacy(useLegacy)
+    changeSelected(value)
+  }
   useEffect(() => {
-    const id = setInterval(() => {
+    const refreshDate = () => {
       const next = today()
-      setActual((prev) => {
-        if (prev !== next) setSelected((old) => (old === prev ? next : old))
-        return next
-      })
-    }, 30000)
-    return () => clearInterval(id)
-  }, [])
+      if (actual !== next) {
+        setActual(next)
+        if (selected === actual) {
+          changeSelected(next)
+          setLegacy(false)
+        }
+      }
+    }
+    const id = setInterval(refreshDate, 30000)
+    window.addEventListener('focus', refreshDate)
+    document.addEventListener('visibilitychange', refreshDate)
+    return () => {
+      clearInterval(id)
+      window.removeEventListener('focus', refreshDate)
+      document.removeEventListener('visibilitychange', refreshDate)
+    }
+  }, [actual, selected])
   useEffect(() => {
     const fn = (e: StorageEvent) => {
       if (e.key === STORAGE_KEY) {
@@ -172,7 +209,9 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     }
   }
   const key = `${selected}|${data.profile.track}`
-  const day = data.days[key] || emptyDay()
+  const lesson = legacy ? undefined : getLesson(selected)
+  const collection = lesson ? 'courseDays' : 'days'
+  const day = data[collection]?.[key] || emptyDay()
   function updateDay(change: Partial<Day>) {
     if (selected > actual) {
       toast.error('未来日期可以预览，暂不能打卡或保存练习。')
@@ -180,7 +219,10 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     }
     return commit((d) => ({
       ...d,
-      days: { ...d.days, [key]: { ...(d.days[key] || emptyDay()), ...change } },
+      [collection]: {
+        ...d[collection],
+        [key]: { ...(d[collection]?.[key] || emptyDay()), ...change },
+      },
     }))
   }
   function review(id: string, known: boolean) {
@@ -194,11 +236,12 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     if (
       commit((d) => {
         const dailyKey = `${actual}|${d.profile.track}`
-        const daily = d.days[dailyKey] || emptyDay()
+        const dailyCollection = getLesson(actual) ? 'courseDays' : 'days'
+        const daily = d[dailyCollection]?.[dailyKey] || emptyDay()
         return {
           ...d,
-          days: {
-            ...d.days,
+          [dailyCollection]: {
+            ...d[dailyCollection],
             [dailyKey]: { ...daily, vocabulary: [...new Set([...(daily.vocabulary || []), id])] },
           },
           reviews: {
@@ -211,6 +254,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
       toast.success(`已记录，${addDays(actual, interval)} 复习`)
   }
   const offset = Math.max(0, dayDiff(selected, data.profile.startDate))
+  const topicIndex = lesson ? 7 + lessons.indexOf(lesson) : offset % 7
   function exportData() {
     try {
       const raw = blocked.current
@@ -234,8 +278,10 @@ export function StudyProvider({ children }: { children: ReactNode }) {
         updateDay,
         commit,
         review,
-        topicIndex: offset % 7,
+        topicIndex,
         cycle: Math.floor(offset / 7) + 1,
+        lesson,
+        wordIds: lesson?.wordIds ?? words.filter((w) => w.topic === topicIndex).map((w) => w.id),
         exportData,
       }}
     >

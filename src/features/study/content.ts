@@ -1,3 +1,5 @@
+import { curriculum, lessons } from './curriculum'
+
 export const sources = {
   academic: {
     name: 'IELTS · 学术类官方样题',
@@ -360,7 +362,7 @@ const wordRows = [
     ],
   ],
 ]
-export const words: Word[] = wordRows.flatMap((group, topic) =>
+const legacyWords: Word[] = wordRows.flatMap((group, topic) =>
   group.map(([word, meaning, phrase, example]) => ({
     id: word,
     word,
@@ -370,7 +372,11 @@ export const words: Word[] = wordRows.flatMap((group, topic) =>
     topic,
   })),
 )
-export const topics = [
+export const words: Word[] = [
+  ...legacyWords,
+  ...curriculum.wordBank.filter((word) => !legacyWords.some((old) => old.id === word.id)),
+]
+const legacyTopics = [
   {
     name: '学习与教育',
     en: 'Learning & education',
@@ -540,6 +546,7 @@ export const topics = [
     listen: '复做本周错题最多的一组；第二遍记录原文中的同义替换。',
   },
 ]
+export const topics = [...legacyTopics, ...lessons]
 export const taskDefs = [
   {
     id: 'vocabulary',
